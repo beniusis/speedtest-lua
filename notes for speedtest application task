@@ -1,0 +1,19 @@
+- Duomenų išsiuntimo ir parsiuntimo greičiui nustatyti bus naudojamas cURL;
+- Šalies (geolokacijos) nustatymui bus naudojamas IP Geolocation API;
+- Serverių sąrašas, į kuriuos bus daromi testai (server_list.json);
+- Flag'ų perdavimui naudojamas Argparse.
+
+
+* Laikytis tokios logikos: vienas metodas - vienas veiksmas (pvz. metodas, kuris organizuoja duomenų siuntimą, o kitas metodas organizuoja duomenų išsiuntimą ir panašiai);
+* Parsiuntimo metu visi duomenys nukreipiami į /dev/null;
+* Upload metu duomenys generuojami iš /dev/zero.
+
+
+** Useful Links **
+https://github.com/openwrt/packages/tree/master/lang
+https://github.com/Lua-cURL/Lua-cURLv3
+http://mpeterv.github.io/argparse/
+https://github.com/openwrt/packages/tree/openwrt-22.03/lang/luaexpat	
+https://lunarmodules.github.io/luaexpat/index.html
+https://ip-api.com/docs/api:json (http://ip-api.com/json/?fields=24859)
+https://williamyaps.github.io/wlmjavascript/servercli.html
