@@ -22,7 +22,7 @@ function measure_upload_speed()
     easy:setopt(cURL.OPT_UPLOAD, true)
     easy:setopt(cURL.OPT_READFUNCTION, fd)
     easy:setopt(cURL.OPT_INFILESIZE, file_size)
-    easy:perform(curl)
+    easy:perform()
     
     upload_speed = easy:getinfo(cURL.INFO_SPEED_UPLOAD_T) / 125000
     easy:close()
