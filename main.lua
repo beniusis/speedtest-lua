@@ -10,7 +10,6 @@ function measure_download_speed()
     local easy = cURL.easy()
     easy:setopt(cURL.OPT_URL, download_host_url)
     easy:setopt(cURL.OPT_WRITEFUNCTION, function() end)
-    easy:setopt(cURL.OPT_HEADERFUNCTION, function() end)
     easy:perform()
 
     download_speed = easy:getinfo(cURL.INFO_SPEED_DOWNLOAD_T) / 125000
