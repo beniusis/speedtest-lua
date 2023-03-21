@@ -1,56 +1,50 @@
-local cURL = require("cURL")
+cURL = require("cURL")
 
-local argparse = require("argparse")
-local parser = argparse()
-parser:flag("-d --download", "Calls the function to measure download's speed.")
-parser:flag("-u --upload", "Calls the function to measure upload's speed.")
-local args = parser:parse()
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+file_size = 1024 * 1024 * 10 -- 10MB
+download_host_url = "speed-kaunas.telia.lt:8080/download?size=" .. file_size
+upload_host_url = "speed-kaunas.telia.lt:8080/upload"
 
-local upload_host_url = "http://vln038-speedtest-1.tele2.net/upload.php"
-local download_host_url = "http://vln038-speedtest-1.tele2.net/10MB.zip"
-
-local file_size = 1024 * 1024 * 10 -- 10 MB
+-- speed variables
+download_speed = 0
+upload_speed = 0
 
 function measure_download_speed()
+    local start_time = os.clock()
     local easy = cURL.easy{
         url = download_host_url,
-        writefunction = function() end
+        useragent = user_agent,
+        writefunction = io.open("/dev/null", "wb"),
+        noprogress = false,
+        progressfunction = function (_, download_total, download_now, _, _)
+            download_speed = ((download_total / 125000) / (os.clock() - start_time))
+        end
     }
-
-    local start_time = os.clock()
-    easy:perform()
-    local end_time = os.clock()
-
-    download_speed = easy:getinfo(cURL.INFO_SPEED_DOWNLOAD_T) / 125000
-    download_latency = (end_time - start_time) * 1000 -- in ms
-
+    local success, err = pcall(easy:perform())
+    if not success then
+        print(err)
+    end
     easy:close()
 end
 
 function measure_upload_speed()
-    local easy = cURL.easy{
-        url = upload_host_url,
-        upload = true,
-        readfunction = io.open("upload_file.zip", "rb"),
-        infilesize = file_size
-    }
-
     local start_time = os.clock()
+    local easy = cURL.easy{
+        url = download_host_url,
+        useragent = user_agent,
+        infilesize = file_size,
+        readfunction = io.open("/dev/zero", "rb"),
+        noprogress = false,
+        progressfunction = function (_, _, _, upload_total, upload_now)
+            upload_speed = (upload_total / 125000) / (os.clock() - start_time)
+        end
+    }
     easy:perform()
-    local end_time = os.clock()
-
-    upload_speed = easy:getinfo(cURL.INFO_SPEED_UPLOAD_T) / 125000
-    upload_latency = (end_time - start_time) * 1000 -- in ms
-
     easy:close()
 end
 
-if (args.download) then 
-    measure_download_speed()
-    print(string.format("Average download speed: %.2f Mbps, Latency: %.0fms", download_speed, download_latency))
-end
+measure_download_speed()
+print(string.format("Average download speed: %.2f Mbps", download_speed))
 
-if (args.upload) then
-    measure_upload_speed()
-    print(string.format("Average upload speed: %.2f Mbps, Latency: %.0fms", upload_speed, upload_latency))
-end
+-- measure_upload_speed()
+print(string.format("Average upload speed: %.2f Mbps", upload_speed))
