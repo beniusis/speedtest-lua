@@ -16,9 +16,13 @@ function measure_download_speed()
         url = download_host_url,
         writefunction = function() end
     }
+
+    local start_time = os.clock()
     easy:perform()
+    local end_time = os.clock()
 
     download_speed = easy:getinfo(cURL.INFO_SPEED_DOWNLOAD_T) / 125000
+    download_latency = (end_time - start_time) * 1000 -- in ms
 
     easy:close()
 end
@@ -31,19 +35,22 @@ function measure_upload_speed()
         infilesize = file_size
     }
 
+    local start_time = os.clock()
     easy:perform()
+    local end_time = os.clock()
 
     upload_speed = easy:getinfo(cURL.INFO_SPEED_UPLOAD_T) / 125000
+    upload_latency = (end_time - start_time) * 1000 -- in ms
 
     easy:close()
 end
 
 if (args.download) then 
     measure_download_speed()
-    print(string.format("Average download speed: %.2f Mbps", download_speed))
+    print(string.format("Average download speed: %.2f Mbps, Latency: %.0fms", download_speed, download_latency))
 end
 
 if (args.upload) then
     measure_upload_speed()
-    print(string.format("Average upload speed: %.2f Mbps", upload_speed))
+    print(string.format("Average upload speed: %.2f Mbps, Latency: %.0fms", upload_speed, upload_latency))
 end
