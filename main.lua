@@ -1,5 +1,11 @@
 local cURL = require("cURL")
 
+local argparse = require("argparse")
+local parser = argparse()
+parser:flag("-d --download", "Calls the function to measure download's speed.")
+parser:flag("-u --upload", "Calls the function to measure upload's speed.")
+local args = parser:parse()
+
 local upload_host_url = "http://vln038-speedtest-1.tele2.net/upload.php"
 local download_host_url = "http://vln038-speedtest-1.tele2.net/10MB.zip"
 
@@ -32,8 +38,12 @@ function measure_upload_speed()
     easy:close()
 end
 
-measure_download_speed()
-print(string.format("Average download speed: %.2f Mbps", download_speed))
+if (args.download) then 
+    measure_download_speed()
+    print(string.format("Average download speed: %.2f Mbps", download_speed))
+end
 
-measure_upload_speed()
-print(string.format("Average upload speed: %.2f Mbps", upload_speed))
+if (args.upload) then
+    measure_upload_speed()
+    print(string.format("Average upload speed: %.2f Mbps", upload_speed))
+end
