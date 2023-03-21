@@ -24,7 +24,7 @@ function measure_download_speed()
     end)
 
     if not success then
-        print("DOWNLOAD FAILURE")
+        print("DOWNLOAD FAILURE: " .. err)
     else
         print(string.format("Average download speed: %.2f Mbps", download_speed))
     end
@@ -46,7 +46,7 @@ function measure_upload_speed()
     end)
 
     if not success then
-        print("UPLOAD FAILURE")
+        print("UPLOAD FAILURE: " .. err)
     else
         print(string.format("Average upload speed: %.2f Mbps", upload_speed))
     end
