@@ -20,9 +20,9 @@ function measure_download_speed()
             download_speed = ((download_total / 125000) / (os.clock() - start_time))
         end
     }
-    local success, err = pcall(easy:perform())
-    if not success then
-        print(err)
+
+    if not easy:perform() then
+        error("DOWNLOAD FAILURE")
     end
     easy:close()
 end
@@ -39,12 +39,25 @@ function measure_upload_speed()
             upload_speed = (upload_total / 125000) / (os.clock() - start_time)
         end
     }
-    easy:perform()
+
+    if not easy:perform() then
+        error("UPLOAD FAILURE")
+    end
     easy:close()
 end
 
-measure_download_speed()
-print(string.format("Average download speed: %.2f Mbps", download_speed))
+local success, err
 
--- measure_upload_speed()
-print(string.format("Average upload speed: %.2f Mbps", upload_speed))
+success, err = pcall(measure_download_speed)
+if not success then
+    print(err)
+else
+    print(string.format("Average download speed: %.2f Mbps", download_speed))
+end
+
+-- success, err = pcall(measure_upload_speed)
+-- if not success then
+--     print(err)
+-- else
+--     print(string.format("Average upload speed: %.2f Mbps", upload_speed))
+-- end
