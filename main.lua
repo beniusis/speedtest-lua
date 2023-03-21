@@ -11,53 +11,48 @@ upload_speed = 0
 
 function measure_download_speed()
     local start_time = os.clock()
-    local easy = cURL.easy{
-        url = download_host_url,
-        useragent = user_agent,
-        writefunction = io.open("/dev/null", "wb"),
-        noprogress = false,
-        progressfunction = function (_, download_total, download_now, _, _)
-            download_speed = ((download_total / 125000) / (os.clock() - start_time))
-        end
-    }
+    local success, err = pcall(function()
+        cURL.easy{
+            url = download_host_url,
+            useragent = user_agent,
+            writefunction = io.open("/dev/null", "wb"),
+            noprogress = false,
+            progressfunction = function (_, download_total, download_now, _, _)
+                download_speed = ((download_total / 125000) / (os.clock() - start_time))
+            end
+        }:perform():close()
+    end)
 
-    if not easy:perform() then
-        error("DOWNLOAD FAILURE")
+    if not success then
+        print("DOWNLOAD FAILURE")
+    else
+        print(string.format("Average download speed: %.2f Mbps", download_speed))
     end
-    easy:close()
 end
 
 function measure_upload_speed()
     local start_time = os.clock()
-    local easy = cURL.easy{
-        url = download_host_url,
-        useragent = user_agent,
-        infilesize = file_size,
-        readfunction = io.open("/dev/zero", "rb"),
-        noprogress = false,
-        progressfunction = function (_, _, _, upload_total, upload_now)
-            upload_speed = (upload_total / 125000) / (os.clock() - start_time)
-        end
-    }
+    local success, err = pcall(function ()
+        cURL.easy{
+            url = download_host_url,
+            useragent = user_agent,
+            infilesize = file_size,
+            readfunction = io.open("/dev/zero", "rb"),
+            noprogress = false,
+            progressfunction = function (_, _, _, upload_total, upload_now)
+                upload_speed = (upload_total / 125000) / (os.clock() - start_time)
+            end
+        }:perform():close()
+    end)
 
-    if not easy:perform() then
-        error("UPLOAD FAILURE")
+    if not success then
+        print("UPLOAD FAILURE")
+    else
+        print(string.format("Average upload speed: %.2f Mbps", upload_speed))
     end
-    easy:close()
+        
 end
 
-local success, err
+measure_download_speed()
 
-success, err = pcall(measure_download_speed)
-if not success then
-    print(err)
-else
-    print(string.format("Average download speed: %.2f Mbps", download_speed))
-end
-
--- success, err = pcall(measure_upload_speed)
--- if not success then
---     print(err)
--- else
---     print(string.format("Average upload speed: %.2f Mbps", upload_speed))
--- end
+-- measure_upload_speed()
