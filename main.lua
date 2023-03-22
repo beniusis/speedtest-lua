@@ -5,6 +5,8 @@ JSON = require("json")
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
 HOST_URL = "speed-kaunas.telia.lt:8080"
 IP_API_URL = "http://ip-api.com/json/?fields=25115"
+SERVER_LIST_URL = "https://raw.githubusercontent.com/beniusis/speedtest-lua/master/server_list.json"
+SERVER_LIST_FILE = "/tmp/servers.json"
 
 -- Speed variables (default values)
 download_speed = 0
@@ -70,6 +72,7 @@ function measure_upload_speed()
 end
 
 -- Get the country of a client using geolocation API (ip-api.com)
+-- If there is an error in the call - return "Unknown" as the country, otherwise return country's name
 function get_country()
     local country
     local easy = cURL.easy{
@@ -86,5 +89,29 @@ function get_country()
         return "Unknown"
     else
         return country
+    end
+end
+
+-- Download server list file if it doesn't exist in the system
+-- If the file exists - close it and do nothing
+function download_server_list()
+    local server_file = io.open(SERVER_LIST_FILE, "r")
+    if server_file == nil then
+        local easy = cURL.easy{
+            url = SERVER_LIST_URL,
+            useragent = USER_AGENT,
+            httpget = true,
+            writefunction = io.open(SERVER_LIST_FILE, "w")
+        }
+
+        local success, err = pcall(init_perform, easy)
+
+        if not success then
+            print(err)
+        else
+            print("Server list has been successfully downloaded!")
+        end
+    else
+        server_file:close()
     end
 end
