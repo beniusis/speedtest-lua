@@ -71,7 +71,7 @@ function measure_upload_speed()
     end
 end
 
--- Get the country of a client using geolocation API (ip-api.com)
+-- Get the country of a client using geolocation API (ip-api.com) ------ endpoint is limited to 45 rpm from an IP address
 -- If there is an error in the call - return "Unknown" as the country, otherwise return country's name
 function get_country()
     local country
@@ -113,5 +113,32 @@ function download_server_list()
         end
     else
         server_file:close()
+    end
+end
+
+-- Get servers from the server list file by provided country
+-- If the server list file does not exist in the system - download it first
+-- If country parameter is not provided or there are zero servers found of provided country - return nil
+function get_servers(country)
+    download_server_list() -- does nothing if the server list file exists
+
+    local servers = {}
+    local server_file = io.open(SERVER_LIST_FILE, "r")
+    local server_file_contents = server_file:read("*a")
+
+    if country ~= nil then
+        local server_list = json.decode(server_file_contents)
+        for _, server in ipairs(server_list) do
+            if server.country == country then
+                table.insert(servers, server)
+            end
+        end
+        if #servers ~= 0 then
+            return servers
+        else
+            return nil
+        end
+    else
+        return nil
     end
 end
