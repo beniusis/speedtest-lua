@@ -63,13 +63,6 @@
         "id": 2983
     },
     {
-        "country": "AR",
-        "city": "Viedma",
-        "provider": "Agilnet",
-        "host": "speedtest.agilnet.com.ar:8080",
-        "id": 17824
-    },
-    {
         "country": "Argentina",
         "city": "Benavidez",
         "provider": "GOW INTERNET SRL",
@@ -107,7 +100,7 @@
     {
         "country": "Argentina",
         "city": "Jardin America",
-        "provider": "SWISS-NET ENERGIA & TELECOMUNICACIONES",
+        "provider": "SWISS-NET ENERGIA &amp; TELECOMUNICACIONES",
         "host": "speedtest.swiss-net.com.ar:8080",
         "id": 15091
     },
@@ -189,13 +182,6 @@
         "id": 10316
     },
     {
-        "country": "AU",
-        "city": "Adelaide",
-        "provider": "KernWi-Fi Pty Ltd",
-        "host": "ookla.kernwifi.com.au:8080",
-        "id": 16907
-    },
-    {
         "country": "Argentina",
         "city": "San Miguel de TucÃ„â€ Ã…â€”man",
         "provider": "Arlab TI",
@@ -215,20 +201,6 @@
         "provider": "CTNET",
         "host": "speedtest.ctnetonline.com.ar:8080",
         "id": 11065
-    },
-    {
-        "country": "AU",
-        "city": "Perth",
-        "provider": "Pentanet - Internet Ã„ÂÃ¢â€šÂ¬Ã‚Â¦ brought up to speed!",
-        "host": "speedtest.pentanet.com.au:8080",
-        "id": 17109
-    },
-    {
-        "country": "AU",
-        "city": "Sunshine Coast",
-        "provider": "Telstra",
-        "host": "mcy1.speedtest.telstra.net:8080",
-        "id": 17702
     },
     {
         "country": "Australia",
@@ -506,7 +478,7 @@
     {
         "country": "Belize",
         "city": "Belmopan",
-        "provider": "Central Tv & Internet Ltd.",
+        "provider": "Central Tv &amp; Internet Ltd.",
         "host": "speedtest-centraltv.bz:8080",
         "id": 7801
     },
@@ -558,62 +530,6 @@
         "provider": "Botswana Telecom",
         "host": "www.speedtest.co.bw:8080",
         "id": 944
-    },
-    {
-        "country": "BR",
-        "city": "Aracaju",
-        "provider": "G8",
-        "host": "speedtest.aju.g8.net.br:8080",
-        "id": 17606
-    },
-    {
-        "country": "BR",
-        "city": "Ilheus, Bahia",
-        "provider": "Turkeynet",
-        "host": "speedtest1.turkeynet.com.br:8080",
-        "id": 16921
-    },
-    {
-        "country": "BR",
-        "city": "Goiania",
-        "provider": "G8 Networks",
-        "host": "speedtest.bsa.g8.net.br:8080",
-        "id": 17420
-    },
-    {
-        "country": "BR",
-        "city": "Goiania",
-        "provider": "G8 Networks",
-        "host": "speedtest.gna.g8.net.br:8080",
-        "id": 17605
-    },
-    {
-        "country": "BR",
-        "city": "Itaja",
-        "provider": "CONNECT NET",
-        "host": "speed01.connectnetbrasil.com.br:8080",
-        "id": 17673
-    },
-    {
-        "country": "BR",
-        "city": "Itabuna",
-        "provider": "UWBR VOX TelecomunicaÃ„â€ Ã‚Â§Ã„â€ Ã‚Âµes",
-        "host": "speedvox-ita01.voxconexao.com.br:8080",
-        "id": 17246
-    },
-    {
-        "country": "BR",
-        "city": "Porto Alegre",
-        "provider": "RLNET",
-        "host": "speedtest1.rlnetpoa.com.br:8080",
-        "id": 17678
-    },
-    {
-        "country": "BR",
-        "city": "Rio De Janeiro",
-        "provider": "YIPI Telecom",
-        "host": "speedtest.yipi.com.br:8080",
-        "id": 17508
     },
     {
         "country": "Brasil",
@@ -1395,7 +1311,7 @@
     {
         "country": "Brazil",
         "city": "Fortaleza",
-        "provider": "C&A NET TELECOM",
+        "provider": "C&amp;A NET TELECOM",
         "host": "speedtest.ceanettelecom.com.br:8080",
         "id": 10605
     },
@@ -2828,32 +2744,11 @@
         "id": 5305
     },
     {
-        "country": "CH",
-        "city": "Frauenfeld",
-        "provider": "Leucom Stafag AG",
-        "host": "speedtest.leucom.ch:8080",
-        "id": 17788
-    },
-    {
         "country": "Canada",
         "city": "Vancouver, BC",
         "provider": "TELUS",
         "host": "vancouver.speedtest.telus.com:8080",
         "id": 3049
-    },
-    {
-        "country": "CH",
-        "city": "Solothurn",
-        "provider": "SolNet",
-        "host": "speedcheck.solnet.ch:8080",
-        "id": 17851
-    },
-    {
-        "country": "CH",
-        "city": "Yverdon-Les-Bains",
-        "provider": "HEIG-VD",
-        "host": "speedtest.as203130.net:8080",
-        "id": 17588
     },
     {
         "country": "Chad",
@@ -2917,41 +2812,6 @@
         "provider": "ZhenJiang branch,China Mobile Limited",
         "host": "speedtest.zjmobile.com:8080",
         "id": 17320
-    },
-    {
-        "country": "CL",
-        "city": "Antofagasta",
-        "provider": "Entel",
-        "host": "speedtest3.entelchile.net:8080",
-        "id": 18166
-    },
-    {
-        "country": "CL",
-        "city": "Chillan",
-        "provider": "CableVision",
-        "host": "speedtest2.ccvision.cl:8080",
-        "id": 18213
-    },
-    {
-        "country": "CL",
-        "city": "Chillan",
-        "provider": "CableVision",
-        "host": "speedtest.ccvision.cl:8080",
-        "id": 18052
-    },
-    {
-        "country": "CL",
-        "city": "Puerto Montt",
-        "provider": "Entel",
-        "host": "speedtest2.entelchile.net:8080",
-        "id": 18146
-    },
-    {
-        "country": "CL",
-        "city": "San Javier",
-        "provider": "Tv Cable Loncomilla",
-        "host": "speedtest1.loncomillatv.cl:8080",
-        "id": 18112
     },
     {
         "country": "Colombia",
@@ -3199,53 +3059,11 @@
         "id": 4160
     },
     {
-        "country": "ES",
-        "city": "Alicante",
-        "provider": "aeromax",
-        "host": "vmax1.aeromax.es:8080",
-        "id": 17325
-    },
-    {
-        "country": "ES",
-        "city": "BenijÃ„â€ Ã‚Â³far",
-        "provider": "DVBLab Communication",
-        "host": "st.dvblab.com:8080",
-        "id": 17797
-    },
-    {
-        "country": "ES",
-        "city": "Lleida",
-        "provider": "e.Telecom",
-        "host": "st.etelecom.es:8080",
-        "id": 17772
-    },
-    {
-        "country": "ES",
-        "city": "Madrid",
-        "provider": "Digimobil",
-        "host": "speedtest.digimobil.es:8080",
-        "id": 17773
-    },
-    {
-        "country": "ES",
-        "city": "Paterna",
-        "provider": "OPTLC Telecomunicaciones",
-        "host": "mivelocidad.qpbatt.net:8080",
-        "id": 17142
-    },
-    {
         "country": "Estonia",
         "city": "Narva",
         "provider": "FairyHosting.com",
         "host": "speedtest.fairyhosting.com:8080",
         "id": 12456
-    },
-    {
-        "country": "ES",
-        "city": "Xativa",
-        "provider": "wirered.es",
-        "host": "speedtest.wirered.es:8080",
-        "id": 16860
     },
     {
         "country": "Estonia",
@@ -3276,25 +3094,11 @@
         "id": 3447
     },
     {
-        "country": "FR",
-        "city": "Lille",
-        "provider": "Eurafibre",
-        "host": "speedtest.eurafibre.fr:8080",
-        "id": 16913
-    },
-    {
         "country": "France",
         "city": "Paris",
         "provider": "CCleaner",
         "host": "speedtest-ookla-prod-001-par.ff.avast.com:8080",
         "id": 16676
-    },
-    {
-        "country": "FJ",
-        "city": "Suva",
-        "provider": "Connect Internet Services",
-        "host": "speedtest.connect.com.fj:8080",
-        "id": 17158
     },
     {
         "country": "France",
@@ -3418,7 +3222,7 @@
     {
         "country": "Germany",
         "city": "Frankfurt",
-        "provider": "IP-Projects GmbH & Co. KG",
+        "provider": "IP-Projects GmbH &amp; Co. KG",
         "host": "speedtest.ip-projects.de:8080",
         "id": 8040
     },
@@ -3586,7 +3390,7 @@
     {
         "country": "Guam",
         "city": "Barrigada",
-        "provider": "IT&E",
+        "provider": "IT&amp;E",
         "host": "sp1.guam.ite.net:8080",
         "id": 7377
     },
@@ -3666,48 +3470,6 @@
         "provider": "CSL",
         "host": "csl2.hkspeedtest.com:8080",
         "id": 14903
-    },
-    {
-        "country": "ID",
-        "city": "Banda Aceh",
-        "provider": "Universitas Syiah Kuala",
-        "host": "speedtest.unsyiah.ac.id:8080",
-        "id": 16810
-    },
-    {
-        "country": "ID",
-        "city": "Jakarta",
-        "provider": "PT. Pemuda Berkarya Manunggal",
-        "host": "speedtest.inetku.net.id:8080",
-        "id": 17534
-    },
-    {
-        "country": "ID",
-        "city": "Semarang",
-        "provider": "PT Des Teknologi Informasi",
-        "host": "speedtest.desnet.id:8080",
-        "id": 17516
-    },
-    {
-        "country": "IL",
-        "city": "Tel Aviv",
-        "provider": "Partner Communications",
-        "host": "speedtest2.partner.co.il:8080",
-        "id": 17022
-    },
-    {
-        "country": "IN",
-        "city": "Bangalore",
-        "provider": "Assistive Networks & Technologies Pvt Ltd",
-        "host": "speedtest.assistivenetwork.net:8080",
-        "id": 17600
-    },
-    {
-        "country": "IN",
-        "city": "Bhopal",
-        "provider": "Winux",
-        "host": "speedtest.winux.co.in:8080",
-        "id": 17275
     },
     {
         "country": "India",
@@ -4258,7 +4020,7 @@
     {
         "country": "India",
         "city": "Surat",
-        "provider": "HATHWAY CABLE & DATACOM LTD.",
+        "provider": "HATHWAY CABLE &amp; DATACOM LTD.",
         "host": "116.74.100.7:8080",
         "id": 7543
     },
@@ -4272,7 +4034,7 @@
     {
         "country": "India",
         "city": "Vadodara",
-        "provider": "Hathway Cable & Datacom Ltd",
+        "provider": "Hathway Cable &amp; Datacom Ltd",
         "host": "60.254.50.14:8080",
         "id": 8190
     },
@@ -5406,7 +5168,7 @@
     {
         "country": "Mexico",
         "city": "Merida",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.mer.attmex.mx:8080",
         "id": 8113
     },
@@ -5775,13 +5537,6 @@
         "id": 9893
     },
     {
-        "country": "NI",
-        "city": "Managua",
-        "provider": "Tecomunica",
-        "host": "speedtest.tecomunica.com.ni:8080",
-        "id": 18176
-    },
-    {
         "country": "Northern Ireland",
         "city": "Derry",
         "provider": "Bluebox Broadband",
@@ -5819,7 +5574,7 @@
     {
         "country": "Northern Mariana",
         "city": "Susupe",
-        "provider": "IT&E",
+        "provider": "IT&amp;E",
         "host": "sp1.saipan.ite.net:8080",
         "id": 6793
     },
@@ -6062,34 +5817,6 @@
         "id": 12210
     },
     {
-        "country": "PL",
-        "city": "Bielsko-BiaÃƒâ€¦Ã¢â‚¬Å¡a",
-        "provider": "Multi-NET Infrastruktura Sp. z o.o.",
-        "host": "speed.multi-net.eu:8080",
-        "id": 17569
-    },
-    {
-        "country": "PL",
-        "city": "CheÃƒâ€¦Ã¢â‚¬Å¡m",
-        "provider": "BlueDot",
-        "host": "test.bluedot.pl:8080",
-        "id": 16768
-    },
-    {
-        "country": "PL",
-        "city": "KrakÃ„â€ Ã‚Â³w",
-        "provider": "petroinform.net",
-        "host": "speedtest.petroinform.net:8080",
-        "id": 16878
-    },
-    {
-        "country": "PL",
-        "city": "PoznaÃƒâ€¦Ã¢â‚¬Å¾",
-        "provider": "Oxylion S.A",
-        "host": "speedtest-poz-01.oxylion.net.pl:8080",
-        "id": 17338
-    },
-    {
         "country": "Philippines",
         "city": "Makati",
         "provider": "Eastern Communications",
@@ -6097,25 +5824,11 @@
         "id": 1238
     },
     {
-        "country": "PL",
-        "city": "Warszawa",
-        "provider": "Vecrtra S.A.",
-        "host": "speedtest-1.vectranet.pl:8080",
-        "id": 18199
-    },
-    {
         "country": "Poland",
         "city": "Aleksandrow Lodzki",
         "provider": "STORMmedia",
         "host": "tester.stormmedia.pl:8080",
         "id": 3610
-    },
-    {
-        "country": "PL",
-        "city": "Zator",
-        "provider": "Air-Net",
-        "host": "speedtest.air-net.com.pl:8080",
-        "id": 17433
     },
     {
         "country": "Poland",
@@ -6433,20 +6146,6 @@
         "id": 15619
     },
     {
-        "country": "PY",
-        "city": "Filadelfia",
-        "provider": "FilaNET",
-        "host": "speedtest.fila.net.py:8080",
-        "id": 17822
-    },
-    {
-        "country": "PY",
-        "city": "Loma Plata",
-        "provider": "ChacoNET",
-        "host": "speedtest.chaco.net.py:8080",
-        "id": 17969
-    },
-    {
         "country": "Qatar",
         "city": "Doha",
         "provider": "Vodafone Qatar P.Q.S.C",
@@ -6550,55 +6249,6 @@
         "provider": "Teletrans",
         "host": "speedtest.pitesti.teletrans.ro:8080",
         "id": 2546
-    },
-    {
-        "country": "RU",
-        "city": "Ramenskoye",
-        "provider": "AVIEL",
-        "host": "speedtest.aviel.ru:8080",
-        "id": 17352
-    },
-    {
-        "country": "RU",
-        "city": "Ryazan",
-        "provider": "Vidikon",
-        "host": "test.vidikon.tv:8080",
-        "id": 17136
-    },
-    {
-        "country": "RU",
-        "city": "Salekhard",
-        "provider": "JSC \"CONNECT\"",
-        "host": "cache.connect-online.ru:8080",
-        "id": 17819
-    },
-    {
-        "country": "RU",
-        "city": "Saratov",
-        "provider": "TTK",
-        "host": "speed.vtt.net:8080",
-        "id": 16982
-    },
-    {
-        "country": "RU",
-        "city": "Simferopol",
-        "provider": "FarLINE ISP",
-        "host": "spdtst1.farline.net:8080",
-        "id": 18128
-    },
-    {
-        "country": "RU",
-        "city": "Tula",
-        "provider": "Sunlink",
-        "host": "st.sunlink.ru:8080",
-        "id": 17097
-    },
-    {
-        "country": "RU",
-        "city": "Volgograd",
-        "provider": "TTK",
-        "host": "speed-vgd.vtt.net:8080",
-        "id": 17199
     },
     {
         "country": "Russia",
@@ -7420,34 +7070,6 @@
         "id": 20742
     },
     {
-        "country": "SK",
-        "city": "Bratislava",
-        "provider": "VNET a.s.",
-        "host": "speedtest.vnet.sk:8080",
-        "id": 17669
-    },
-    {
-        "country": "SK",
-        "city": "NÃ„â€ Ã¯Â¿Â½mestovo",
-        "provider": "DSI DATA s.r.o.",
-        "host": "speedtest.flexi.sk:8080",
-        "id": 16745
-    },
-    {
-        "country": "SK",
-        "city": "Ochodnica, Ochodnica",
-        "provider": "WNET TECHNOLOGY s.r.o.",
-        "host": "speedtest.wnet-technology.sk:8080",
-        "id": 17789
-    },
-    {
-        "country": "SK",
-        "city": "Puchov",
-        "provider": "kiki internet",
-        "host": "ldvet.kiki.sk:8080",
-        "id": 17081
-    },
-    {
         "country": "Slovakia",
         "city": "Banovce nad Bebravou",
         "provider": "kiki internet",
@@ -8188,20 +7810,6 @@
         "provider": "Turksat Kablonet",
         "host": "st-konya-1.turksatkablo.com.tr:8080",
         "id": 20978
-    },
-    {
-        "country": "UA",
-        "city": "Dnepropetrovsk",
-        "provider": "Civilization",
-        "host": "speedtest.civ.dp.ua:8080",
-        "id": 17498
-    },
-    {
-        "country": "TW",
-        "city": "Zhonghe",
-        "provider": "FarEasTone Telecom",
-        "host": "fetsz1.seed.net.tw:8080",
-        "id": 17265
     },
     {
         "country": "Ukraine",
@@ -9424,7 +9032,7 @@
     {
         "country": "United States",
         "city": "New Orleans, LA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "msy.speedtest.sbcglobal.net:8080",
         "id": 5117
     },
@@ -9613,7 +9221,7 @@
     {
         "country": "United States",
         "city": "Richardson, TX",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "dfw.speedtest.sbcglobal.net:8080",
         "id": 5023
     },
@@ -9648,7 +9256,7 @@
     {
         "country": "United States",
         "city": "Saint Louis, MO",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "stl.speedtest.sbcglobal.net:8080",
         "id": 5108
     },
@@ -9690,7 +9298,7 @@
     {
         "country": "United States",
         "city": "San Francisco, CA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "sfo.speedtest.sbcglobal.net:8080",
         "id": 5026
     },
@@ -9725,7 +9333,7 @@
     {
         "country": "United States",
         "city": "Seattle, WA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "sea.speedtest.sbcglobal.net:8080",
         "id": 5033
     },
@@ -9980,34 +9588,6 @@
         "provider": "Telefonica Moviles del Uruguay S.A.",
         "host": "speedtest.movistar.com.uy:8080",
         "id": 20212
-    },
-    {
-        "country": "US",
-        "city": "Allen, KS",
-        "provider": "S&A Telephone",
-        "host": "speedtest.satel.usch.com:8080",
-        "id": 17458
-    },
-    {
-        "country": "US",
-        "city": "Ashburn, VA",
-        "provider": "Hosted Backbone, LLC",
-        "host": "speedtest1.ash3.va.hostedbackbone.net:8080",
-        "id": 17663
-    },
-    {
-        "country": "US",
-        "city": "Bend, OR",
-        "provider": "BendTel Inc.",
-        "host": "speedtest.bendtel.com:8080",
-        "id": 16961
-    },
-    {
-        "country": "US",
-        "city": "Des Moines, IA",
-        "provider": "NexGen Communications",
-        "host": "speedtest.nexgencom.com:8080",
-        "id": 16730
     },
     {
         "country": "Uzbekistan",
@@ -10549,13 +10129,6 @@
         "id": 16544
     },
     {
-        "country": "BG",
-        "city": "Dobrich",
-        "provider": "Dobrich Telecom Provider",
-        "host": "speedtest.dtp-bg.bg:8080",
-        "id": 17502
-    },
-    {
         "country": "Bhutan",
         "city": "Thimphu",
         "provider": "Bhutan Telecom Limited",
@@ -10575,118 +10148,6 @@
         "provider": "Comteco Ltda",
         "host": "speed.supernet.com.bo:8080",
         "id": 6235
-    },
-    {
-        "country": "BR",
-        "city": "Araguaina",
-        "provider": "Biramar Eng",
-        "host": "www.biramar.eng.br:8080",
-        "id": 16952
-    },
-    {
-        "country": "BR",
-        "city": "Ararangua",
-        "provider": "Contato Internet",
-        "host": "speedtest.contato.net:8080",
-        "id": 17231
-    },
-    {
-        "country": "BR",
-        "city": "Arcoverde",
-        "provider": "Gznet Provedor",
-        "host": "sp1.dktelecom.net.br:8080",
-        "id": 17172
-    },
-    {
-        "country": "BR",
-        "city": "Barbacena, MG",
-        "provider": "NetRosas Telecom",
-        "host": "speedtest.net-rosas.com.br:8080",
-        "id": 17753
-    },
-    {
-        "country": "BR",
-        "city": "Belo Horizonte",
-        "provider": "Blink Telecom Ltda",
-        "host": "speed.blinktelecom.com.br:8080",
-        "id": 17438
-    },
-    {
-        "country": "BR",
-        "city": "Boituva",
-        "provider": "BR Conecta",
-        "host": "speedtest.brconecta.com.br:8080",
-        "id": 17379
-    },
-    {
-        "country": "BR",
-        "city": "Itapeva",
-        "provider": "PR Telecom",
-        "host": "speedtest2.prtelecom.com.br:8080",
-        "id": 17506
-    },
-    {
-        "country": "BR",
-        "city": "Itupeva",
-        "provider": "Vianet",
-        "host": "speedtest.vianet.srv.br:8080",
-        "id": 17624
-    },
-    {
-        "country": "BR",
-        "city": "Juazeiro",
-        "provider": "RapidusNET",
-        "host": "speedtest1.rapidusnet.com.br:8080",
-        "id": 17665
-    },
-    {
-        "country": "BR",
-        "city": "Juazeiro",
-        "provider": "Kasatech",
-        "host": "speedtest.kasatech.net:8080",
-        "id": 16928
-    },
-    {
-        "country": "BR",
-        "city": "KalorÃ„â€ Ã‚Â©",
-        "provider": "Naveg TelecomunicaÃ„â€ Ã‚Â§Ã„â€ Ã‚Âµes",
-        "host": "speedtest.navegtelecom.net.br:8080",
-        "id": 17798
-    },
-    {
-        "country": "BR",
-        "city": "Rio Grande do Norte",
-        "provider": "Qero TelecomunicaÃ„â€ Ã‚Â§Ã„â€ Ã‚Âµes do Brasil Ltda",
-        "host": "speedtest.qerotelecom.com:8080",
-        "id": 17102
-    },
-    {
-        "country": "BR",
-        "city": "Salgueiro",
-        "provider": "FerreiraNet Telecom",
-        "host": "speedtest.ferreiranettelecom.com.br:8080",
-        "id": 16894
-    },
-    {
-        "country": "BR",
-        "city": "Salvador",
-        "provider": "nextelecom ltda me",
-        "host": "speedtest.nextelecom.net.br:8080",
-        "id": 16648
-    },
-    {
-        "country": "BR",
-        "city": "Santa BÃ„â€ Ã¯Â¿Â½rbara do Leste",
-        "provider": "Nova Tecnologia",
-        "host": "ookla1.novatecnologia.com.br:8080",
-        "id": 17781
-    },
-    {
-        "country": "BR",
-        "city": "Santa Rita",
-        "provider": "Navegar Provedor de Internet",
-        "host": "speedtest.navegarpb.com:8080",
-        "id": 17075
     },
     {
         "country": "Brasil",
@@ -10852,7 +10313,7 @@
     {
         "country": "Brazil",
         "city": "Bebedouro",
-        "provider": "MD Brasil TI & Telecom",
+        "provider": "MD Brasil TI &amp; Telecom",
         "host": "speedtest.mdbrasil.com.br:8080",
         "id": 18069
     },
@@ -11412,7 +10873,7 @@
     {
         "country": "Brazil",
         "city": "Guarabira",
-        "provider": "L&M Telecom",
+        "provider": "L&amp;M Telecom",
         "host": "assinelm.com:8080",
         "id": 19922
     },
@@ -11895,7 +11356,7 @@
     {
         "country": "Brazil",
         "city": "Pirangi",
-        "provider": "Micro&Cia",
+        "provider": "Micro&amp;Cia",
         "host": "sp1.microecianet.com.br:8080",
         "id": 10502
     },
@@ -12707,7 +12168,7 @@
     {
         "country": "Canada",
         "city": "Waterloo, ON",
-        "provider": "NeuStyle Software & Systems Corporation",
+        "provider": "NeuStyle Software &amp; Systems Corporation",
         "host": "neu-speedtest1.neustylesoftware.ca:8080",
         "id": 18646
     },
@@ -12794,41 +12255,6 @@
         "provider": "Changsha, Hunan Unicom",
         "host": "speedtest01.hn165.com:8080",
         "id": 4870
-    },
-    {
-        "country": "CL",
-        "city": "Santiago",
-        "provider": "Mi Internet SpA",
-        "host": "speedtest.miinternet.cl:8080",
-        "id": 18027
-    },
-    {
-        "country": "CM",
-        "city": "Douala",
-        "provider": "Orange Cameroun",
-        "host": "speedtest1.orange.cm:8080",
-        "id": 17209
-    },
-    {
-        "country": "CN",
-        "city": "Chongqing",
-        "provider": "Chongqing Mobile Company",
-        "host": "speedtest2.cq.chinamobile.com:8080",
-        "id": 17584
-    },
-    {
-        "country": "CN",
-        "city": "Hefei",
-        "provider": "China Telecom AnHui Branch",
-        "host": "speedtest1.ah163.com:8080",
-        "id": 17145
-    },
-    {
-        "country": "CN",
-        "city": "Shijiazhuang",
-        "provider": "chinamobile, hebei",
-        "host": "speedtest1.he.chinamobile.com:8080",
-        "id": 17223
     },
     {
         "country": "Congo",
@@ -13125,13 +12551,6 @@
         "id": 2288
     },
     {
-        "country": "FR",
-        "city": "Talange",
-        "provider": "Regie Talange",
-        "host": "testdebit.regie-talange.fr:8080",
-        "id": 16876
-    },
-    {
         "country": "France",
         "city": "Bordeaux",
         "provider": "LaFibre.info",
@@ -13151,27 +12570,6 @@
         "provider": "QCell",
         "host": "sp1.qcell.gm:8080",
         "id": 10461
-    },
-    {
-        "country": "GB",
-        "city": "Bath",
-        "provider": "Truespeed Communications",
-        "host": "speedtest.truespeed.com:8080",
-        "id": 17970
-    },
-    {
-        "country": "GB",
-        "city": "Leeds",
-        "provider": "razorblue",
-        "host": "speedtest.razorblue.net.uk:8080",
-        "id": 17449
-    },
-    {
-        "country": "GB",
-        "city": "London",
-        "provider": "Mauritius Telecom Ltd",
-        "host": "speedtestlondon.telecom.mu:8080",
-        "id": 17418
     },
     {
         "country": "Georgia",
@@ -13204,7 +12602,7 @@
     {
         "country": "Germany",
         "city": "Frankfurt",
-        "provider": "meerfarbig GmbH & Co. KG",
+        "provider": "meerfarbig GmbH &amp; Co. KG",
         "host": "speedtest.meerfarbig.net:8080",
         "id": 18667
     },
@@ -13246,7 +12644,7 @@
     {
         "country": "Germany",
         "city": "Wernigerode",
-        "provider": "Heuer & Sack GbR",
+        "provider": "Heuer &amp; Sack GbR",
         "host": "speedtest.heuer-und-sack.de:8080",
         "id": 21981
     },
@@ -13256,13 +12654,6 @@
         "provider": "SWW Wunsiedel GmbH",
         "host": "speedtest1.s-w-w.com:8080",
         "id": 4578
-    },
-    {
-        "country": "GH",
-        "city": "Accra",
-        "provider": "ComSys Ghana Limited",
-        "host": "sp1.comsysghana.net:8080",
-        "id": 17770
     },
     {
         "country": "Ghana",
@@ -13312,13 +12703,6 @@
         "provider": "Burstfire Networks Ltd",
         "host": "sp1.burstfire.net:8080",
         "id": 6151
-    },
-    {
-        "country": "FI",
-        "city": "Helsinki",
-        "provider": "FINPRISON",
-        "host": "finprison.net:8080",
-        "id": 17961
     },
     {
         "country": "Great Britain",
@@ -13454,20 +12838,6 @@
         "id": 18513
     },
     {
-        "country": "IN",
-        "city": "Haldia",
-        "provider": "HUSTEL TELECOM PVT. LTD.",
-        "host": "sp1.hustel.net:8080",
-        "id": 17816
-    },
-    {
-        "country": "IN",
-        "city": "Kota",
-        "provider": "Kappa Internet Services Pvt. Ltd.",
-        "host": "speedtest.kappa.net.in:8080",
-        "id": 17779
-    },
-    {
         "country": "India",
         "city": "Anand",
         "provider": "Elecon Information Technology Ltd.",
@@ -13484,7 +12854,7 @@
     {
         "country": "India",
         "city": "Andheri",
-        "provider": "AirNet Network & Datacom Pvt Ltd",
+        "provider": "AirNet Network &amp; Datacom Pvt Ltd",
         "host": "speedtest.airnetnetworks.com:8080",
         "id": 10463
     },
@@ -13925,7 +13295,7 @@
     {
         "country": "India",
         "city": "Raipur",
-        "provider": "Sun Broadband & Data Services Pvt. Ltd.",
+        "provider": "Sun Broadband &amp; Data Services Pvt. Ltd.",
         "host": "speedtest1.sunbroadband.in:8080",
         "id": 11659
     },
@@ -14096,13 +13466,6 @@
         "provider": "CitraNet",
         "host": "speedtest.citra.net.id:8080",
         "id": 6910
-    },
-    {
-        "country": "IQ",
-        "city": "Sulaymaniyah",
-        "provider": "AlsardFiber",
-        "host": "speedtest.alsardfiber.com:8080",
-        "id": 16882
     },
     {
         "country": "Iran",
@@ -14651,13 +14014,6 @@
         "id": 4329
     },
     {
-        "country": "KZ",
-        "city": "Semey",
-        "provider": "Altel JSC",
-        "host": "speedtest19.altel.kz:8080",
-        "id": 16672
-    },
-    {
         "country": "Lao PDR",
         "city": "Vientiane",
         "provider": "ETL public company",
@@ -15099,13 +14455,6 @@
         "id": 2280
     },
     {
-        "country": "MX",
-        "city": "Aguascalientes",
-        "provider": "NUEVARED",
-        "host": "sp.nuevared.mx:8080",
-        "id": 17644
-    },
-    {
         "country": "Nepal",
         "city": "Jawalakhel",
         "provider": "Worldlink Communications Pvt. Ltd.",
@@ -15468,20 +14817,6 @@
         "provider": "GigaNET",
         "host": "test1.giganet.net.py:8080",
         "id": 7096
-    },
-    {
-        "country": "PH",
-        "city": "Bacolod",
-        "provider": "Skycable",
-        "host": "speedtest-bac.skybroadband.com.ph:8080",
-        "id": 17281
-    },
-    {
-        "country": "PH",
-        "city": "Pasig City",
-        "provider": "Infinivan",
-        "host": "speedtest.infinivan.net:8080",
-        "id": 18198
     },
     {
         "country": "Philippines",
@@ -16494,7 +15829,7 @@
     {
         "country": "Russian Federation",
         "city": "Moscow",
-        "provider": "Orange Business Services, Russia & CIS",
+        "provider": "Orange Business Services, Russia &amp; CIS",
         "host": "speedtest.rosprint.net:8080",
         "id": 10366
     },
@@ -16854,13 +16189,6 @@
         "provider": "OJSC TELECOM-SERVICE Voronezh, Voronezh Oblast, RU",
         "host": "speed.vrn.tv:8080",
         "id": 7396
-    },
-    {
-        "country": "SA",
-        "city": "Dammam",
-        "provider": "Integrated Telecom Company - (ITC)",
-        "host": "ftthspeed-kho.itc.sa:8080",
-        "id": 17373
     },
     {
         "country": "Saint Kitts and Nevis",
@@ -17577,34 +16905,6 @@
         "id": 15888
     },
     {
-        "country": "TG",
-        "city": "LomÃ„â€ Ã‚Â©",
-        "provider": "GVA Togo",
-        "host": "speedtest.lom.tg.canalbox.net:8080",
-        "id": 17139
-    },
-    {
-        "country": "TH",
-        "city": "Ayutthaya",
-        "provider": "AIS",
-        "host": "speedtest-aya1.ais-idc.net:8080",
-        "id": 17690
-    },
-    {
-        "country": "TH",
-        "city": "Nakhon Ratchasima",
-        "provider": "AIS",
-        "host": "speedtest-nma1.ais-idc.net:8080",
-        "id": 17111
-    },
-    {
-        "country": "TH",
-        "city": "Phitsanulok",
-        "provider": "AIS",
-        "host": "speedtest-plk1.ais-idc.net:8080",
-        "id": 17134
-    },
-    {
         "country": "Thailand",
         "city": "Hatyai",
         "provider": "CAT TELECOM PUBLIC COMPANY LIMITED",
@@ -17656,7 +16956,7 @@
     {
         "country": "Trinidad",
         "city": "Port of Spain",
-        "provider": "Telecommunication Services of Trinidad & Tobago",
+        "provider": "Telecommunication Services of Trinidad &amp; Tobago",
         "host": "gigenet.tstt.net.tt:8080",
         "id": 4553
     },
@@ -17806,55 +17106,6 @@
         "provider": "Turksat Kablonet",
         "host": "st-mersin-1.turksatkablo.com.tr:8080",
         "id": 20991
-    },
-    {
-        "country": "UA",
-        "city": "Ã… Ã¢â‚¬ÂÃ…Æ’Ã¢â€šÂ¬Ã…Æ’Ã‚Æ’Ã… Ã‚Â¶Ã… Ã…â€”Ã… Ã‚Â¾Ã… Ã‚Â²Ã… Ã…â€”Ã… Ã‚Â°",
-        "provider": "EuroNet LLC",
-        "host": "euronet.dn.ua:8080",
-        "id": 17052
-    },
-    {
-        "country": "UA",
-        "city": "Kiev",
-        "provider": "Euroline-Telecom",
-        "host": "speedtest.euroline-telecom.net:8080",
-        "id": 17594
-    },
-    {
-        "country": "UA",
-        "city": "Lviv",
-        "provider": "ISP Kopiyka",
-        "host": "speedtest.kopiyka.org:8080",
-        "id": 17398
-    },
-    {
-        "country": "UA",
-        "city": "Kyiv",
-        "provider": "PrJSC \"VF UKRAINE\"",
-        "host": "speedtest.vodafone.ua:8080",
-        "id": 16747
-    },
-    {
-        "country": "UA",
-        "city": "Nikopol",
-        "provider": "Giptel",
-        "host": "speedtest.giptel.net:8080",
-        "id": 17020
-    },
-    {
-        "country": "UA",
-        "city": "Sinelnikovo",
-        "provider": "Aleksandr",
-        "host": "speedtest.hn.biz.ua:8080",
-        "id": 17500
-    },
-    {
-        "country": "UA",
-        "city": "Zaporizhzhya",
-        "provider": "Gigabit-Online",
-        "host": "speedtest.gigabit.zp.ua:8080",
-        "id": 17485
     },
     {
         "country": "Ukraine",
@@ -18391,7 +17642,7 @@
     {
         "country": "United States",
         "city": "Cicero, IL",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "chi.speedtest.sbcglobal.net:8080",
         "id": 5025
     },
@@ -18699,7 +17950,7 @@
     {
         "country": "United States",
         "city": "Indianapolis, IN",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "ind.speedtest.sbcglobal.net:8080",
         "id": 5115
     },
@@ -18734,7 +17985,7 @@
     {
         "country": "United States",
         "city": "Kansas City, MO",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "mci.speedtest.sbcglobal.net:8080",
         "id": 5112
     },
@@ -18951,7 +18202,7 @@
     {
         "country": "United States",
         "city": "Miami, FL",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "mia.speedtest.sbcglobal.net:8080",
         "id": 5030
     },
@@ -19126,7 +18377,7 @@
     {
         "country": "United States",
         "city": "Petersburg, MI",
-        "provider": "D&P Communications",
+        "provider": "D&amp;P Communications",
         "host": "d-pcommunications.com:8080",
         "id": 1450
     },
@@ -19525,7 +18776,7 @@
     {
         "country": "United States",
         "city": "Wilkes, GA",
-        "provider": "Wilkes Telephone & Electric Company",
+        "provider": "Wilkes Telephone &amp; Electric Company",
         "host": "speedtest.nu-z.net:8080",
         "id": 15013
     },
@@ -19563,34 +18814,6 @@
         "provider": "GreenLight",
         "host": "speedtest.myglnc.com:8080",
         "id": 13903
-    },
-    {
-        "country": "US",
-        "city": "Fort Myers, FL",
-        "provider": "T3 Communications",
-        "host": "speedtest.t3com.com:8080",
-        "id": 17795
-    },
-    {
-        "country": "US",
-        "city": "Grand Junction, CO",
-        "provider": "Grand Valley Telecom, Inc",
-        "host": "speedtest.gvtci.net:8080",
-        "id": 17460
-    },
-    {
-        "country": "US",
-        "city": "Las Vegas, NV",
-        "provider": "HYPER NETWORKS 10G",
-        "host": "speedtest.hypernetworks.com:8080",
-        "id": 17466
-    },
-    {
-        "country": "US",
-        "city": "Leon, IA",
-        "provider": "GRM Networks",
-        "host": "speedtest2.grm.net:8080",
-        "id": 17522
     },
     {
         "country": "Venezuela",
@@ -20298,132 +19521,6 @@
         "provider": "BLIC.NET",
         "host": "speedtest.blic.net:8080",
         "id": 2284
-    },
-    {
-        "country": "BR",
-        "city": "Camaragibe",
-        "provider": "RJTECNOLOGIA",
-        "host": "ookla.rjtecnologia-pe.net.br:8080",
-        "id": 17149
-    },
-    {
-        "country": "BR",
-        "city": "Camaragibe",
-        "provider": "BBG Telecom",
-        "host": "speedtest.bbgtelecom.com.br:8080",
-        "id": 16638
-    },
-    {
-        "country": "BR",
-        "city": "Carazinho",
-        "provider": "Seanet Telecom",
-        "host": "speedtest.seanetcarazinho.com.br:8080",
-        "id": 17747
-    },
-    {
-        "country": "BR",
-        "city": "Caruaru",
-        "provider": "BJN TELECOMUNICAÃ„â€ Ã¢â‚¬Â¡OES",
-        "host": "ookla.bomjesusnet.net.br:8080",
-        "id": 17766
-    },
-    {
-        "country": "BR",
-        "city": "Casa Branca",
-        "provider": "TELCOM PROVEDOR DE ACESSO",
-        "host": "speedtest.telcominternet.com.br:8080",
-        "id": 17174
-    },
-    {
-        "country": "BR",
-        "city": "Cascavel",
-        "provider": "Speedtest GTV",
-        "host": "speedtest.gtv.tv.br:8080",
-        "id": 17435
-    },
-    {
-        "country": "BR",
-        "city": "Manaus",
-        "provider": "Fiber Network",
-        "host": "velocimetro1.fibernetwork.com.br:8080",
-        "id": 17442
-    },
-    {
-        "country": "BR",
-        "city": "Marilia",
-        "provider": "Blueweb Internet",
-        "host": "speedtest.blueweb.com.br:8080",
-        "id": 17790
-    },
-    {
-        "country": "BR",
-        "city": "Milagres",
-        "provider": "R.A InformÃ„â€ Ã¯Â¿Â½tica",
-        "host": "speedmaster.rainfor.net.br:8080",
-        "id": 17207
-    },
-    {
-        "country": "BR",
-        "city": "Mineiros",
-        "provider": "Mixtel",
-        "host": "sp1.mixtel.com.br:8080",
-        "id": 17005
-    },
-    {
-        "country": "BR",
-        "city": "Monte Azul Paulista",
-        "provider": "Infraconect",
-        "host": "speedtest.infraconect.com.br:8080",
-        "id": 17683
-    },
-    {
-        "country": "BR",
-        "city": "Mucambo",
-        "provider": "INFORLINK MUCAMBO",
-        "host": "www.inforlinkce.com.br:8080",
-        "id": 17495
-    },
-    {
-        "country": "BR",
-        "city": "Natal",
-        "provider": "ED-LINK TELECOM",
-        "host": "speedtest.ed-linkrn.com.br:8080",
-        "id": 17765
-    },
-    {
-        "country": "BR",
-        "city": "Nova IguaÃ„â€ Ã‚Â§u",
-        "provider": "SINTERCOM",
-        "host": "speedtest.sintnet.com.br:8080",
-        "id": 17276
-    },
-    {
-        "country": "BR",
-        "city": "Santo Andre",
-        "provider": "R L A World Net Brasil LTDA",
-        "host": "speedtest.worldnetbrasil.com.br:8080",
-        "id": 17212
-    },
-    {
-        "country": "BR",
-        "city": "Sao Paulo",
-        "provider": "K2 NETWORK",
-        "host": "speedtest.k2network.com.br:8080",
-        "id": 16837
-    },
-    {
-        "country": "BR",
-        "city": "SÃ„â€ Ã‚Â£o Luis",
-        "provider": "MUNDONET",
-        "host": "speed.mundonetbandalarga.com.br:8080",
-        "id": 17104
-    },
-    {
-        "country": "BR",
-        "city": "SÃ„â€ Ã‚Â£o Paulo",
-        "provider": "Eduardo Carvalho",
-        "host": "speedtest.dsnetfg.com.br:8080",
-        "id": 16896
     },
     {
         "country": "Brasil",
@@ -21226,14 +20323,14 @@
     {
         "country": "Brazil",
         "city": "Itanhaem",
-        "provider": "ALB INTERNET & INFORMATICA LTDA - ME",
+        "provider": "ALB INTERNET &amp; INFORMATICA LTDA - ME",
         "host": "10001.velocidadenet.com.br:8080",
         "id": 14505
     },
     {
         "country": "Brazil",
         "city": "Itanhaem",
-        "provider": "ALB Internet & INFORMATICA LTDA-ME",
+        "provider": "ALB Internet &amp; INFORMATICA LTDA-ME",
         "host": "10001.velocidadenet.com.br:8080",
         "id": 21111
     },
@@ -22024,7 +21121,7 @@
     {
         "country": "Brazil",
         "city": "Sao Paulo",
-        "provider": "Via Fibra Telecom - PONTO NET & RL NET",
+        "provider": "Via Fibra Telecom - PONTO NET &amp; RL NET",
         "host": "speed1.brotherslan.com.br:8080",
         "id": 12322
     },
@@ -22757,20 +21854,6 @@
         "id": 2771
     },
     {
-        "country": "CZ",
-        "city": "Jesenice",
-        "provider": "JM-Net z.s.",
-        "host": "speed-jesenice.jmnet.cz:8080",
-        "id": 17015
-    },
-    {
-        "country": "CZ",
-        "city": "Ãƒâ€¦Ã‚ËœÃ„â€ Ã‚Â­Ãƒâ€žÃ‚Â¨any",
-        "provider": "JM-Net z.s.",
-        "host": "speed-ricany.jmnet.cz:8080",
-        "id": 17018
-    },
-    {
         "country": "Czech Republic",
         "city": "Ã„â€ Ã‚Å¡stÃ„â€ Ã‚Â­ nad Labem",
         "provider": "AmigoNet s.r.o.",
@@ -22904,20 +21987,6 @@
         "id": 12722
     },
     {
-        "country": "DE",
-        "city": "Berlin",
-        "provider": "Cronon AG",
-        "host": "warp.cronon.net:8080",
-        "id": 17137
-    },
-    {
-        "country": "DE",
-        "city": "Eutin",
-        "provider": "Stadtwerke Eutin GmbH",
-        "host": "speedtest.sweutin.de:8080",
-        "id": 16870
-    },
-    {
         "country": "Denmark",
         "city": "Taastrup",
         "provider": "Kviknet",
@@ -22944,13 +22013,6 @@
         "provider": "Djibouti Telecom",
         "host": "speedtest.djiboutitelecom.dj:8080",
         "id": 7416
-    },
-    {
-        "country": "DK",
-        "city": "Hasle",
-        "provider": "BornFiber",
-        "host": "speedtest.bornfiber.dk:8080",
-        "id": 17431
     },
     {
         "country": "Dominica",
@@ -23007,13 +22069,6 @@
         "provider": "PUNTONET",
         "host": "speedtest.puntonet.ec:8080",
         "id": 11998
-    },
-    {
-        "country": "EG",
-        "city": "Cairo",
-        "provider": "we",
-        "host": "speedtest3.tedata.net:8080",
-        "id": 16744
     },
     {
         "country": "Egypt",
@@ -23200,7 +22255,7 @@
     {
         "country": "Germany",
         "city": "Hamburg",
-        "provider": "Studio Funk GmbH & Co. KG",
+        "provider": "Studio Funk GmbH &amp; Co. KG",
         "host": "speedtest.studiofunk.de:8080",
         "id": 2398
     },
@@ -23287,13 +22342,6 @@
         "provider": "u-mee Networks Ltd",
         "host": "speedtest.u-mee.com:8080",
         "id": 8048
-    },
-    {
-        "country": "GR",
-        "city": "Athens",
-        "provider": "Synapsecom Telecoms SA",
-        "host": "speedtest.synapsecom.gr:8080",
-        "id": 17930
     },
     {
         "country": "Great Britain",
@@ -23417,7 +22465,7 @@
     {
         "country": "Guyana",
         "city": "Georgetown",
-        "provider": "Guyana Telephone & Telegraph Co. Ltd.",
+        "provider": "Guyana Telephone &amp; Telegraph Co. Ltd.",
         "host": "speedtest.gtt.co.gy:8080",
         "id": 6086
     },
@@ -23518,69 +22566,6 @@
         "provider": "ISIS-COM Ltd",
         "host": "speedtest.isiscom.hu:8080",
         "id": 10128
-    },
-    {
-        "country": "IN",
-        "city": "New Delhi",
-        "provider": "JDM Broadband",
-        "host": "sp1.jdmbroadband.com:8080",
-        "id": 17714
-    },
-    {
-        "country": "IN",
-        "city": "New Delhi",
-        "provider": "Sai Networks",
-        "host": "exnetdel.speedtest.bhaukaalbaba.com:8080",
-        "id": 17013
-    },
-    {
-        "country": "IN",
-        "city": "New Delhi",
-        "provider": "Zapbytes Broadband",
-        "host": "speedtest1.zapbytes.in:8080",
-        "id": 17782
-    },
-    {
-        "country": "IN",
-        "city": "Patna",
-        "provider": "Instanet",
-        "host": "speedtest.instanet.in:8080",
-        "id": 16726
-    },
-    {
-        "country": "IN",
-        "city": "Ranchi",
-        "provider": "Protoact Digital Network Pvt Ltd",
-        "host": "sp1.protoactnetworks.com:8080",
-        "id": 17073
-    },
-    {
-        "country": "IN",
-        "city": "Siliguri",
-        "provider": "Siliguri Internet & Cable TV Pvt. Ltd.",
-        "host": "speedtest.sinetonline.net:8080",
-        "id": 17520
-    },
-    {
-        "country": "IN",
-        "city": "Thrissur",
-        "provider": "Kerala Vision ISP",
-        "host": "speedtest.keralavisionisp.com:8080",
-        "id": 17289
-    },
-    {
-        "country": "IN",
-        "city": "Vadodara",
-        "provider": "Ucom Digital Pvt Ltd.",
-        "host": "speedtest.ucomdigital.com:8080",
-        "id": 16923
-    },
-    {
-        "country": "IN",
-        "city": "Varanasi",
-        "provider": "World Vision Networks Private Limited",
-        "host": "st1.wvnpl.com:8080",
-        "id": 17467
     },
     {
         "country": "India",
@@ -23851,7 +22836,7 @@
     {
         "country": "India",
         "city": "Kolkata",
-        "provider": "Meghbela Cable & Broadband Services Pvt. Ltd.",
+        "provider": "Meghbela Cable &amp; Broadband Services Pvt. Ltd.",
         "host": "203.147.88.6:8080",
         "id": 14314
     },
@@ -23893,7 +22878,7 @@
     {
         "country": "India",
         "city": "Mumbai",
-        "provider": "Wan & Lan Internet Pvt. Ltd.",
+        "provider": "Wan &amp; Lan Internet Pvt. Ltd.",
         "host": "speedtest.wnet.net.in:8080",
         "id": 4883
     },
@@ -23921,7 +22906,7 @@
     {
         "country": "India",
         "city": "Nagpur",
-        "provider": "PASSIT MEDIA & COMM. PVT. LTD.",
+        "provider": "PASSIT MEDIA &amp; COMM. PVT. LTD.",
         "host": "hostbox.on2cloud.com:8080",
         "id": 10851
     },
@@ -23991,7 +22976,7 @@
     {
         "country": "India",
         "city": "Patna",
-        "provider": "Max-tech media & communications pvt ltd",
+        "provider": "Max-tech media &amp; communications pvt ltd",
         "host": "sp1.foxbroadband.com:8080",
         "id": 12309
     },
@@ -24388,34 +23373,6 @@
         "id": 5803
     },
     {
-        "country": "IT",
-        "city": "Campagna",
-        "provider": "Farecom",
-        "host": "speedtest1.farecom.it:8080",
-        "id": 17155
-    },
-    {
-        "country": "IT",
-        "city": "Livorno",
-        "provider": "Arcolink by Next.it S.r.l.",
-        "host": "srv-st02.arcolink.it:8080",
-        "id": 18054
-    },
-    {
-        "country": "IT",
-        "city": "Sora",
-        "provider": "Connetta Srl",
-        "host": "st1.connetta.it:8080",
-        "id": 17277
-    },
-    {
-        "country": "IT",
-        "city": "Niscemi",
-        "provider": "We-Link srl",
-        "host": "speedtest.we-link.it:8080",
-        "id": 17474
-    },
-    {
         "country": "Italy",
         "city": "Albenga",
         "provider": "Rocket Way",
@@ -24640,13 +23597,6 @@
         "id": 19169
     },
     {
-        "country": "JP",
-        "city": "Sakai, Osaka",
-        "provider": "tdlabs",
-        "host": "ookla.td.v2n.jp:8080",
-        "id": 17838
-    },
-    {
         "country": "Kazakhstan",
         "city": "Aktau",
         "provider": "Beeline KZ",
@@ -24761,7 +23711,7 @@
     {
         "country": "Latvia",
         "city": "Liepaja",
-        "provider": "Elektrons&K",
+        "provider": "Elektrons&amp;K",
         "host": "net.elektrons-k.lv:8080",
         "id": 2739
     },
@@ -24820,20 +23770,6 @@
         "provider": "PowerNet Liberia",
         "host": "speedtest.pwrnetworks.com:8080",
         "id": 10593
-    },
-    {
-        "country": "LU",
-        "city": "Bertrange",
-        "provider": "TANGO SA",
-        "host": "speedtest.tango.lu:8080",
-        "id": 18136
-    },
-    {
-        "country": "LS",
-        "city": "Maseru",
-        "provider": "Econet Telecom Lesotho",
-        "host": "speedtest2.etl.co.ls:8080",
-        "id": 17050
     },
     {
         "country": "Luxembourg",
@@ -25027,7 +23963,7 @@
     {
         "country": "Mexico",
         "city": "Ecatepec",
-        "provider": "AT&T MÃ„â€ Ã‚Â©xico",
+        "provider": "AT&amp;T MÃ„â€ Ã‚Â©xico",
         "host": "speed1.ecamex.attmex.mx:8080",
         "id": 12034
     },
@@ -25041,7 +23977,7 @@
     {
         "country": "Mexico",
         "city": "Guadalajara",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.gdl.attmex.mx:8080",
         "id": 7945
     },
@@ -25083,7 +24019,7 @@
     {
         "country": "Mexico",
         "city": "Monterrey",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.mty.attmex.mx:8080",
         "id": 7946
     },
@@ -25160,30 +24096,9 @@
     {
         "country": "Mexico",
         "city": "Santa Fe",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.stafemex.attmex.mx:8080",
         "id": 11550
-    },
-    {
-        "country": "MG",
-        "city": "Antananarivo",
-        "provider": "AIRTEL MADAGASCAR",
-        "host": "speedtest3.airtel.mg:8080",
-        "id": 17704
-    },
-    {
-        "country": "MG",
-        "city": "Antananarivo",
-        "provider": "TELMA",
-        "host": "speedtest.telma.mg:8080",
-        "id": 17987
-    },
-    {
-        "country": "MM",
-        "city": "Naypyidaw",
-        "provider": "mm-link",
-        "host": "speedtest.mm-link.net:8080",
-        "id": 18053
     },
     {
         "country": "Micronesia",
@@ -25193,34 +24108,6 @@
         "id": 20536
     },
     {
-        "country": "MM",
-        "city": "Naypyidaw",
-        "provider": "Myanma Posts and Telecommunications",
-        "host": "mpt02.mpt.net.mm:8080",
-        "id": 17590
-    },
-    {
-        "country": "MM",
-        "city": "Yangon",
-        "provider": "Mytel",
-        "host": "speedtest.mytel.com.mm:8080",
-        "id": 16916
-    },
-    {
-        "country": "MM",
-        "city": "Yangon",
-        "provider": "GTMH Telecom",
-        "host": "speedtest.gtmh-telecom.com:8080",
-        "id": 16724
-    },
-    {
-        "country": "MM",
-        "city": "Yangon",
-        "provider": "Myanmar Posts and Telecommunications",
-        "host": "mpt03.mpt.net.mm:8080",
-        "id": 17519
-    },
-    {
         "country": "Moldova",
         "city": "Chisinau",
         "provider": "StarNet",
@@ -25228,53 +24115,11 @@
         "id": 6433
     },
     {
-        "country": "MM",
-        "city": "Yangon",
-        "provider": "Myanma Posts and Telecommunications",
-        "host": "mpt01.mpt.net.mm:8080",
-        "id": 17589
-    },
-    {
         "country": "Moldova",
         "city": "Chisinau",
         "provider": "Orange Moldova SA",
         "host": "speedtest.orange.md:8080",
         "id": 4149
-    },
-    {
-        "country": "MX",
-        "city": "Ciudad Nezahualcoyotl",
-        "provider": "Triara",
-        "host": "speedtest2-nezahualcoyotl.triara.com:8080",
-        "id": 17108
-    },
-    {
-        "country": "MX",
-        "city": "Coyoacan",
-        "provider": "Triara",
-        "host": "speedtest2-coyoacan.triara.com:8080",
-        "id": 17106
-    },
-    {
-        "country": "MX",
-        "city": "Saltillo",
-        "provider": "Spectro Networks",
-        "host": "speedtest.spectro.mx:8080",
-        "id": 17473
-    },
-    {
-        "country": "MX",
-        "city": "Santa Fe",
-        "provider": "Triara",
-        "host": "speedtest2-santafe.triara.com:8080",
-        "id": 17107
-    },
-    {
-        "country": "MX",
-        "city": "Tultitlan",
-        "provider": "Triara",
-        "host": "speedtest2-tultitlan.triara.com:8080",
-        "id": 17105
     },
     {
         "country": "Myanmar",
@@ -25930,7 +24775,7 @@
     {
         "country": "Poland",
         "city": "Choroszcz",
-        "provider": "TVK-NET PPHU A&K Chamerlinscy",
+        "provider": "TVK-NET PPHU A&amp;K Chamerlinscy",
         "host": "speedtest.tvk-net.pl:8080",
         "id": 7073
     },
@@ -26318,55 +25163,6 @@
         "provider": "Sc Interlink Banat Srl",
         "host": "speedtest1.banat-net.ro:8080",
         "id": 3322
-    },
-    {
-        "country": "RS",
-        "city": "Beograd",
-        "provider": "mts",
-        "host": "speedtest.mts.rs:8080",
-        "id": 17947
-    },
-    {
-        "country": "RU",
-        "city": "Apatity",
-        "provider": "ApaNet",
-        "host": "speedtest.apanet.ru:8080",
-        "id": 17834
-    },
-    {
-        "country": "RS",
-        "city": "Paracin",
-        "provider": "Exe Net d.o.o.",
-        "host": "pnspeedtest.exe-net.net:8080",
-        "id": 17129
-    },
-    {
-        "country": "RU",
-        "city": "Abakan",
-        "provider": "OrionTelecom",
-        "host": "speedtest.abk.orionnet.ru:8080",
-        "id": 17585
-    },
-    {
-        "country": "RU",
-        "city": "Belgorod",
-        "provider": "Easyhoster.ru (IT-Media LLC)",
-        "host": "speedtest.easyhoster.ru:8080",
-        "id": 18137
-    },
-    {
-        "country": "RU",
-        "city": "Berezovskiy",
-        "provider": "KVANT Telecommunications",
-        "host": "speedtest.kvant-ber.ru:8080",
-        "id": 16765
-    },
-    {
-        "country": "RU",
-        "city": "Bryansk",
-        "provider": "RIA-link Ltd.",
-        "host": "91-215-188-162-st.ria-link.ru:8080",
-        "id": 18218
     },
     {
         "country": "Russia",
@@ -27384,16 +26180,9 @@
         "id": 10608
     },
     {
-        "country": "SI",
-        "city": "Vrhnika",
-        "provider": "SGH HostMachine",
-        "host": "st-new.sgh.si:8080",
-        "id": 17971
-    },
-    {
         "country": "Seychelles",
         "city": "Victoria",
-        "provider": "Cable & Wireless Seychelles",
+        "provider": "Cable &amp; Wireless Seychelles",
         "host": "speedtest.cwseychelles.com:8080",
         "id": 3060
     },
@@ -28674,7 +27463,7 @@
     {
         "country": "United States",
         "city": "Allen, KS",
-        "provider": "S&A Telephone",
+        "provider": "S&amp;A Telephone",
         "host": "speedtest.satel.usch.com:8080",
         "id": 21606
     },
@@ -29010,7 +27799,7 @@
     {
         "country": "United States",
         "city": "Cleveland, OH",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "cle.speedtest.sbcglobal.net:8080",
         "id": 5111
     },
@@ -29052,7 +27841,7 @@
     {
         "country": "United States",
         "city": "Colby, KS",
-        "provider": "S&T Communications",
+        "provider": "S&amp;T Communications",
         "host": "speedtest1.st-tel.net:8080",
         "id": 3434
     },
@@ -29150,7 +27939,7 @@
     {
         "country": "United States",
         "city": "Detroit, MI",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "dtt.speedtest.sbcglobal.net:8080",
         "id": 5114
     },
@@ -29311,7 +28100,7 @@
     {
         "country": "United States",
         "city": "Guaynabo, PR",
-        "provider": "AT&T MOBILITY PUERTO RICO",
+        "provider": "AT&amp;T MOBILITY PUERTO RICO",
         "host": "speedtest.attbusinesspr.com:8080",
         "id": 12639
     },
@@ -29325,7 +28114,7 @@
     {
         "country": "United States",
         "city": "Holyrood, KS",
-        "provider": "H&B Communications",
+        "provider": "H&amp;B Communications",
         "host": "hb.from-ks.com:8080",
         "id": 22144
     },
@@ -29542,7 +28331,7 @@
     {
         "country": "United States",
         "city": "Los Angeles, CA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "lax.speedtest.sbcglobal.net:8080",
         "id": 5031
     },
@@ -29871,7 +28660,7 @@
     {
         "country": "United States",
         "city": "Orlando, FL",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "mco.speedtest.sbcglobal.net:8080",
         "id": 5118
     },
@@ -30074,7 +28863,7 @@
     {
         "country": "United States",
         "city": "San Antonio, TX",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "sat.speedtest.sbcglobal.net:8080",
         "id": 5107
     },
@@ -30387,62 +29176,6 @@
         "id": 10175
     },
     {
-        "country": "US",
-        "city": "Montgomery, AL",
-        "provider": "WaveFly",
-        "host": "speedtest.mgm.wavefly.com:8080",
-        "id": 16908
-    },
-    {
-        "country": "US",
-        "city": "New York, NY",
-        "provider": "Natural Wireless",
-        "host": "speedtest.naturalwireless.com:8080",
-        "id": 16888
-    },
-    {
-        "country": "US",
-        "city": "Oklahoma City, OK",
-        "provider": "OneNet",
-        "host": "okc-speedtest.onenet.net:8080",
-        "id": 17751
-    },
-    {
-        "country": "US",
-        "city": "Oneonta, AL",
-        "provider": "SardisTel Oneonta",
-        "host": "oneonta.sardis.network:8080",
-        "id": 16706
-    },
-    {
-        "country": "US",
-        "city": "Parsippany, NJ",
-        "provider": "Planet Networks",
-        "host": "speedtest.planet.net:8080",
-        "id": 17545
-    },
-    {
-        "country": "US",
-        "city": "Potsdam, NY",
-        "provider": "Clarkson University",
-        "host": "speedtest.clarkson.edu:8080",
-        "id": 16610
-    },
-    {
-        "country": "US",
-        "city": "Random Lake, WI",
-        "provider": "Bertram Communications",
-        "host": "speedtest.gobertram.com:8080",
-        "id": 17681
-    },
-    {
-        "country": "US",
-        "city": "Readlyn, IA",
-        "provider": "Readlyn Telephone Company",
-        "host": "speedtest.readlyntelco.com:8080",
-        "id": 16736
-    },
-    {
         "country": "Viet Nam",
         "city": "Ha Noi",
         "provider": "VIETPN CO, LTD",
@@ -30455,13 +29188,6 @@
         "provider": "Vietnamobile",
         "host": "hn1.speedtest.vietnamobile.com.vn:8080",
         "id": 16416
-    },
-    {
-        "country": "US",
-        "city": "San Diego, CA",
-        "provider": "ZTelco",
-        "host": "speedtest.ztelco.com:8080",
-        "id": 17445
     },
     {
         "country": "Viet Nam",
@@ -30490,41 +29216,6 @@
         "provider": "Flow BVI",
         "host": "speedtestbvi.discoverflow.co:8080",
         "id": 17056
-    },
-    {
-        "country": "VN",
-        "city": "Da Nang",
-        "provider": "Vietnamobile",
-        "host": "vnmdngspt1.vietnamobile.com.vn:8080",
-        "id": 16873
-    },
-    {
-        "country": "VN",
-        "city": "Ho Chi Minh",
-        "provider": "Vietnamobile",
-        "host": "vnmhcmspt1.vietnamobile.com.vn:8080",
-        "id": 16749
-    },
-    {
-        "country": "ZA",
-        "city": "Johannesburg",
-        "provider": "Rain",
-        "host": "speedtest.rain.co.za:8080",
-        "id": 18057
-    },
-    {
-        "country": "ZA",
-        "city": "Johannesburg",
-        "provider": "Web Squad Connect (Pty) Ltd",
-        "host": "speedtest.jhb.websquad.co.za:8080",
-        "id": 18073
-    },
-    {
-        "country": "ZA",
-        "city": "Polokwane",
-        "provider": "CapriCom Networks",
-        "host": "speedtest.capricom.co.za:8080",
-        "id": 18191
     },
     {
         "country": "Angola",
@@ -30560,27 +29251,6 @@
         "provider": "APUA Inet",
         "host": "speedtest.apuainet.ag:8080",
         "id": 11757
-    },
-    {
-        "country": "AO",
-        "city": "Benguela",
-        "provider": "TVCABO",
-        "host": "bgl-speed.tvcabo.ao:8080",
-        "id": 17057
-    },
-    {
-        "country": "AR",
-        "city": "BahÃ„â€ Ã‚Â­a Blanca",
-        "provider": "BVC Online",
-        "host": "speedtest.bvconline.com.ar:8080",
-        "id": 17671
-    },
-    {
-        "country": "AR",
-        "city": "San Clemente del TuyÃ„â€ Ã…â€”",
-        "provider": "ATCCO SRL",
-        "host": "speedtest.atcco.com.ar:8080",
-        "id": 17283
     },
     {
         "country": "Argentina",
@@ -31078,83 +29748,6 @@
         "provider": "AVAX Net doo",
         "host": "st-01.avax.ba:8080",
         "id": 3649
-    },
-    {
-        "country": "BR",
-        "city": "Conceicao Do Araguaia",
-        "provider": "JC TELECOM SERVIÃ„â€ Ã¢â‚¬Â¡OS DE TELECOMUNICAÃ„â€ Ã¢â‚¬Â¡Ã„â€ Ã¢â‚¬Â¢ES LTDA",
-        "host": "ns2.grupojcc.com.br:8080",
-        "id": 17611
-    },
-    {
-        "country": "BR",
-        "city": "CuriÃ„â€ Ã…â€”va",
-        "provider": "POLETTO TELECOM",
-        "host": "speedtest.polettotelecom.com.br:8080",
-        "id": 17147
-    },
-    {
-        "country": "BR",
-        "city": "Florianopolis",
-        "provider": "Virtex Floriano",
-        "host": "speedtestflo.virtex.com.br:8080",
-        "id": 16790
-    },
-    {
-        "country": "BR",
-        "city": "Frederico Westphalen",
-        "provider": "TcheTurbo Provedor",
-        "host": "speedtest.tcheturbo.com.br:8080",
-        "id": 16863
-    },
-    {
-        "country": "BR",
-        "city": "Otacilio Costa",
-        "provider": "Experts Telecom",
-        "host": "speedtest-otc.experts.net.br:8080",
-        "id": 17214
-    },
-    {
-        "country": "BR",
-        "city": "Patos de Minas",
-        "provider": "Uai Telecom",
-        "host": "velocidade.uaitelecom.com.br:8080",
-        "id": 17182
-    },
-    {
-        "country": "BR",
-        "city": "Ponta Grossa",
-        "provider": "Universidade Estadual de Ponta Grossa",
-        "host": "speedtest.uepg.br:8080",
-        "id": 17487
-    },
-    {
-        "country": "BR",
-        "city": "Tupaciguara",
-        "provider": "Rede G2",
-        "host": "speedtest.redeg2.com.br:8080",
-        "id": 17076
-    },
-    {
-        "country": "BR",
-        "city": "TupÃ„â€ Ã‚Â£",
-        "provider": "TVC TUPA LTDA",
-        "host": "speedtest.tvctupa.com.br:8080",
-        "id": 16651
-    },
-    {
-        "country": "BR",
-        "city": "TupÃ„â€ Ã‚Â£",
-        "provider": "Bit Telecom",
-        "host": "speedtest.bittelecom.net:8080",
-        "id": 17631
-    },
-    {
-        "country": "BR",
-        "city": "ViÃ„â€ Ã‚Â§osa",
-        "provider": "VSATelecom",
-        "host": "speedtest1.vsatelecom.com.br:8080",
-        "id": 17553
     },
     {
         "country": "Brasil",
@@ -33579,13 +32172,6 @@
         "id": 7742
     },
     {
-        "country": "CR",
-        "city": "San Jose",
-        "provider": "Telecable S.A.",
-        "host": "speedtest.telecablecr.com:8080",
-        "id": 18204
-    },
-    {
         "country": "Croatia",
         "city": "Zagreb",
         "provider": "Terrakom",
@@ -33682,13 +32268,6 @@
         "provider": "O2 Slovakia, s.r.o.",
         "host": "rychlostinternetu.sk:8080",
         "id": 21187
-    },
-    {
-        "country": "DE",
-        "city": "Saarwellingen",
-        "provider": "Net-Build GmbH",
-        "host": "speedtest.netbuild.net:8080",
-        "id": 16729
     },
     {
         "country": "DELETE ME",
@@ -34099,7 +32678,7 @@
     {
         "country": "Germany",
         "city": "Lauf a.d. Pegnitz",
-        "provider": "Bisping & Bisping GmbH & Co. KG",
+        "provider": "Bisping &amp; Bisping GmbH &amp; Co. KG",
         "host": "ookla.bisping.de:8080",
         "id": 18549
     },
@@ -34120,7 +32699,7 @@
     {
         "country": "Germany",
         "city": "Regensburg",
-        "provider": "R-KOM GmbH & Co. KG",
+        "provider": "R-KOM GmbH &amp; Co. KG",
         "host": "speedtest.glasfaser-ostbayern.de:8080",
         "id": 4404
     },
@@ -34435,14 +33014,14 @@
     {
         "country": "India",
         "city": "Bangalore",
-        "provider": "Atri networks & media pvt ltd",
+        "provider": "Atri networks &amp; media pvt ltd",
         "host": "speedtest.netron.in:8080",
         "id": 13870
     },
     {
         "country": "India",
         "city": "Bangalore",
-        "provider": "Hathway Cable & Datacom Ltd",
+        "provider": "Hathway Cable &amp; Datacom Ltd",
         "host": "bangspeed.hathway.com:8080",
         "id": 4663
     },
@@ -34918,7 +33497,7 @@
     {
         "country": "India",
         "city": "Shahabad",
-        "provider": "jimmi broadband & cable services",
+        "provider": "jimmi broadband &amp; cable services",
         "host": "shahabad.gulbarganet.in:8080",
         "id": 21885
     },
@@ -35777,16 +34356,9 @@
         "id": 1268
     },
     {
-        "country": "LB",
-        "city": "Zalka",
-        "provider": "Mnets",
-        "host": "speed.mnets.net:8080",
-        "id": 17084
-    },
-    {
         "country": "Libya",
         "city": "Misurata",
-        "provider": "ICONA for IT & Telecom. LTD co.",
+        "provider": "ICONA for IT &amp; Telecom. LTD co.",
         "host": "st1.icona.ly:8080",
         "id": 4292
     },
@@ -35831,20 +34403,6 @@
         "provider": "Datacenter Luxembourg S.A",
         "host": "speedtest.dclux.com:8080",
         "id": 3271
-    },
-    {
-        "country": "LY",
-        "city": "Zawiya",
-        "provider": "ABRAJ LIBYA (LTC)",
-        "host": "speedtest4.ltc.net.ly:8080",
-        "id": 18025
-    },
-    {
-        "country": "MA",
-        "city": "Casablanca",
-        "provider": "Maroc Telecom",
-        "host": "casablancast.iam.ma:8080",
-        "id": 18214
     },
     {
         "country": "Macao",
@@ -35943,13 +34501,6 @@
         "provider": "YTL Broadband",
         "host": "speedtest.ytlbroadband.my:8080",
         "id": 8700
-    },
-    {
-        "country": "MD",
-        "city": "Chisinau",
-        "provider": "ARAX I.S.P.",
-        "host": "speedtest.arax.md:8080",
-        "id": 18210
     },
     {
         "country": "Mexico",
@@ -36129,7 +34680,7 @@
     {
         "country": "Mexico",
         "city": "Tijuana",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.tij.attmex.mx:8080",
         "id": 7953
     },
@@ -36178,7 +34729,7 @@
     {
         "country": "Mexico",
         "city": "Tlalnepantla",
-        "provider": "AT&T Mexico",
+        "provider": "AT&amp;T Mexico",
         "host": "speed1.tla.attmex.mx:8080",
         "id": 5051
     },
@@ -36696,7 +35247,7 @@
     {
         "country": "Panama",
         "city": "Panama",
-        "provider": "Cable & Wireless PanamÃ„â€ Ã¯Â¿Â½",
+        "provider": "Cable &amp; Wireless PanamÃ„â€ Ã¯Â¿Â½",
         "host": "speedtest1.cwpanama.net:8080",
         "id": 13884
     },
@@ -36867,13 +35418,6 @@
         "provider": "E-Cho Sp. z o.o.",
         "host": "speedtest1.e-cho.pl:8080",
         "id": 5735
-    },
-    {
-        "country": "PK",
-        "city": "Lahore",
-        "provider": "Vision East (PVT) Ltd.",
-        "host": "speedtest.visioneast.net:8080",
-        "id": 17133
     },
     {
         "country": "Poland",
@@ -37261,13 +35805,6 @@
         "id": 20670
     },
     {
-        "country": "RO",
-        "city": "Cluj-Napoca",
-        "provider": "ITDATATELECOM",
-        "host": "speedtest.itdatatelecom.ro:8080",
-        "id": 16702
-    },
-    {
         "country": "Romania",
         "city": "Arad",
         "provider": "CobraNET SRL",
@@ -37294,41 +35831,6 @@
         "provider": "DATA ZYX SRL",
         "host": "traceroute.zyx.ro:8080",
         "id": 8661
-    },
-    {
-        "country": "RU",
-        "city": "Ã… Ã¢â‚¬Â¢Ã… Ã‚Â³Ã… Ã‚Â¾Ã…Æ’Ã¢â€šÂ¬Ã…Æ’Ã‚Å’Ã… Ã‚ÂµÃ… Ã‚Â²Ã…Æ’Ã‚ÂÃ… Ã…â€”",
-        "provider": "Ltd. Regional Network Company (RNC)",
-        "host": "speedtest.rnc.ru:8080",
-        "id": 17070
-    },
-    {
-        "country": "RU",
-        "city": "Gagra",
-        "provider": "Gagra Telecom",
-        "host": "speedtest1.gagratel.ru:8080",
-        "id": 17543
-    },
-    {
-        "country": "RU",
-        "city": "Krasnodar",
-        "provider": "Sky Telecom",
-        "host": "sp1.telecomsky.ru:8080",
-        "id": 16949
-    },
-    {
-        "country": "RU",
-        "city": "Moscow",
-        "provider": "Telecom Center",
-        "host": "speedtest.tcenter.ru:8080",
-        "id": 17091
-    },
-    {
-        "country": "RU",
-        "city": "Petropavlovsk-Kamchatsky",
-        "provider": "SKTV",
-        "host": "speed.kamtv.ru:8080",
-        "id": 17526
     },
     {
         "country": "Russia",
@@ -38241,13 +36743,6 @@
         "id": 6817
     },
     {
-        "country": "SD",
-        "city": "Khartoum",
-        "provider": "Canar Telecom",
-        "host": "st1.canar.sd:8080",
-        "id": 17434
-    },
-    {
         "country": "Senegal",
         "city": "Dakar",
         "provider": "Sonatel",
@@ -38334,7 +36829,7 @@
     {
         "country": "Slovakia",
         "city": "Trebisov",
-        "provider": "E-MAX INTERNET & IT s.r.o.",
+        "provider": "E-MAX INTERNET &amp; IT s.r.o.",
         "host": "speed2-tv.e-max.sk:8080",
         "id": 16459
     },
@@ -40707,7 +39202,7 @@
     {
         "country": "United States",
         "city": "San Diego, CA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "san.speedtest.sbcglobal.net:8080",
         "id": 5116
     },
@@ -40861,7 +39356,7 @@
     {
         "country": "United States",
         "city": "Tucker, GA",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "atl.speedtest.sbcglobal.net:8080",
         "id": 5027
     },
@@ -40910,7 +39405,7 @@
     {
         "country": "United States",
         "city": "Washington, DC",
-        "provider": "AT&T",
+        "provider": "AT&amp;T",
         "host": "was.speedtest.sbcglobal.net:8080",
         "id": 5113
     },
@@ -41011,41 +39506,6 @@
         "provider": "Noel Communications",
         "host": "speedtest.noelcomm.com:8080",
         "id": 21441
-    },
-    {
-        "country": "US",
-        "city": "South Bend, IN",
-        "provider": "Fourway.NET",
-        "host": "spdtst-southbend.fourway.net:8080",
-        "id": 16770
-    },
-    {
-        "country": "US",
-        "city": "Springfield, MO",
-        "provider": "Syndeo Solutions",
-        "host": "speedtest.syndeosolutions.com:8080",
-        "id": 17566
-    },
-    {
-        "country": "US",
-        "city": "Tampa, FL",
-        "provider": "TampaBay DSL dba PBX-Change",
-        "host": "speedtest.pbx-change.com:8080",
-        "id": 17026
-    },
-    {
-        "country": "US",
-        "city": "Tucson, AZ",
-        "provider": "Bluespan Wireless LLC",
-        "host": "nogales.speedtest.bluespanwireless.com:8080",
-        "id": 16960
-    },
-    {
-        "country": "US",
-        "city": "Walla Walla, WA",
-        "provider": "Columbia Energy, LLC",
-        "host": "speedtest.columbiainet.com:8080",
-        "id": 17701
     },
     {
         "country": "Uzbekistan",
