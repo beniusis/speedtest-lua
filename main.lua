@@ -137,10 +137,10 @@ function get_servers(country)
     end
 end
 
--- Check whether the server responds to the HTTP request within the 3 seconds
--- If it doesn't respond - return false and assume it is not alive
--- If it responds - return true
-function check_if_server_is_alive(server_host)
+-- Firstly, check whether the server responds to the HTTP request within the 3 seconds
+-- If it does respond - return latency (in microseconds)
+-- If it doesn't respond - return nil
+function get_server_latency(server_host)
     local easy = cURL.easy()
     easy:setopt_url(server_host)
     easy:setopt_timeout(3)
@@ -149,28 +149,23 @@ function check_if_server_is_alive(server_host)
     
     local success, err = pcall(easy.perform, easy)
     if success then
-        return true
+        return easy:getinfo(cURL.INFO_CONNECT_TIME_T)
     else
-        return false
+        return nil
     end
 
     easy:close()
 end
 
 -- Find the best server with the best response time
--- If all of the servers from the provided list are not alive - returns nil
--- If provided server list is empty - returns nil as well
+-- If provided server list is empty - returns nil
 function find_best_server(servers)
     local best_latency = 99999
     local server_host = nil
     if servers ~= nil then
         for _, server in ipairs(servers) do
-            if (check_if_server_is_alive(server.host) == true) then
-                local easy = cURL.easy{
-                    url = server.host
-                }:perform()
-                local latency = easy:getinfo(cURL.INFO_CONNECT_TIME_T)
-                easy:close()
+            local latency = get_server_latency(server.host)
+            if latency ~= nil then
                 if latency < best_latency then
                     best_latency = latency
                     server_host = server.host
