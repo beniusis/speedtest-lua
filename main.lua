@@ -12,12 +12,6 @@ SERVER_LIST_FILE = "/tmp/servers.json"
 download_speed = 0
 upload_speed = 0
 
--- Method which should be called inside pcalls to handle errors
-function init_perform(easy_object)
-    easy_object:perform()
-    easy_object:close()
-end
-
 -- Method for measuring the download speed
 function measure_download_speed()
     local start_time = os.time()
@@ -32,7 +26,7 @@ function measure_download_speed()
         end
     }
 
-    local success, err = pcall(init_perform, easy)
+    local success, err = pcall(easy.perform, easy)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)" then
@@ -62,7 +56,7 @@ function measure_upload_speed()
         end
     }
 
-    local success, err = pcall(init_perform, easy)
+    local success, err = pcall(easy.perform, easy)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)" then
         print(string.format("Upload speed: %.2f Mbps", upload_speed))
@@ -84,7 +78,7 @@ function get_country()
         end
     }
 
-    local success, err = pcall(init_perform, easy)
+    local success, err = pcall(easy.perform, easy)
     if not success then
         return "Unknown"
     else
@@ -104,7 +98,7 @@ function download_server_list()
             writefunction = io.open(SERVER_LIST_FILE, "w")
         }
 
-        local success, err = pcall(init_perform, easy)
+        local success, err = pcall(easy.perform, easy)
 
         if not success then
             print(err)
@@ -138,6 +132,52 @@ function get_servers(country)
         else
             return nil
         end
+    else
+        return nil
+    end
+end
+
+-- Check whether the server responds to the HTTP request within the 3 seconds
+-- If it doesn't respond - return false and assume it is not alive
+-- If it responds - return true
+function check_if_server_is_alive(server_host)
+    local easy = cURL.easy()
+    easy:setopt_url(server_host)
+    easy:setopt_timeout(3)
+    easy:setopt_ssl_verifyhost(false)
+    easy:setopt_ssl_verifypeer(false)
+    
+    local success, err = pcall(easy.perform, easy)
+    if success then
+        return true
+    else
+        return false
+    end
+
+    easy:close()
+end
+
+-- Find the best server with the best response time
+-- If all of the servers from the provided list are not alive - returns nil
+-- If provided server list is empty - returns nil as well
+function find_best_server(servers)
+    local best_latency = 99999
+    local server_host = nil
+    if servers ~= nil then
+        for _, server in ipairs(servers) do
+            if (check_if_server_is_alive(server.host) == true) then
+                local easy = cURL.easy{
+                    url = server.host
+                }:perform()
+                local latency = easy:getinfo(cURL.INFO_CONNECT_TIME_T)
+                easy:close()
+                if latency < best_latency then
+                    best_latency = latency
+                    server_host = server.host
+                end
+            end
+        end
+        return server_host
     else
         return nil
     end
