@@ -12,25 +12,40 @@ SERVER_LIST_FILE = "/tmp/servers.json"
 download_speed = 0
 upload_speed = 0
 
+-- Time variables (default values)
+start_time = 0
+end_time = 0
+
+-- Downloading progress function
+function download_progress(_, dlnow, _, _)
+    download_speed = dlnow / 1024 / 1000 * 8
+end
+
+-- Uploading progress function
+function upload_progress(_, _, _, ulnow)
+    upload_speed = ulnow / 1024 / 1000 * 8
+end
+
 -- Method for measuring the download speed
 function measure_download_speed()
-    local start_time = os.time()
+    start_time = os.time()
     local easy = cURL.easy{
         url = HOST_URL .. "/download",
         useragent = USER_AGENT,
         writefunction = io.open("/dev/null", "wb"),
         noprogress = false,
-        timeout = 15,
-        progressfunction = function (download_total, download_now, _, _)
-            download_speed = (download_now / 125000) / (os.time() - start_time)
-        end
+        timeout = 10,
+        progressfunction = download_progress
     }
 
     local success, err = pcall(easy.perform, easy)
+    end_time = os.time()
+    -- local total_transfer_time = easy:getinfo(cURL.INFO_TOTAL_TIME)
+    -- download_speed = download_speed / total_transfer_time
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)" then
-            print(string.format("Download speed: %.2f Mbps", download_speed))
+            print(string.format("Download speed: %.2f Mbps", download_speed / (end_time - start_time)))
     else
         print(err)
     end
@@ -50,16 +65,17 @@ function measure_upload_speed()
             }
         },
         noprogress = false,
-        timeout = 15,
-        progressfunction = function (_, _, upload_total, upload_now)
-           upload_speed = (upload_now / 125000) / (os.time() - start_time)
-        end
+        timeout = 10,
+        progressfunction = upload_progress
     }
 
     local success, err = pcall(easy.perform, easy)
+    -- local total_transfer_time = easy:getinfo(cURL.INFO_TOTAL_TIME)
+    -- upload_speed = upload_speed / total_transfer_time
+    end_time = os.time()
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)" then
-        print(string.format("Upload speed: %.2f Mbps", upload_speed))
+        print(string.format("Upload speed: %.2f Mbps", upload_speed / (end_time - start_time)))
     else
         print(err)
     end
@@ -162,18 +178,23 @@ end
 function find_best_server(servers)
     local best_latency = 99999
     local server_host = nil
-    if servers ~= nil then
-        for _, server in ipairs(servers) do
-            local latency = get_server_latency(server.host)
-            if latency ~= nil then
-                if latency < best_latency then
-                    best_latency = latency
-                    server_host = server.host
-                end
-            end
-        end
-        return server_host
-    else
+
+    if servers == nil then
         return nil
     end
+
+    for _, server in ipairs(servers) do
+        local latency = get_server_latency(server.host)
+        if latency ~= nil then
+            if latency < best_latency then
+                best_latency = latency
+                server_host = server.host
+            end
+        end
+    end
+    return server_host
 end
+
+-- print(find_best_server(get_servers("asas")))
+measure_download_speed()
+measure_upload_speed()
