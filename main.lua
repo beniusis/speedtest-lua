@@ -68,7 +68,7 @@ function measure_upload_speed()
     }
 
     start_time = os.time()
-    
+
     local success, err = pcall(easy.perform, easy)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
@@ -91,7 +91,7 @@ function get_country()
         useragent = USER_AGENT,
         httpget = true,
         writefunction = function(data)
-            country = json.decode(data).country
+            country = JSON.decode(data).country
         end
     }
 
@@ -148,7 +148,7 @@ function get_servers(country)
         return nil
     end
 
-    local server_list = json.decode(server_file_contents)
+    local server_list = JSON.decode(server_file_contents)
     for _, server in ipairs(server_list) do
         if server.country == country then
             table.insert(servers, server)
