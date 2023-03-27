@@ -1,5 +1,6 @@
 cURL = require("cURL")
 JSON = require("json")
+argparse = require("argparse")
 
 -- Global constants
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
@@ -8,11 +9,9 @@ IP_API_URL = "http://ip-api.com/json/?fields=25115"
 SERVER_LIST_URL = "https://raw.githubusercontent.com/beniusis/speedtest-lua/master/server_list.json"
 SERVER_LIST_FILE = "/tmp/servers.json"
 
--- Speed variables (default values)
+-- Global variables
 download_speed = 0
 upload_speed = 0
-
--- Time variables (default values)
 start_time = 0
 
 -- Downloading progress function
@@ -40,11 +39,14 @@ function measure_download_speed()
     local success, err = pcall(easy.perform, easy)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
-        or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)" then
-            print(string.format("Download speed: %.2f Mbps", download_speed))
+        or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
+            or err == nil then
+                print(string.format("Download speed: %.2f Mbps", download_speed))
     else
         print(err)
     end
+
+    easy:close()
     start_time = 0
 end
 
@@ -66,13 +68,17 @@ function measure_upload_speed()
     }
 
     start_time = os.time()
+    
     local success, err = pcall(easy.perform, easy)
 
-    if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)" then
-        print(string.format("Upload speed: %.2f Mbps", upload_speed))
+    if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
+        or err == nil then
+            print(string.format("Upload speed: %.2f Mbps", upload_speed))
     else
         print(err)
     end
+
+    easy:close()
     start_time = 0
 end
 
@@ -90,35 +96,42 @@ function get_country()
     }
 
     local success, err = pcall(easy.perform, easy)
+
     if not success then
         return "Unknown"
     else
         return country
     end
+
+    easy:close()
 end
 
 -- Download server list file if it doesn't exist in the system
 -- If the file exists - close it and do nothing
 function download_server_list()
     local server_file = io.open(SERVER_LIST_FILE, "r")
-    if server_file == nil then
-        local easy = cURL.easy{
-            url = SERVER_LIST_URL,
-            useragent = USER_AGENT,
-            httpget = true,
-            writefunction = io.open(SERVER_LIST_FILE, "w")
-        }
 
-        local success, err = pcall(easy.perform, easy)
-
-        if not success then
-            print(err)
-        else
-            print("Server list has been successfully downloaded!")
-        end
-    else
+    if server_file ~= nil then
         server_file:close()
+        return
     end
+
+    local easy = cURL.easy{
+        url = SERVER_LIST_URL,
+        useragent = USER_AGENT,
+        httpget = true,
+        writefunction = io.open(SERVER_LIST_FILE, "w")
+    }
+
+    local success, err = pcall(easy.perform, easy)
+
+    if not success then
+        print(err)
+    else
+        print("Server list has been successfully downloaded!")
+    end
+
+    easy:close()
 end
 
 -- Get servers from the server list file by provided country
@@ -131,18 +144,19 @@ function get_servers(country)
     local server_file = io.open(SERVER_LIST_FILE, "r")
     local server_file_contents = server_file:read("*a")
 
-    if country ~= nil then
-        local server_list = json.decode(server_file_contents)
-        for _, server in ipairs(server_list) do
-            if server.country == country then
-                table.insert(servers, server)
-            end
+    if country == nil then
+        return nil
+    end
+
+    local server_list = json.decode(server_file_contents)
+    for _, server in ipairs(server_list) do
+        if server.country == country then
+            table.insert(servers, server)
         end
-        if #servers ~= 0 then
-            return servers
-        else
-            return nil
-        end
+    end
+
+    if #servers ~= 0 then
+        return servers
     else
         return nil
     end
@@ -190,5 +204,25 @@ function find_best_server(servers)
     return server_host
 end
 
-measure_download_speed()
-measure_upload_speed()
+parser = argparse()
+parser:flag("-d", "Call the function to measure download's speed")
+parser:flag("-u", "Call the function to measure upload's speed")
+parser:flag("-c", "Call the function to get the client's country")
+parser:flag("-s", "Call the function to get the server list")
+parser:flag("-b", "Call the function to find the best server from the server list")
+args = parser:parse()
+
+if (args.d) then
+    measure_download_speed()
+elseif (args.u) then
+    measure_upload_speed()
+elseif (args.c) then
+    local country = get_country()
+elseif (args.s) then
+    local country = get_country()
+    local servers = get_servers(country)
+elseif (args.b) then
+    local country = get_country()
+    local servers = get_servers(country)
+    local best_server = find_best_server(servers)
+end
