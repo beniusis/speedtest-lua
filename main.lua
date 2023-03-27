@@ -14,21 +14,19 @@ upload_speed = 0
 
 -- Time variables (default values)
 start_time = 0
-end_time = 0
 
 -- Downloading progress function
 function download_progress(_, dlnow, _, _)
-    download_speed = dlnow / 1024 / 1000 * 8
+    download_speed = (dlnow / 1024 / 1000 * 8) / (os.time() - start_time)
 end
 
 -- Uploading progress function
 function upload_progress(_, _, _, ulnow)
-    upload_speed = ulnow / 1024 / 1000 * 8
+    upload_speed = (ulnow / 1024 / 1000 * 8) / (os.time() - start_time)
 end
 
 -- Method for measuring the download speed
 function measure_download_speed()
-    start_time = os.time()
     local easy = cURL.easy{
         url = HOST_URL .. "/download",
         useragent = USER_AGENT,
@@ -38,22 +36,20 @@ function measure_download_speed()
         progressfunction = download_progress
     }
 
+    start_time = os.time()
     local success, err = pcall(easy.perform, easy)
-    end_time = os.time()
-    -- local total_transfer_time = easy:getinfo(cURL.INFO_TOTAL_TIME)
-    -- download_speed = download_speed / total_transfer_time
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)" then
-            print(string.format("Download speed: %.2f Mbps", download_speed / (end_time - start_time)))
+            print(string.format("Download speed: %.2f Mbps", download_speed))
     else
         print(err)
     end
+    start_time = 0
 end
 
 -- Method for measuring the upload speed
 function measure_upload_speed()
-    local start_time = os.time()
     local easy = cURL.easy{
         url = HOST_URL .. "/upload",
         useragent = USER_AGENT,
@@ -69,16 +65,15 @@ function measure_upload_speed()
         progressfunction = upload_progress
     }
 
+    start_time = os.time()
     local success, err = pcall(easy.perform, easy)
-    -- local total_transfer_time = easy:getinfo(cURL.INFO_TOTAL_TIME)
-    -- upload_speed = upload_speed / total_transfer_time
-    end_time = os.time()
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)" then
-        print(string.format("Upload speed: %.2f Mbps", upload_speed / (end_time - start_time)))
+        print(string.format("Upload speed: %.2f Mbps", upload_speed))
     else
         print(err)
     end
+    start_time = 0
 end
 
 -- Get the country of a client using geolocation API (ip-api.com) ------ endpoint is limited to 45 rpm from an IP address
@@ -195,6 +190,5 @@ function find_best_server(servers)
     return server_host
 end
 
--- print(find_best_server(get_servers("asas")))
 measure_download_speed()
 measure_upload_speed()
