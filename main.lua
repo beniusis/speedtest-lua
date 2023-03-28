@@ -14,14 +14,20 @@ download_speed = 0
 upload_speed = 0
 start_time = 0
 
+-- Round the provided number to 10s
+-- For example: 9.56321 to 9.56, 5.98741 to 5.99 and so on ...
+function round(number)
+    return tonumber(string.format("%.2f", number))
+end
+
 -- Downloading progress function
 function download_progress(_, dlnow, _, _)
-    download_speed = (dlnow / 1024 / 1000 * 8) / (os.time() - start_time)
+    download_speed = round((dlnow / 1024 / 1000 * 8) / (os.time() - start_time))
 end
 
 -- Uploading progress function
 function upload_progress(_, _, _, ulnow)
-    upload_speed = (ulnow / 1024 / 1000 * 8) / (os.time() - start_time)
+    upload_speed = round((ulnow / 1024 / 1000 * 8) / (os.time() - start_time))
 end
 
 -- Method for measuring the download speed
@@ -162,7 +168,7 @@ function get_servers(country)
     end
 end
 
--- Firstly, check whether the server responds to the HTTP request within the 3 seconds
+-- Checks whether the server responds to the HTTP request within the 3 seconds
 -- If it does respond - return latency (in microseconds)
 -- If it doesn't respond - return nil
 function get_server_latency(server_host)
