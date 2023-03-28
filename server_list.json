@@ -100,7 +100,7 @@
     {
         "country": "Argentina",
         "city": "Jardin America",
-        "provider": "SWISS-NET ENERGIA &amp; TELECOMUNICACIONES",
+        "provider": "SWISS-NET ENERGIA & TELECOMUNICACIONES",
         "host": "speedtest.swiss-net.com.ar:8080",
         "id": 15091
     },
@@ -478,7 +478,7 @@
     {
         "country": "Belize",
         "city": "Belmopan",
-        "provider": "Central Tv &amp; Internet Ltd.",
+        "provider": "Central Tv & Internet Ltd.",
         "host": "speedtest-centraltv.bz:8080",
         "id": 7801
     },
@@ -1311,7 +1311,7 @@
     {
         "country": "Brazil",
         "city": "Fortaleza",
-        "provider": "C&amp;A NET TELECOM",
+        "provider": "C&A NET TELECOM",
         "host": "speedtest.ceanettelecom.com.br:8080",
         "id": 10605
     },
@@ -3222,7 +3222,7 @@
     {
         "country": "Germany",
         "city": "Frankfurt",
-        "provider": "IP-Projects GmbH &amp; Co. KG",
+        "provider": "IP-Projects GmbH & Co. KG",
         "host": "speedtest.ip-projects.de:8080",
         "id": 8040
     },
@@ -3390,7 +3390,7 @@
     {
         "country": "Guam",
         "city": "Barrigada",
-        "provider": "IT&amp;E",
+        "provider": "IT&E",
         "host": "sp1.guam.ite.net:8080",
         "id": 7377
     },
@@ -4020,7 +4020,7 @@
     {
         "country": "India",
         "city": "Surat",
-        "provider": "HATHWAY CABLE &amp; DATACOM LTD.",
+        "provider": "HATHWAY CABLE & DATACOM LTD.",
         "host": "116.74.100.7:8080",
         "id": 7543
     },
@@ -4034,7 +4034,7 @@
     {
         "country": "India",
         "city": "Vadodara",
-        "provider": "Hathway Cable &amp; Datacom Ltd",
+        "provider": "Hathway Cable & Datacom Ltd",
         "host": "60.254.50.14:8080",
         "id": 8190
     },
@@ -5168,7 +5168,7 @@
     {
         "country": "Mexico",
         "city": "Merida",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.mer.attmex.mx:8080",
         "id": 8113
     },
@@ -5574,7 +5574,7 @@
     {
         "country": "Northern Mariana",
         "city": "Susupe",
-        "provider": "IT&amp;E",
+        "provider": "IT&E",
         "host": "sp1.saipan.ite.net:8080",
         "id": 6793
     },
@@ -6249,755 +6249,6 @@
         "provider": "Teletrans",
         "host": "speedtest.pitesti.teletrans.ro:8080",
         "id": 2546
-    },
-    {
-        "country": "Russia",
-        "city": "Kazan",
-        "provider": "RETN",
-        "host": "speedtest-kzn.retn.net:8080",
-        "id": 22240
-    },
-    {
-        "country": "Russia",
-        "city": "Kazan",
-        "provider": "Beeline",
-        "host": "kazan1.speedtest.corbina.net:8080",
-        "id": 4963
-    },
-    {
-        "country": "Russia",
-        "city": "Kemerovo",
-        "provider": "MegaTelecom",
-        "host": "speedtest.megatc.ru:8080",
-        "id": 20145
-    },
-    {
-        "country": "Russia",
-        "city": "Kemerovo",
-        "provider": "Beeline",
-        "host": "kemerovo1.speedtest.corbina.net:8080",
-        "id": 5077
-    },
-    {
-        "country": "Russia",
-        "city": "Khabarovsk",
-        "provider": "Pautina-LTD",
-        "host": "st.pautina-telecom.ru:8080",
-        "id": 22199
-    },
-    {
-        "country": "Russia",
-        "city": "Kingisepp",
-        "provider": "King-Online Ltd.",
-        "host": "sp1.king-online.ru:8080",
-        "id": 4494
-    },
-    {
-        "country": "Russia",
-        "city": "Kirov",
-        "provider": "MegaFon",
-        "host": "kirov.speedtest-uf.megafon.ru:8080",
-        "id": 17041
-    },
-    {
-        "country": "Russia",
-        "city": "Nizhny Tagil",
-        "provider": "MegaFon",
-        "host": "nizhniy-tagil.speedtest-uf.megafon.ru:8080",
-        "id": 17038
-    },
-    {
-        "country": "Russia",
-        "city": "Novorossiysk",
-        "provider": "Noviy Internet",
-        "host": "speedtest.natanet.ru:8080",
-        "id": 22151
-    },
-    {
-        "country": "Russia",
-        "city": "Novosibirsk",
-        "provider": "Beeline",
-        "host": "speedcheck1.nsk.beeline.ru:8080",
-        "id": 5045
-    },
-    {
-        "country": "Russia",
-        "city": "Novy Urengoy",
-        "provider": "MegaFon",
-        "host": "noviy-urengoi.speedtest-uf.megafon.ru:8080",
-        "id": 17031
-    },
-    {
-        "country": "Russia",
-        "city": "Noyabrsk",
-        "provider": "MegaFon",
-        "host": "noyabrsk.speedtest-uf.megafon.ru:8080",
-        "id": 17032
-    },
-    {
-        "country": "Russia",
-        "city": "Orel",
-        "provider": "JSC \"VimpelCom\"",
-        "host": "speedtest1.orel.beeline.ru:8080",
-        "id": 4623
-    },
-    {
-        "country": "Russia",
-        "city": "Otradnoe",
-        "provider": "Lentel",
-        "host": "www.lentel.ru:8080",
-        "id": 4752
-    },
-    {
-        "country": "Russia",
-        "city": "Perm",
-        "provider": "Internet Protocol Transit Telecom Ltd",
-        "host": "s1.iptt.ru:8080",
-        "id": 18951
-    },
-    {
-        "country": "Russia",
-        "city": "Perm",
-        "provider": "PERM-IX.RU",
-        "host": "speedtest.perm-ix.ru:8080",
-        "id": 22383
-    },
-    {
-        "country": "Russia",
-        "city": "Perm",
-        "provider": "MegaFon",
-        "host": "perm.speedtest-uf.megafon.ru:8080",
-        "id": 17039
-    },
-    {
-        "country": "Russia",
-        "city": "Yalta",
-        "provider": "Yaltanet",
-        "host": "speedtest.yaltanet.ru:8080",
-        "id": 21617
-    },
-    {
-        "country": "Russia",
-        "city": "Yaroslavl",
-        "provider": "Yarnet",
-        "host": "speedtest.yarnet.ru:8080",
-        "id": 18234
-    },
-    {
-        "country": "Russia",
-        "city": "Zelenograd",
-        "provider": "Dataplanet Ltd.",
-        "host": "speedtest-zel.dapl.ru:8080",
-        "id": 21456
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Abakan",
-        "provider": "OOO Alfatel plus",
-        "host": "speedtest.alfatelplus.ru:8080",
-        "id": 4366
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Aksay",
-        "provider": "Timernet",
-        "host": "speedtest.timernet.ru:8080",
-        "id": 16274
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Birobidzhan",
-        "provider": "MegaFon",
-        "host": "brn.speedtest-dvf.megafon.ru:8080",
-        "id": 5644
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Biysk",
-        "provider": "Dianet",
-        "host": "st-biysk.dianet.info:8080",
-        "id": 1549
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Blagoveshchensk",
-        "provider": "MegaFon",
-        "host": "blk.speedtest-dvf.megafon.ru:8080",
-        "id": 5648
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Blagoveshchensk",
-        "provider": "Mobile TeleSystems OJSC",
-        "host": "0902speedtest01.mtsdv.ru:8080",
-        "id": 3972
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Blagoveshchensk",
-        "provider": "OJSC Rostelecom \"NoLimit\"",
-        "host": "speedtest.amur.ru:8080",
-        "id": 2278
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bologoe",
-        "provider": "CJSC RASCOM",
-        "host": "bologoe1.speedtest.rascom.ru:8080",
-        "id": 5702
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bratsk",
-        "provider": "Orion telecom, LLC",
-        "host": "speedtest.brk.orionnet.ru:8080",
-        "id": 15914
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bratsk",
-        "provider": "Teleos-1",
-        "host": "speed.btk.teleos.ru:8080",
-        "id": 8574
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bratsk",
-        "provider": "Ã… Ã¢â‚¬Å“Ã… Ã‚Å¡Ã… Ã¯Â¿Â½Ã… Ã¢â‚¬â„¢Ã… Ãƒâ€ Ã… Ã¢â‚¬â€Ã… Ã‚Â¬",
-        "host": "speed.nsplus.ru:8080",
-        "id": 12513
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chita",
-        "provider": "MIG-Service",
-        "host": "speedtest.gin.su:8080",
-        "id": 11463
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Dolgoprudny",
-        "provider": "MIPT-Telecom",
-        "host": "speedtest.telecom.mipt.ru:8080",
-        "id": 874
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Domodedovo",
-        "provider": "Gigacom Systems LLC",
-        "host": "st1.gigacoms.ru:8080",
-        "id": 8282
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Dvurechensk",
-        "provider": "IT service LLC",
-        "host": "speedtest.icom.net.ru:8080",
-        "id": 6075
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Hi-Link",
-        "host": "speedtest.hi-link.ru:8080",
-        "id": 14797
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Orient-Telecom",
-        "host": "speedtest.ortel.ru:8080",
-        "id": 14820
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Business Net Irkutsk",
-        "host": "share.irk.ru:8080",
-        "id": 1000
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Interfonica",
-        "host": "speedtest.interfonica.ru:8080",
-        "id": 13563
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ivanovo",
-        "provider": "TTK",
-        "host": "test.ivn.ttksever.ru:8080",
-        "id": 16483
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ivanovo",
-        "provider": "MTS",
-        "host": "speedtest1.ivanovo.comstar-r.ru:8080",
-        "id": 5038
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ivanovo",
-        "provider": "MTT Connect",
-        "host": "st.345000.ru:8080",
-        "id": 9945
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Khasavyurt",
-        "provider": "Has-Net",
-        "host": "sp.has-net.ru:8080",
-        "id": 6884
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Khotkovo",
-        "provider": "OTS Ltd.",
-        "host": "speedtest.ots-net.ru:8080",
-        "id": 14213
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kingisepp",
-        "provider": "OOO Ruslantk",
-        "host": "speedtest.ruslantk.ru:8080",
-        "id": 7458
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kirishi",
-        "provider": "OOO TK TOR",
-        "host": "speed.kirishi.ru:8080",
-        "id": 2071
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kirov",
-        "provider": "DOM.RU",
-        "host": "speedtest.kirov.ertelecom.ru:8080",
-        "id": 2702
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kirov",
-        "provider": "Beeline",
-        "host": "speedtest1.kirov.beeline.ru:8080",
-        "id": 6573
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kurgan",
-        "provider": "Beeline",
-        "host": "speedtest1.kurgan.beeline.ru:8080",
-        "id": 6479
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kurgan",
-        "provider": "DOM.RU",
-        "host": "speedtest.kurgan.ertelecom.ru:8080",
-        "id": 2700
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kursk",
-        "provider": "Net By Net Holding LLC",
-        "host": "krsk-speedtest-srv02.ti.ru:8080",
-        "id": 4864
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kursk",
-        "provider": "DOM.RU",
-        "host": "speedtest.kursk.ertelecom.ru:8080",
-        "id": 2665
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kursk",
-        "provider": "Beeline",
-        "host": "orel-speedtest.corbina.net:8080",
-        "id": 10947
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kursk",
-        "provider": "ISP Sovtest",
-        "host": "speedtest.sovtest.ru:8080",
-        "id": 2762
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Citytelecom",
-        "host": "speedtest.citytelecom.ru:8080",
-        "id": 15418
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "LLC Buran-Telecom",
-        "host": "speedtest.burantel.ru:8080",
-        "id": 10045
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "RusCentroSvas",
-        "host": "speedtest.rcsnet.ru:8080",
-        "id": 9321
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Net By Net Holding LLC",
-        "host": "msk1.bigspeedtest.netbynet.ru:8080",
-        "id": 7531
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nazran",
-        "provider": "VIP Nazran",
-        "host": "speedcheck1.nzr.beeline.ru:8080",
-        "id": 5948
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nazran",
-        "provider": "ITT ltd",
-        "host": "st.zaoitt.ru:8080",
-        "id": 16558
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nefteyugansk",
-        "provider": "E-YUGANSK",
-        "host": "speedtest.e-yugansk.ru:8080",
-        "id": 9971
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nefteyugansk",
-        "provider": "E-YUGANSK",
-        "host": "speedtest.e-yugansk.ru:8080",
-        "id": 3623
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhnevartovsk",
-        "provider": "Pride",
-        "host": "speedtest.pride-net.ru:8080",
-        "id": 2799
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhnii Tagil",
-        "provider": "SetiTagila",
-        "host": "speedtest.setitagila.ru:8080",
-        "id": 1886
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhniy Tagil",
-        "provider": "Seti Tagila",
-        "host": "speedtest.setitagila.ru:8080",
-        "id": 15096
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Omsk",
-        "provider": "BST",
-        "host": "bs-telecom.net:8080",
-        "id": 5147
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Omsk",
-        "provider": "JSC Zap-Sib TransTeleCom",
-        "host": "speed-omk.myttk.ru:8080",
-        "id": 1830
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Omsk",
-        "provider": "Omsk-IX",
-        "host": "speedtest.omkc.ru:8080",
-        "id": 1351
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Omsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.omsk.ertelecom.ru:8080",
-        "id": 2695
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Orel",
-        "provider": "Net By Net Holding LLC",
-        "host": "orl1.bigspeedtest.netbynet.ru:8080",
-        "id": 7620
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Orenberg",
-        "provider": "DOM.RU",
-        "host": "speedtest.oren.ertelecom.ru:8080",
-        "id": 2694
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Rostov-on-don",
-        "provider": "Dontechsvyaz",
-        "host": "speedtest.donnetwork.ru:8080",
-        "id": 15240
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Rostov-on-Don",
-        "provider": "DOM.RU",
-        "host": "speedtest.rostov.ertelecom.ru:8080",
-        "id": 2716
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Rubtsovsk",
-        "provider": "Dianet",
-        "host": "st-rubtsovsk.dianet.ru:8080",
-        "id": 4912
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ruzayevka",
-        "provider": "OOO RGTS \"Parus\"",
-        "host": "speedtest1.rgtsparus.ru:8080",
-        "id": 2744
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ryazan",
-        "provider": "MTS",
-        "host": "speedtest1.ryazan.comstar-r.ru:8080",
-        "id": 1910
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ryazan",
-        "provider": "DOM.RU",
-        "host": "speedtest.ryazan.ertelecom.ru:8080",
-        "id": 2691
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saransk",
-        "provider": "Ã… Ã¯Â¿Â½JSC \"CONTACT-TV\"",
-        "host": "ktv-net.ru:8080",
-        "id": 4698
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saransk",
-        "provider": "Rostelecom JSC",
-        "host": "speed.rm.volga.rt.ru:8080",
-        "id": 9315
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saratov",
-        "provider": "DOM.RU",
-        "host": "speedtest.saratov.ertelecom.ru:8080",
-        "id": 2689
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saratov",
-        "provider": "JSC \"MTS\"",
-        "host": "sp1.overta.ru:8080",
-        "id": 6059
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saratov",
-        "provider": "scts.ru",
-        "host": "sp1.scts.ru:8080",
-        "id": 10425
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Stavropol",
-        "provider": "First Digital TV Ltd.",
-        "host": "speed.gorodtv.net:8080",
-        "id": 6036
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Stavropol",
-        "provider": "LLC SET (Zelenaya)",
-        "host": "test.ooonet.ru:8080",
-        "id": 14584
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Surgut",
-        "provider": "METROSET",
-        "host": "speedtest.sg.metro-set.ru:8080",
-        "id": 2313
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Surgut",
-        "provider": "Net By Net Holding LLC",
-        "host": "sur1.bigspeedtest.netbynet.ru:8080",
-        "id": 10764
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Surgut",
-        "provider": "Beeline",
-        "host": "speedtest1.surgut.beeline.ru:8080",
-        "id": 6834
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tver",
-        "provider": "Sky@Net",
-        "host": "speedtest.tvhost.ru:8080",
-        "id": 11947
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tver",
-        "provider": "DOM.RU",
-        "host": "speedtest.tver.ertelecom.ru:8080",
-        "id": 2732
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "Beeline",
-        "host": "tyumen-speedtest1.corbina.net:8080",
-        "id": 7775
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "OOO Pozitiv Telecom",
-        "host": "sp.pozitivtelecom.ru:8080",
-        "id": 9322
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "Metroset",
-        "host": "speedtest.tm.metro-set.ru:8080",
-        "id": 10870
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "23-NET",
-        "host": "sp1.23-net.ru:8080",
-        "id": 9598
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "DOM.RU",
-        "host": "speedtest.tmn.ertelecom.ru:8080",
-        "id": 2697
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tyumen",
-        "provider": "Delta Telesystems",
-        "host": "speedtest.oborona.net:8080",
-        "id": 988
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "Vladivostok State University of Economics",
-        "host": "noc.vvsu.ru:8080",
-        "id": 6375
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Volgodonsk",
-        "provider": "Net By Net Holding LLC",
-        "host": "vlgd1.bigspeedtest.netbynet.ru:8080",
-        "id": 6390
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Volgograd",
-        "provider": "Modern Comm Technologies",
-        "host": "speedtest.comrise.ru:8080",
-        "id": 1357
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Volgograd",
-        "provider": "DOM.RU",
-        "host": "speedtest.volgograd.ertelecom.ru:8080",
-        "id": 2715
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Volkhov",
-        "provider": "Volkhov-Online Ltd.",
-        "host": "vo47.ru:8080",
-        "id": 2086
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vologda",
-        "provider": "Baza.net",
-        "host": "speedtest.baza.net:8080",
-        "id": 9745
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vologda",
-        "provider": "Navigator",
-        "host": "speedtest.visp.ru:8080",
-        "id": 13924
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vologda",
-        "provider": "MTS",
-        "host": "speedtest1.vologda.comstar-r.ru:8080",
-        "id": 1916
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Zelenograd",
-        "provider": "DATAPLANET Ltd.",
-        "host": "speedtest.dapl.ru:8080",
-        "id": 7931
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Zheleznogorsk",
-        "provider": "Signal Service LLC",
-        "host": "speed.signaltv.net:8080",
-        "id": 2236
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Zheleznovodsk",
-        "provider": "VIP Zheleznovodsk",
-        "host": "speedcheck1.zvd.beeline.ru:8080",
-        "id": 5946
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Zhigulevsk",
-        "provider": "LLC Zhigulevsk Cable Network",
-        "host": "speedtest.zhigulinet.ru:8080",
-        "id": 10054
     },
     {
         "country": "Rwanda",
@@ -9032,7 +8283,7 @@
     {
         "country": "United States",
         "city": "New Orleans, LA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "msy.speedtest.sbcglobal.net:8080",
         "id": 5117
     },
@@ -9221,7 +8472,7 @@
     {
         "country": "United States",
         "city": "Richardson, TX",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "dfw.speedtest.sbcglobal.net:8080",
         "id": 5023
     },
@@ -9256,7 +8507,7 @@
     {
         "country": "United States",
         "city": "Saint Louis, MO",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "stl.speedtest.sbcglobal.net:8080",
         "id": 5108
     },
@@ -9298,7 +8549,7 @@
     {
         "country": "United States",
         "city": "San Francisco, CA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "sfo.speedtest.sbcglobal.net:8080",
         "id": 5026
     },
@@ -9333,7 +8584,7 @@
     {
         "country": "United States",
         "city": "Seattle, WA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "sea.speedtest.sbcglobal.net:8080",
         "id": 5033
     },
@@ -10313,7 +9564,7 @@
     {
         "country": "Brazil",
         "city": "Bebedouro",
-        "provider": "MD Brasil TI &amp; Telecom",
+        "provider": "MD Brasil TI & Telecom",
         "host": "speedtest.mdbrasil.com.br:8080",
         "id": 18069
     },
@@ -10873,7 +10124,7 @@
     {
         "country": "Brazil",
         "city": "Guarabira",
-        "provider": "L&amp;M Telecom",
+        "provider": "L&M Telecom",
         "host": "assinelm.com:8080",
         "id": 19922
     },
@@ -11356,7 +10607,7 @@
     {
         "country": "Brazil",
         "city": "Pirangi",
-        "provider": "Micro&amp;Cia",
+        "provider": "Micro&Cia",
         "host": "sp1.microecianet.com.br:8080",
         "id": 10502
     },
@@ -12168,7 +11419,7 @@
     {
         "country": "Canada",
         "city": "Waterloo, ON",
-        "provider": "NeuStyle Software &amp; Systems Corporation",
+        "provider": "NeuStyle Software & Systems Corporation",
         "host": "neu-speedtest1.neustylesoftware.ca:8080",
         "id": 18646
     },
@@ -12602,7 +11853,7 @@
     {
         "country": "Germany",
         "city": "Frankfurt",
-        "provider": "meerfarbig GmbH &amp; Co. KG",
+        "provider": "meerfarbig GmbH & Co. KG",
         "host": "speedtest.meerfarbig.net:8080",
         "id": 18667
     },
@@ -12644,7 +11895,7 @@
     {
         "country": "Germany",
         "city": "Wernigerode",
-        "provider": "Heuer &amp; Sack GbR",
+        "provider": "Heuer & Sack GbR",
         "host": "speedtest.heuer-und-sack.de:8080",
         "id": 21981
     },
@@ -12854,7 +12105,7 @@
     {
         "country": "India",
         "city": "Andheri",
-        "provider": "AirNet Network &amp; Datacom Pvt Ltd",
+        "provider": "AirNet Network & Datacom Pvt Ltd",
         "host": "speedtest.airnetnetworks.com:8080",
         "id": 10463
     },
@@ -13295,7 +12546,7 @@
     {
         "country": "India",
         "city": "Raipur",
-        "provider": "Sun Broadband &amp; Data Services Pvt. Ltd.",
+        "provider": "Sun Broadband & Data Services Pvt. Ltd.",
         "host": "speedtest1.sunbroadband.in:8080",
         "id": 11659
     },
@@ -15351,846 +14602,6 @@
         "id": 15004
     },
     {
-        "country": "Russia",
-        "city": "Abakan",
-        "provider": "Orion telecom, Ltd.",
-        "host": "speedtest.abk.orionnet.ru:8080",
-        "id": 19664
-    },
-    {
-        "country": "Russia",
-        "city": "Achinsk",
-        "provider": "Sint",
-        "host": "st.mysint.ru:8080",
-        "id": 20642
-    },
-    {
-        "country": "Russia",
-        "city": "Alexandrov",
-        "provider": "Trytek",
-        "host": "speedtest.trytek.ru:8080",
-        "id": 19118
-    },
-    {
-        "country": "Russia",
-        "city": "Arkhangelsk",
-        "provider": "Semantic",
-        "host": "speedtest.semantic.su:8080",
-        "id": 21854
-    },
-    {
-        "country": "Russia",
-        "city": "Armavir",
-        "provider": "CityTelekom",
-        "host": "speedtest.city-telekom.ru:8080",
-        "id": 19533
-    },
-    {
-        "country": "Russia",
-        "city": "Astrakhan",
-        "provider": "Beeline",
-        "host": "astrakhan1.speedtest.corbina.net:8080",
-        "id": 4903
-    },
-    {
-        "country": "Russia",
-        "city": "Barnaul",
-        "provider": "Milecom",
-        "host": "speedtest.barnaul.milecom.ru:8080",
-        "id": 21829
-    },
-    {
-        "country": "Russia",
-        "city": "Krasnodar",
-        "provider": "Beeline",
-        "host": "krr1.speedtest.corbina.net:8080",
-        "id": 5623
-    },
-    {
-        "country": "Russia",
-        "city": "Barnaul",
-        "provider": "Rostelecom Altai",
-        "host": "speedtest.ab.ru:8080",
-        "id": 21479
-    },
-    {
-        "country": "Russia",
-        "city": "KRASNODAR",
-        "provider": "yug-link",
-        "host": "speedtest.yug-link.ru:8080",
-        "id": 16636
-    },
-    {
-        "country": "Russia",
-        "city": "Krasnogorsk",
-        "provider": "ComSite",
-        "host": "speedtest.comsite.ru:8080",
-        "id": 21459
-    },
-    {
-        "country": "Russia",
-        "city": "Krasnoyarsk",
-        "provider": "Beeline",
-        "host": "krasnoyarsk1.speedtest.corbina.net:8080",
-        "id": 5153
-    },
-    {
-        "country": "Russia",
-        "city": "Kubinka",
-        "provider": "LLC \"New Line\"",
-        "host": "speedtest.line-new.ru:8080",
-        "id": 12781
-    },
-    {
-        "country": "Russia",
-        "city": "Kurgan",
-        "provider": "MegaFon",
-        "host": "kurgan.speedtest-uf.megafon.ru:8080",
-        "id": 17037
-    },
-    {
-        "country": "Russia",
-        "city": "Labytnangi",
-        "provider": "Yamaltelecom",
-        "host": "speedtest.lbt.ru:8080",
-        "id": 20728
-    },
-    {
-        "country": "Russia",
-        "city": "Makhachkala",
-        "provider": "Rline",
-        "host": "speedtest.r-line.ru:8080",
-        "id": 20055
-    },
-    {
-        "country": "Russia",
-        "city": "Perm",
-        "provider": "Gamma-Service",
-        "host": "speedtest.igamma.ru:8080",
-        "id": 18905
-    },
-    {
-        "country": "Russia",
-        "city": "Ramenskoye",
-        "provider": "Proxima",
-        "host": "st1.proximanet.ru:8080",
-        "id": 4702
-    },
-    {
-        "country": "Russia",
-        "city": "Saint Petersburg",
-        "provider": "UNIS",
-        "host": "speedtest.unisnet.ru:8080",
-        "id": 20780
-    },
-    {
-        "country": "Russia",
-        "city": "Saint Petersburg",
-        "provider": "RETN",
-        "host": "speedtest-spb.retn.net:8080",
-        "id": 18570
-    },
-    {
-        "country": "Russia",
-        "city": "Saint Petersburg",
-        "provider": "CityTelecom",
-        "host": "speedtest.spb.citytelecom.ru:8080",
-        "id": 17310
-    },
-    {
-        "country": "Russia",
-        "city": "Saint Petersburg",
-        "provider": "Tele2 Russia",
-        "host": "spb2.companion.tele2.ru:8080",
-        "id": 20477
-    },
-    {
-        "country": "Russia",
-        "city": "Saint-Petersburg",
-        "provider": "WEBA",
-        "host": "speedtest-ookla1.weba.ru:8080",
-        "id": 21491
-    },
-    {
-        "country": "Russia",
-        "city": "Samara",
-        "provider": "Metromax Group",
-        "host": "speedtest.metromax.ru:8080",
-        "id": 18313
-    },
-    {
-        "country": "Russia",
-        "city": "Saransk",
-        "provider": "TTK",
-        "host": "speed.rmttk.ru:8080",
-        "id": 20505
-    },
-    {
-        "country": "Russia",
-        "city": "Saratov",
-        "provider": "Beeline",
-        "host": "srt1.speedtest.corbina.net:8080",
-        "id": 5092
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Aleysk",
-        "provider": "Dianet",
-        "host": "st-aleysk.dianet.info:8080",
-        "id": 1527
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Anadyr",
-        "provider": "MegaFon",
-        "host": "ana.speedtest-dvf.megafon.ru:8080",
-        "id": 5643
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Angarsk",
-        "provider": "RTA Telecom",
-        "host": "speedtest.rta-net.ru:8080",
-        "id": 16065
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Angarsk",
-        "provider": "PAKETA",
-        "host": "st1.raketa-net.ru:8080",
-        "id": 14792
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Apatity",
-        "provider": "ApaNet",
-        "host": "speedtest.apanet.ru:8080",
-        "id": 5703
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Apatity",
-        "provider": "Citylink Ltd",
-        "host": "speedtest-ap.murm.pro:8080",
-        "id": 4980
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bryansk",
-        "provider": "DOM.RU",
-        "host": "speedtest.bryansk.ertelecom.ru:8080",
-        "id": 2707
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bryansk",
-        "provider": "Beeline",
-        "host": "smolensk1.speedtest.corbina.net:8080",
-        "id": 10946
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bryansk",
-        "provider": "OOO \"Sector Telecom\"",
-        "host": "speedtest.sectortele.com:8080",
-        "id": 8191
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Buzuluk",
-        "provider": "City-Line",
-        "host": "speedtest.city-line.org:8080",
-        "id": 12883
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cheboksary",
-        "provider": "Net By Net Holding LLC",
-        "host": "chb-speedtest-srv02.ti.ru:8080",
-        "id": 10635
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cheboksary",
-        "provider": "DOM.RU",
-        "host": "speedtest.cheb.ertelecom.ru:8080",
-        "id": 2731
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cheboksary",
-        "provider": "Etherway",
-        "host": "speed.etherway.ru:8080",
-        "id": 1215
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cheboksary",
-        "provider": "LLC AKVILON",
-        "host": "ns1.akvi.net:8080",
-        "id": 6623
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "Beeline",
-        "host": "ekat1.speedtest.corbina.net:8080",
-        "id": 6400
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "OJSC MegaFon",
-        "host": "speedtest-uf.megafon.ru:8080",
-        "id": 6437
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "Teleset-Service",
-        "host": "speedtest.telenet.ru:8080",
-        "id": 4745
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "Ural WES",
-        "host": "tarvalon.ural.net:8080",
-        "id": 1930
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "DOM.RU",
-        "host": "speedtest.ekat.ertelecom.ru:8080",
-        "id": 2705
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ekaterinburg",
-        "provider": "Tele2 Russia",
-        "host": "ekt1.companion.tele2.ru:8080",
-        "id": 6616
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Izberbash",
-        "provider": "IzbNet",
-        "host": "sp1.izbnet.com:8080",
-        "id": 7610
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Izhevsk",
-        "provider": "Izhline Ltd.",
-        "host": "speedtest.18r.ru:8080",
-        "id": 1802
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Izhevsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.izhevsk.ertelecom.ru:8080",
-        "id": 2704
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Izhevsk",
-        "provider": "Mark-ITT",
-        "host": "speedtest.izhevsk.net:8080",
-        "id": 1136
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Izhevsk",
-        "provider": "Beeline",
-        "host": "speedtest1.izhevsk.beeline.ru:8080",
-        "id": 6571
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kachkanar",
-        "provider": "Interra Ltd",
-        "host": "sp1.kch.interra.ru:8080",
-        "id": 11085
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaliningrad",
-        "provider": "Tis-Dialog",
-        "host": "speedtest.tis-dialog.ru:8080",
-        "id": 1352
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaliningrad",
-        "provider": "Net By Net Holding LLC",
-        "host": "kld-speedtest-srv02.ti.ru:8080",
-        "id": 11071
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kirovsk",
-        "provider": "Link",
-        "host": "speedtest.link-spb.ru:8080",
-        "id": 3866
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kiselevsk",
-        "provider": "Electron-Service Ltd.",
-        "host": "sp1.e-s.tv:8080",
-        "id": 10311
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kislovodsk",
-        "provider": "VIP Kislovodsk",
-        "host": "speedcheck1.kvd.beeline.ru:8080",
-        "id": 5969
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kizilyurt",
-        "provider": "http://www.skynetdag.ru",
-        "host": "download.skynetdag.ru:8080",
-        "id": 14247
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kopeysk",
-        "provider": "INSIT",
-        "host": "st.kopnet.ru:8080",
-        "id": 11738
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Korkino",
-        "provider": "Korkino Cable TV Network",
-        "host": "speedtest.kortv.ru:8080",
-        "id": 3791
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kursk",
-        "provider": "Kursktelecom",
-        "host": "speed.r46.ru:8080",
-        "id": 2516
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Lipetsk",
-        "provider": "LIS",
-        "host": "speedtest.lis.su:8080",
-        "id": 1543
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Lipetsk",
-        "provider": "Zelenaya. Lipetsk",
-        "host": "speed.lipetsk.zelenaya.net:8080",
-        "id": 9755
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Lipetsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.lipetsk.ertelecom.ru:8080",
-        "id": 2663
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Lipetsk",
-        "provider": "Net By Net Holding LLC",
-        "host": "lip1.bigspeedtest.netbynet.ru:8080",
-        "id": 7618
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Lysva",
-        "provider": "KVARTAL.TV",
-        "host": "speedtest.kvartal.tv:8080",
-        "id": 5473
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "DOM.RU",
-        "host": "speedtest.msk.ertelecom.ru:8080",
-        "id": 14190
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "MTS",
-        "host": "librarian.comstar.ru:8080",
-        "id": 1907
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Orange Business Services, Russia &amp; CIS",
-        "host": "speedtest.rosprint.net:8080",
-        "id": 10366
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Fortex",
-        "host": "91.210.84.45:8080",
-        "id": 8072
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Reconn LLC",
-        "host": "speedtest.reconn.ru:8080",
-        "id": 15252
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Tele2 Russia",
-        "host": "msk1.companion.tele2.ru:8080",
-        "id": 6562
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "MGTS",
-        "host": "sptest2.mgts-spdop.ru:8080",
-        "id": 6827
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Starlink",
-        "host": "speedtest1.starlink.ru:8080",
-        "id": 8367
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhny Novgorod",
-        "provider": "Beeline",
-        "host": "speedtest1.nnovgorod.beeline.ru:8080",
-        "id": 7008
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhny Novgorod",
-        "provider": "DOM.RU",
-        "host": "speedtest.nn.ertelecom.ru:8080",
-        "id": 2698
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhny Novgorod",
-        "provider": "Tele2 Russia",
-        "host": "nnov1.companion.tele2.ru:8080",
-        "id": 6563
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nizhny Novgorod",
-        "provider": "Megafon",
-        "host": "speedtest-cf.megafon.ru:8080",
-        "id": 6387
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novaya Usman",
-        "provider": "LLC Trans Analitika",
-        "host": "speedtest-1.cnetvrn.ru:8080",
-        "id": 6534
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Orenburg",
-        "provider": "Focuslife",
-        "host": "speed.ats99.ru:8080",
-        "id": 11426
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Penza",
-        "provider": "DOM.RU",
-        "host": "speedtest.penza.ertelecom.ru:8080",
-        "id": 2692
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Penza",
-        "provider": "Zolotaya Linia Ltd.",
-        "host": "ns2.penza.com.ru:8080",
-        "id": 9449
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Perm",
-        "provider": "DOM.RU",
-        "host": "speedtest.perm.ertelecom.ru:8080",
-        "id": 2660
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Perm",
-        "provider": "INNOR",
-        "host": "parmail.ru:8080",
-        "id": 6021
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pervouralsk",
-        "provider": "Interra Ltd",
-        "host": "sp1.interra.ru:8080",
-        "id": 11124
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "RUNNet",
-        "host": "sp.runnet.ru:8080",
-        "id": 14633
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "PIN Co. Ltd.",
-        "host": "speedtest.pinspb.ru:8080",
-        "id": 15929
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "AirNet",
-        "host": "sp2net1.airnet.ru:8080",
-        "id": 10299
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Net By Net Holding LLC",
-        "host": "spb-speedtest-srv02.ti.ru:8080",
-        "id": 11076
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Miran",
-        "host": "speedtest.miran.ru:8080",
-        "id": 10309
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "CJSC RASCOM",
-        "host": "stpetersburg1.speedtest.rascom.ru:8080",
-        "id": 5718
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "OOO \"Medianet\"",
-        "host": "speed.net47.ru:8080",
-        "id": 19058
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Comfortel LLC.",
-        "host": "speedtest.comfortel.pro:8080",
-        "id": 5237
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sertolovo",
-        "provider": "X-Trim Ltd",
-        "host": "speedtest.xtrim.ru:8080",
-        "id": 15510
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sevastopol",
-        "provider": "Miranda-media Sevastopol",
-        "host": "stsev.miranda-media.net:8080",
-        "id": 10103
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sevastopol",
-        "provider": "UBS",
-        "host": "speedtest.ubsnet.ru:8080",
-        "id": 14673
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Severobaykalsk",
-        "provider": "LLC Ironnet",
-        "host": "speedtest.ironnet.info:8080",
-        "id": 3288
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Shadrinsk",
-        "provider": "Courier Plus ISP",
-        "host": "speedtest.shadrinsk.net:8080",
-        "id": 995
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sharypovo",
-        "provider": "Sibline",
-        "host": "test.sibline.net:8080",
-        "id": 14386
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Shelekhov",
-        "provider": "Alpari",
-        "host": "speedtest.tv-alpari.ru:8080",
-        "id": 16243
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Simferopol",
-        "provider": "ISP GIPERCOM",
-        "host": "speedtest.gipercom.net:8080",
-        "id": 19203
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Syktyvkar",
-        "provider": "Rostelecom",
-        "host": "syktyvkar4g.speedtest.rt.ru:8080",
-        "id": 15435
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Syktyvkar",
-        "provider": "CJSC \"SeverTransTeleCom\"",
-        "host": "speedtest2.ttksever.ru:8080",
-        "id": 3173
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Syktyvkar",
-        "provider": "Beeline",
-        "host": "speedtest1.syktyvkar.beeline.ru:8080",
-        "id": 6574
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Taman",
-        "provider": "BCLan",
-        "host": "st.bc-ix.net:8080",
-        "id": 10794
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tambov",
-        "provider": "Zelenaya",
-        "host": "speedtest.zt68.net:8080",
-        "id": 6666
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tambov",
-        "provider": "Atlas Telecom",
-        "host": "speedtest01.internet.su:8080",
-        "id": 6909
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tikhoretsk",
-        "provider": "TeleTime Ltd.",
-        "host": "sp1.ttnet.ru:8080",
-        "id": 11138
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ufa",
-        "provider": "ZAO TransTelecom",
-        "host": "ufatest.svttk.ru:8080",
-        "id": 8313
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ufa",
-        "provider": "DOM.RU",
-        "host": "speedtest.ufa.ertelecom.ru:8080",
-        "id": 2729
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ufa",
-        "provider": "Bashinformsvyaz",
-        "host": "speedtest.bashtel.ru:8080",
-        "id": 2753
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ulan-Ude",
-        "provider": "MegaFon",
-        "host": "uud.speedtest-dvf.megafon.ru:8080",
-        "id": 5646
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ulan-Ude",
-        "provider": "MTS",
-        "host": "213.87.101.14:8080",
-        "id": 3985
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "FreeDom",
-        "host": "speedtest.vrn.ru:8080",
-        "id": 13616
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Volzhsky",
-        "provider": "PowerNet",
-        "host": "speedtest.powernet.com.ru:8080",
-        "id": 2067
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "DOM.RU",
-        "host": "speedtest.voronezh.ertelecom.ru:8080",
-        "id": 2706
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "Net By Net Holding LLC",
-        "host": "vrn1.bigspeedtest.netbynet.ru:8080",
-        "id": 7619
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "Intercon JSC",
-        "host": "speedtest.intercon.ru:8080",
-        "id": 1224
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "Kvant-Telecom",
-        "host": "speedtest.kvant-telecom.ru:8080",
-        "id": 1497
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voronezh",
-        "provider": "OJSC TELECOM-SERVICE Voronezh, Voronezh Oblast, RU",
-        "host": "speed.vrn.tv:8080",
-        "id": 7396
-    },
-    {
         "country": "Saint Kitts and Nevis",
         "city": "Basseterre",
         "provider": "The Cable",
@@ -16956,7 +15367,7 @@
     {
         "country": "Trinidad",
         "city": "Port of Spain",
-        "provider": "Telecommunication Services of Trinidad &amp; Tobago",
+        "provider": "Telecommunication Services of Trinidad & Tobago",
         "host": "gigenet.tstt.net.tt:8080",
         "id": 4553
     },
@@ -17642,7 +16053,7 @@
     {
         "country": "United States",
         "city": "Cicero, IL",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "chi.speedtest.sbcglobal.net:8080",
         "id": 5025
     },
@@ -17950,7 +16361,7 @@
     {
         "country": "United States",
         "city": "Indianapolis, IN",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "ind.speedtest.sbcglobal.net:8080",
         "id": 5115
     },
@@ -17985,7 +16396,7 @@
     {
         "country": "United States",
         "city": "Kansas City, MO",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "mci.speedtest.sbcglobal.net:8080",
         "id": 5112
     },
@@ -18202,7 +16613,7 @@
     {
         "country": "United States",
         "city": "Miami, FL",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "mia.speedtest.sbcglobal.net:8080",
         "id": 5030
     },
@@ -18377,7 +16788,7 @@
     {
         "country": "United States",
         "city": "Petersburg, MI",
-        "provider": "D&amp;P Communications",
+        "provider": "D&P Communications",
         "host": "d-pcommunications.com:8080",
         "id": 1450
     },
@@ -18776,7 +17187,7 @@
     {
         "country": "United States",
         "city": "Wilkes, GA",
-        "provider": "Wilkes Telephone &amp; Electric Company",
+        "provider": "Wilkes Telephone & Electric Company",
         "host": "speedtest.nu-z.net:8080",
         "id": 15013
     },
@@ -20323,14 +18734,14 @@
     {
         "country": "Brazil",
         "city": "Itanhaem",
-        "provider": "ALB INTERNET &amp; INFORMATICA LTDA - ME",
+        "provider": "ALB INTERNET & INFORMATICA LTDA - ME",
         "host": "10001.velocidadenet.com.br:8080",
         "id": 14505
     },
     {
         "country": "Brazil",
         "city": "Itanhaem",
-        "provider": "ALB Internet &amp; INFORMATICA LTDA-ME",
+        "provider": "ALB Internet & INFORMATICA LTDA-ME",
         "host": "10001.velocidadenet.com.br:8080",
         "id": 21111
     },
@@ -21121,7 +19532,7 @@
     {
         "country": "Brazil",
         "city": "Sao Paulo",
-        "provider": "Via Fibra Telecom - PONTO NET &amp; RL NET",
+        "provider": "Via Fibra Telecom - PONTO NET & RL NET",
         "host": "speed1.brotherslan.com.br:8080",
         "id": 12322
     },
@@ -22255,7 +20666,7 @@
     {
         "country": "Germany",
         "city": "Hamburg",
-        "provider": "Studio Funk GmbH &amp; Co. KG",
+        "provider": "Studio Funk GmbH & Co. KG",
         "host": "speedtest.studiofunk.de:8080",
         "id": 2398
     },
@@ -22465,7 +20876,7 @@
     {
         "country": "Guyana",
         "city": "Georgetown",
-        "provider": "Guyana Telephone &amp; Telegraph Co. Ltd.",
+        "provider": "Guyana Telephone & Telegraph Co. Ltd.",
         "host": "speedtest.gtt.co.gy:8080",
         "id": 6086
     },
@@ -22836,7 +21247,7 @@
     {
         "country": "India",
         "city": "Kolkata",
-        "provider": "Meghbela Cable &amp; Broadband Services Pvt. Ltd.",
+        "provider": "Meghbela Cable & Broadband Services Pvt. Ltd.",
         "host": "203.147.88.6:8080",
         "id": 14314
     },
@@ -22878,7 +21289,7 @@
     {
         "country": "India",
         "city": "Mumbai",
-        "provider": "Wan &amp; Lan Internet Pvt. Ltd.",
+        "provider": "Wan & Lan Internet Pvt. Ltd.",
         "host": "speedtest.wnet.net.in:8080",
         "id": 4883
     },
@@ -22906,7 +21317,7 @@
     {
         "country": "India",
         "city": "Nagpur",
-        "provider": "PASSIT MEDIA &amp; COMM. PVT. LTD.",
+        "provider": "PASSIT MEDIA & COMM. PVT. LTD.",
         "host": "hostbox.on2cloud.com:8080",
         "id": 10851
     },
@@ -22976,7 +21387,7 @@
     {
         "country": "India",
         "city": "Patna",
-        "provider": "Max-tech media &amp; communications pvt ltd",
+        "provider": "Max-tech media & communications pvt ltd",
         "host": "sp1.foxbroadband.com:8080",
         "id": 12309
     },
@@ -23711,7 +22122,7 @@
     {
         "country": "Latvia",
         "city": "Liepaja",
-        "provider": "Elektrons&amp;K",
+        "provider": "Elektrons&K",
         "host": "net.elektrons-k.lv:8080",
         "id": 2739
     },
@@ -23963,7 +22374,7 @@
     {
         "country": "Mexico",
         "city": "Ecatepec",
-        "provider": "AT&amp;T MÃ„â€ Ã‚Â©xico",
+        "provider": "AT&T MÃ„â€ Ã‚Â©xico",
         "host": "speed1.ecamex.attmex.mx:8080",
         "id": 12034
     },
@@ -23977,7 +22388,7 @@
     {
         "country": "Mexico",
         "city": "Guadalajara",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.gdl.attmex.mx:8080",
         "id": 7945
     },
@@ -24019,7 +22430,7 @@
     {
         "country": "Mexico",
         "city": "Monterrey",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.mty.attmex.mx:8080",
         "id": 7946
     },
@@ -24096,7 +22507,7 @@
     {
         "country": "Mexico",
         "city": "Santa Fe",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.stafemex.attmex.mx:8080",
         "id": 11550
     },
@@ -24775,7 +23186,7 @@
     {
         "country": "Poland",
         "city": "Choroszcz",
-        "provider": "TVK-NET PPHU A&amp;K Chamerlinscy",
+        "provider": "TVK-NET PPHU A&K Chamerlinscy",
         "host": "speedtest.tvk-net.pl:8080",
         "id": 7073
     },
@@ -25165,923 +23576,6 @@
         "id": 3322
     },
     {
-        "country": "Russia",
-        "city": "Belgorod",
-        "provider": "Zelenaya.Belgorod",
-        "host": "speedtest.belgorod.zelenaya.net:8080",
-        "id": 19861
-    },
-    {
-        "country": "Russia",
-        "city": "Belgorod",
-        "provider": "LLC \"BSTK\"",
-        "host": "speedtest.31stk.ru:8080",
-        "id": 20668
-    },
-    {
-        "country": "Russia",
-        "city": "Chelyabinsk",
-        "provider": "MegaFon",
-        "host": "chelyabinsk.speedtest-uf.megafon.ru:8080",
-        "id": 17036
-    },
-    {
-        "country": "Russia",
-        "city": "Chelyabinsk",
-        "provider": "South Ural State University",
-        "host": "spd.susu.ru:8080",
-        "id": 20469
-    },
-    {
-        "country": "Russia",
-        "city": "Bronnicy",
-        "provider": "Proxima",
-        "host": "st2.proximanet.ru:8080",
-        "id": 4735
-    },
-    {
-        "country": "Russia",
-        "city": "Chita",
-        "provider": "Mig-service Chita",
-        "host": "speedtest.migchita.ru:8080",
-        "id": 19026
-    },
-    {
-        "country": "Russia",
-        "city": "Ã… Ã¢â‚¬â„¢Ã… Ã‚Â»Ã… Ã‚Â°Ã… Ã‚Â´Ã… ÃƒÂ¸Ã… Ã‚Â²Ã… Ã‚Â¾Ã…Æ’Ã‚ÂÃ…Æ’Ã¢â‚¬Å¡Ã… Ã‚Â¾Ã… Ã…â€”",
-        "provider": "Ã… Ã‹â€ºÃ… Ã‹â€ºÃ… Ã‹â€º Ã… Ã¢â‚¬â€Ã… Ã‚ÂµÃ… Ã‚Â»Ã… Ã‚ÂµÃ… Ã‚Â½Ã… Ã‚Â°Ã…Æ’Ã‚Â¸ Ã… Ã‚Â¢Ã… Ã‚Â¾Ã…Æ’Ã¢â‚¬Â¡Ã… Ã…â€”Ã… Ã‚Â°",
-        "host": "speedtest.vladivostok.zelenaya.net:8080",
-        "id": 20951
-    },
-    {
-        "country": "Russia",
-        "city": "Ekaterinburg",
-        "provider": "Rostelecom",
-        "host": "ekaterinburg2.speedtest.rt.ru:8080",
-        "id": 21011
-    },
-    {
-        "country": "Russia",
-        "city": "Golitsyno",
-        "provider": "Ã… Ã¢â‚¬Å“Ã… Ã‚Â¾Ã… Ã‚Â»Ã… ÃƒÂ¸Ã…Æ’Ã¢â‚¬ Ã…Æ’Ã¢â‚¬Â¹Ã… Ã‚Â½Ã… Ã‚Â¾ Ã… Ã‚Â¢Ã… Ã‚ÂµÃ… Ã‚Â»Ã… Ã‚ÂµÃ… Ã…â€”Ã… Ã‚Â¾Ã… Ã‚Â¼",
-        "host": "speedtest.gtnet.ru:8080",
-        "id": 19236
-    },
-    {
-        "country": "Russia",
-        "city": "Makhachkala",
-        "provider": "Fly-Tech LTD",
-        "host": "192.162.212.13:8080",
-        "id": 5299
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "Akado Telecom",
-        "host": "speedtest.akado.ru:8080",
-        "id": 12824
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "RETN",
-        "host": "speedtest-msk.retn.net:8080",
-        "id": 22050
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "Volga IX",
-        "host": "stmsk.volga-ix.ru:8080",
-        "id": 22072
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "ASVT",
-        "host": "speedtest.asvt.ru:8080",
-        "id": 19756
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "Beeline",
-        "host": "msk-speedtest1.corbina.net:8080",
-        "id": 4718
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "Telenet Solution Ltd",
-        "host": "speedtest.polycomm.net:8080",
-        "id": 21110
-    },
-    {
-        "country": "Russia",
-        "city": "Simferopol",
-        "provider": "SevTelecom",
-        "host": "sp1.sevtele.com:8080",
-        "id": 18778
-    },
-    {
-        "country": "Russia",
-        "city": "Slavyansk-on-Kuban",
-        "provider": "KES-TELECOM",
-        "host": "stkes1.slavisp.ru:8080",
-        "id": 21493
-    },
-    {
-        "country": "Russia",
-        "city": "St. Petersburg",
-        "provider": "P.A.K.T. LLC",
-        "host": "speedtest.pakt.ru:8080",
-        "id": 21014
-    },
-    {
-        "country": "Russia",
-        "city": "Snezhinsk",
-        "provider": "Vega-Service, LLC",
-        "host": "speedtest.vega-int.ru:8080",
-        "id": 4431
-    },
-    {
-        "country": "Russia",
-        "city": "Stavropol",
-        "provider": "Beeline",
-        "host": "speedtest1.stv.beeline.ru:8080",
-        "id": 5533
-    },
-    {
-        "country": "Russia",
-        "city": "Sukhumi",
-        "provider": "SYSTEMA, LTD",
-        "host": "speedtest1.cyxym.net:8080",
-        "id": 11112
-    },
-    {
-        "country": "Russia",
-        "city": "Surgut",
-        "provider": "MegaFon",
-        "host": "surgut.speedtest-uf.megafon.ru:8080",
-        "id": 17033
-    },
-    {
-        "country": "Russia",
-        "city": "Syktyvkar",
-        "provider": "MegaFon",
-        "host": "siktivkar.speedtest-uf.megafon.ru:8080",
-        "id": 17042
-    },
-    {
-        "country": "Russia",
-        "city": "Tambov",
-        "provider": "MTS PJSC",
-        "host": "ns1.tambov.comstar-r.ru:8080",
-        "id": 18978
-    },
-    {
-        "country": "Russia",
-        "city": "Tambov",
-        "provider": "OOO LANTA",
-        "host": "speedtest.lanta-net.ru:8080",
-        "id": 5458
-    },
-    {
-        "country": "Russia",
-        "city": "Tashtagol",
-        "provider": "Internet Seti",
-        "host": "speedtest.intseti.ru:8080",
-        "id": 21250
-    },
-    {
-        "country": "Russia",
-        "city": "Theodosia",
-        "provider": "OOO TKK FEONET",
-        "host": "speedtest.feonet.net:8080",
-        "id": 19899
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Arkhangels",
-        "provider": "Beeline",
-        "host": "sp1.net29.ru:8080",
-        "id": 11063
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Arkhangelsk",
-        "provider": "Beeline (Vimpelcom) Arkhangelsk",
-        "host": "speedtest.net29.ru:8080",
-        "id": 7160
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Astrakhan",
-        "provider": "ZAO Astrakhan Digital Television",
-        "host": "st1.telplus.ru:8080",
-        "id": 6292
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Azov",
-        "provider": "trkpuls",
-        "host": "ns0.trkpuls.ru:8080",
-        "id": 5344
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Bakhchisaray",
-        "provider": "Orange-Net",
-        "host": "speedtest.orange-net.org:8080",
-        "id": 16070
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chekhov",
-        "provider": "JSC RialCom",
-        "host": "speedtest.rialcom.ru:8080",
-        "id": 6779
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chelyabinsk",
-        "provider": "MTS",
-        "host": "speedtest.mks-chel.ru:8080",
-        "id": 1906
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chelyabinsk",
-        "provider": "IS-Telecom",
-        "host": "speedtest1.is-telecom.ru:8080",
-        "id": 10125
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chelyabinsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.chel.ertelecom.ru:8080",
-        "id": 2717
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chelyabinsk",
-        "provider": "Beeline",
-        "host": "speedtest1.chelyabinsk.beeline.ru:8080",
-        "id": 6572
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chelyabinsk",
-        "provider": "JSC Intersvyaz",
-        "host": "speedtest-eine.is74.ru:8080",
-        "id": 2557
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Engels",
-        "provider": "LTD Pokrovsky radiotelephone",
-        "host": "speedtest.prtcom.ru:8080",
-        "id": 6848
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Feodosia",
-        "provider": "Miranda-media Feodosia",
-        "host": "stfeo.miranda-media.net:8080",
-        "id": 10105
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Fryazino",
-        "provider": "FTIC Ltd",
-        "host": "speedtest.fryazino.net:8080",
-        "id": 5464
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Gatchina",
-        "provider": "Gatchina-Online",
-        "host": "speedtest.gatchina.ru:8080",
-        "id": 2113
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Gatchina",
-        "provider": "AstraOreol ISP",
-        "host": "speedtest.gtn.ru:8080",
-        "id": 7358
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Georgievsk",
-        "provider": "SerDi TeleCom",
-        "host": "speedtest.serdi.ru:8080",
-        "id": 6847
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Glazov",
-        "provider": "Garant-Glazov",
-        "host": "speed.garant.tv:8080",
-        "id": 5225
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Glazov",
-        "provider": "GlazovNet",
-        "host": "speedtest.glazov.net:8080",
-        "id": 8635
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Grozny",
-        "provider": "VIP Grozny",
-        "host": "speedcheck1.grz.beeline.ru:8080",
-        "id": 5945
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaliningrad",
-        "provider": "Antennaya Sluzhba Plyus",
-        "host": "speedtest.antserv.ru:8080",
-        "id": 13152
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaliningrad",
-        "provider": "Ekran",
-        "host": "speedtest2.ekran39.ru:8080",
-        "id": 13484
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaluga",
-        "provider": "Mobile TeleSystems",
-        "host": "93.187.178.100:8080",
-        "id": 6167
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaliningrad",
-        "provider": "Etype",
-        "host": "speedtest.etype.ru:8080",
-        "id": 4090
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaluga",
-        "provider": "HiNet Region40 ISP",
-        "host": "sp1.region40.net:8080",
-        "id": 11113
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kamensk-Shakhtinsky",
-        "provider": "Darya LTD",
-        "host": "darkam.ml:8080",
-        "id": 12469
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kanevskaya",
-        "provider": "GoodNet LLC",
-        "host": "speedtest.gdnet.ru:8080",
-        "id": 15450
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kansk",
-        "provider": "Istok Ltd",
-        "host": "speedtest.istokk.ru:8080",
-        "id": 2851
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaspiysk",
-        "provider": "KaspiyTelekom",
-        "host": "speedtest.kaspiytelekom.ru:8080",
-        "id": 6184
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kaspiysk",
-        "provider": "Kaspnet LLC",
-        "host": "upload.kaspnet.ru:8080",
-        "id": 16075
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kazan",
-        "provider": "Tattelecom",
-        "host": "testspeed.tattelecom.ru:8080",
-        "id": 1325
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Korolev",
-        "provider": "Vermont-IT",
-        "host": "speedtest.vermont-it.ru:8080",
-        "id": 4548
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kostroma",
-        "provider": "Kostroma Municipal Telephone Network",
-        "host": "st1.kostroma.net:8080",
-        "id": 6565
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kotlas",
-        "provider": "OOO Internet29",
-        "host": "speedtest.int29.ru:8080",
-        "id": 7964
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kotlas",
-        "provider": "OOO Astra-sever",
-        "host": "speedtest.astra-sever.ru:8080",
-        "id": 7837
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kovrov",
-        "provider": "ITNet33",
-        "host": "speedtest1.itnet33.ru:8080",
-        "id": 2642
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kovrov",
-        "provider": "KovrovTelecom Ltd.",
-        "host": "speedtest.kovrov.net:8080",
-        "id": 2117
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magadan",
-        "provider": "MegaFon",
-        "host": "mgd.speedtest-dvf.megafon.ru:8080",
-        "id": 5641
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magnitogorsk",
-        "provider": "Freedom",
-        "host": "st.freedom1.ru:8080",
-        "id": 5206
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magadan",
-        "provider": "MTS Magadan",
-        "host": "speedtest-mag.mtsdv.ru:8080",
-        "id": 11146
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magnitogorsk",
-        "provider": "MTS",
-        "host": "stmagn.ural.mts.ru:8080",
-        "id": 1892
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magnitogorsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.mgn.ertelecom.ru:8080",
-        "id": 2699
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Magnitogorsk",
-        "provider": "Maginfo",
-        "host": "speedtest.mgn.ru:8080",
-        "id": 2037
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Makhachkala",
-        "provider": "Subnet",
-        "host": "speedtest.subnet05.ru:8080",
-        "id": 9498
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Makhachkala",
-        "provider": "Intercom",
-        "host": "st2.intercom.pro:8080",
-        "id": 12081
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "OAO Transtelecom",
-        "host": "nettools.ttc-net.ru:8080",
-        "id": 6325
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "VOLNA",
-        "host": "speedtest.volnamobile.ru:8080",
-        "id": 8945
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "Megafon",
-        "host": "speedtest-stf.megafon.ru:8080",
-        "id": 6386
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Mozhaysk",
-        "provider": "OOO \"MKC\"",
-        "host": "speedtest.mkc-net.ru:8080",
-        "id": 6500
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Murmansk",
-        "provider": "Net By Net Holding LLC",
-        "host": "mrm-speedtest-srv02.ti.ru:8080",
-        "id": 11072
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Murmansk",
-        "provider": "M2C",
-        "host": "speedtest.mmsn.ru:8080",
-        "id": 1521
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novokuznetsk",
-        "provider": "JSC Zap-Sib TransTeleCom",
-        "host": "speed-nkz.myttk.ru:8080",
-        "id": 1831
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novokuznetsk",
-        "provider": "Truenetwork",
-        "host": "nvkz.speedtest.truenetwork.ru:8080",
-        "id": 5933
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novokuznetsk",
-        "provider": "Centra",
-        "host": "speedtest.mycentra.ru:8080",
-        "id": 7414
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novosibirsk",
-        "provider": "Tele2 Russia",
-        "host": "novosibirsk1.companion.tele2.ru:8080",
-        "id": 6430
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novosibirsk",
-        "provider": "EDINOS",
-        "host": "st.edinos.ru:8080",
-        "id": 14402
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novosibirsk",
-        "provider": "DOM.RU",
-        "host": "st.nsk.ertelecom.ru:8080",
-        "id": 2696
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novosibirsk",
-        "provider": "AVANTEL",
-        "host": "speedtest.avantel.ru:8080",
-        "id": 4046
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novosibirsk",
-        "provider": "Megafon",
-        "host": "speedtest-sib.megafon.ru:8080",
-        "id": 6389
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Petrozavodsk",
-        "provider": "Svyazservice LTD",
-        "host": "speedtest.sampo.ru:8080",
-        "id": 5966
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Petrozavodsk",
-        "provider": "CityLink Ltd",
-        "host": "speedtest-ptz.citylink-rk.ru:8080",
-        "id": 1712
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pitsunda",
-        "provider": "PicundaNET",
-        "host": "speedtest.picundanet.ru:8080",
-        "id": 6803
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Podolsk",
-        "provider": "Quartz Telecom",
-        "host": "sp1.podolsknet.ru:8080",
-        "id": 7328
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Protvino",
-        "provider": "protvino.net",
-        "host": "speedtest.protvino.net:8080",
-        "id": 9787
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pskov",
-        "provider": "Net By Net Holding LLC",
-        "host": "psk-speedtest-srv02.ti.ru:8080",
-        "id": 11075
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pskov",
-        "provider": "Pskovline LTD",
-        "host": "www.pskovline.ru:8080",
-        "id": 1210
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "DOM.RU",
-        "host": "speedtest.spb.ertelecom.ru:8080",
-        "id": 2690
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Tele2 Russia",
-        "host": "spb1.companion.tele2.ru:8080",
-        "id": 6051
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Forest Net",
-        "host": "speedtest.forestnet.pro:8080",
-        "id": 9644
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "ReTN",
-        "host": "speedtest-spb.retn.net:8080",
-        "id": 9905
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "OBIT",
-        "host": "speedtest.obit.ru:8080",
-        "id": 14771
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "M18",
-        "host": "vaz-2106.ru:8080",
-        "id": 12776
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "PJSC MegaFon",
-        "host": "speedtest-szf.megafon.ru:8080",
-        "id": 6385
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint Petersburg",
-        "provider": "Selectel",
-        "host": "speedtest.selectel.ru:8080",
-        "id": 16125
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Slavyansk-on-Kuban",
-        "provider": "Telecenter",
-        "host": "elhot.slavisp.ru:8080",
-        "id": 6232
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Smolensk",
-        "provider": "Beeline",
-        "host": "smolensk1.speedtest.corbina.net:8080",
-        "id": 8297
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Smolensk",
-        "provider": "Smoltelecom",
-        "host": "speedtest.smoltelecom.ru:8080",
-        "id": 11948
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sochi",
-        "provider": "BiSV",
-        "host": "speed2.bisv.ru:8080",
-        "id": 14089
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sochi",
-        "provider": "Net By Net Holding LLC",
-        "host": "sochi1.bigspeedtest.netbynet.ru:8080",
-        "id": 10763
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tolyatti",
-        "provider": "Drugoy Telecom",
-        "host": "test1-link-server.drugoytel.ru:8080",
-        "id": 5538
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tolyatti",
-        "provider": "Beeline",
-        "host": "speedtest1.tlt.beeline.ru:8080",
-        "id": 10658
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tolyatti",
-        "provider": "InfoLada",
-        "host": "st1.infolada.ru:8080",
-        "id": 6892
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tomsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.tomsk.ertelecom.ru:8080",
-        "id": 2943
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Trubchevsk",
-        "provider": "Satelcom-Service Ltd.",
-        "host": "www.trub.net.ru:8080",
-        "id": 3305
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ulyanovsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.ulsk.ertelecom.ru:8080",
-        "id": 2688
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tuapse",
-        "provider": "OOO \"SkyNet\"",
-        "host": "speedtest.tuapsenet.ru:8080",
-        "id": 4571
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Usinsk",
-        "provider": "Swift Telecom",
-        "host": "test.usinsknet.ru:8080",
-        "id": 3693
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ussuriysk",
-        "provider": "Vladlink",
-        "host": "yssyr.speedtest.vladlink.ru:8080",
-        "id": 10177
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ust-ilimsk",
-        "provider": "Telnet Ltd",
-        "host": "speedtest.ilimnet.ru:8080",
-        "id": 11050
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Uzlovaya",
-        "provider": "Uzlovaya.net Ltd",
-        "host": "speedtest.uzlovaya.net:8080",
-        "id": 6350
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ust-Ilimsk",
-        "provider": "Ilim-Telecom",
-        "host": "speedtest.ilim-telecom.ru:8080",
-        "id": 10648
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vidnoe",
-        "provider": "NFS Telecom",
-        "host": "speedtest.vidnoe.net:8080",
-        "id": 15946
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladikavkaz",
-        "provider": "Videoline LLC",
-        "host": "speedtest.videoline.ru:8080",
-        "id": 13060
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladikavkaz",
-        "provider": "TVINGO telecom",
-        "host": "speed.tvingo.ru:8080",
-        "id": 2098
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voskresensk",
-        "provider": "PRK EPL",
-        "host": "speedtest.vosnet.ru:8080",
-        "id": 1115
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Voskresensk",
-        "provider": "Proxima",
-        "host": "st3.proximanet.ru:8080",
-        "id": 5259
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vsevolozhsk",
-        "provider": "Vsevnet",
-        "host": "speed.vsevnet.ru:8080",
-        "id": 6320
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yakutsk",
-        "provider": "MegaFon",
-        "host": "ykt.speedtest-dvf.megafon.ru:8080",
-        "id": 5647
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yakutsk",
-        "provider": "K-Service",
-        "host": "speedtest.vykt.ru:8080",
-        "id": 12676
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yakutsk",
-        "provider": "MTS Yakutsk",
-        "host": "speedtest-yak.mtsdv.ru:8080",
-        "id": 9679
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yalta",
-        "provider": "OneCity",
-        "host": "speedtest.1city.org:8080",
-        "id": 11914
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yaroslavl",
-        "provider": "NETIS Telecom",
-        "host": "sp1.netis.ru:8080",
-        "id": 9984
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yaroslavl",
-        "provider": "CJSC TransTeleCom",
-        "host": "speedtest1.ttksever.ru:8080",
-        "id": 3088
-    },
-    {
         "country": "Saudi Arabia",
         "city": "Dammam",
         "provider": "Mobily",
@@ -26182,7 +23676,7 @@
     {
         "country": "Seychelles",
         "city": "Victoria",
-        "provider": "Cable &amp; Wireless Seychelles",
+        "provider": "Cable & Wireless Seychelles",
         "host": "speedtest.cwseychelles.com:8080",
         "id": 3060
     },
@@ -27463,7 +24957,7 @@
     {
         "country": "United States",
         "city": "Allen, KS",
-        "provider": "S&amp;A Telephone",
+        "provider": "S&A Telephone",
         "host": "speedtest.satel.usch.com:8080",
         "id": 21606
     },
@@ -27799,7 +25293,7 @@
     {
         "country": "United States",
         "city": "Cleveland, OH",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "cle.speedtest.sbcglobal.net:8080",
         "id": 5111
     },
@@ -27841,7 +25335,7 @@
     {
         "country": "United States",
         "city": "Colby, KS",
-        "provider": "S&amp;T Communications",
+        "provider": "S&T Communications",
         "host": "speedtest1.st-tel.net:8080",
         "id": 3434
     },
@@ -27939,7 +25433,7 @@
     {
         "country": "United States",
         "city": "Detroit, MI",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "dtt.speedtest.sbcglobal.net:8080",
         "id": 5114
     },
@@ -28100,7 +25594,7 @@
     {
         "country": "United States",
         "city": "Guaynabo, PR",
-        "provider": "AT&amp;T MOBILITY PUERTO RICO",
+        "provider": "AT&T MOBILITY PUERTO RICO",
         "host": "speedtest.attbusinesspr.com:8080",
         "id": 12639
     },
@@ -28114,7 +25608,7 @@
     {
         "country": "United States",
         "city": "Holyrood, KS",
-        "provider": "H&amp;B Communications",
+        "provider": "H&B Communications",
         "host": "hb.from-ks.com:8080",
         "id": 22144
     },
@@ -28331,7 +25825,7 @@
     {
         "country": "United States",
         "city": "Los Angeles, CA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "lax.speedtest.sbcglobal.net:8080",
         "id": 5031
     },
@@ -28660,7 +26154,7 @@
     {
         "country": "United States",
         "city": "Orlando, FL",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "mco.speedtest.sbcglobal.net:8080",
         "id": 5118
     },
@@ -28863,7 +26357,7 @@
     {
         "country": "United States",
         "city": "San Antonio, TX",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "sat.speedtest.sbcglobal.net:8080",
         "id": 5107
     },
@@ -32678,7 +30172,7 @@
     {
         "country": "Germany",
         "city": "Lauf a.d. Pegnitz",
-        "provider": "Bisping &amp; Bisping GmbH &amp; Co. KG",
+        "provider": "Bisping & Bisping GmbH & Co. KG",
         "host": "ookla.bisping.de:8080",
         "id": 18549
     },
@@ -32699,7 +30193,7 @@
     {
         "country": "Germany",
         "city": "Regensburg",
-        "provider": "R-KOM GmbH &amp; Co. KG",
+        "provider": "R-KOM GmbH & Co. KG",
         "host": "speedtest.glasfaser-ostbayern.de:8080",
         "id": 4404
     },
@@ -33014,14 +30508,14 @@
     {
         "country": "India",
         "city": "Bangalore",
-        "provider": "Atri networks &amp; media pvt ltd",
+        "provider": "Atri networks & media pvt ltd",
         "host": "speedtest.netron.in:8080",
         "id": 13870
     },
     {
         "country": "India",
         "city": "Bangalore",
-        "provider": "Hathway Cable &amp; Datacom Ltd",
+        "provider": "Hathway Cable & Datacom Ltd",
         "host": "bangspeed.hathway.com:8080",
         "id": 4663
     },
@@ -33497,7 +30991,7 @@
     {
         "country": "India",
         "city": "Shahabad",
-        "provider": "jimmi broadband &amp; cable services",
+        "provider": "jimmi broadband & cable services",
         "host": "shahabad.gulbarganet.in:8080",
         "id": 21885
     },
@@ -34358,7 +31852,7 @@
     {
         "country": "Libya",
         "city": "Misurata",
-        "provider": "ICONA for IT &amp; Telecom. LTD co.",
+        "provider": "ICONA for IT & Telecom. LTD co.",
         "host": "st1.icona.ly:8080",
         "id": 4292
     },
@@ -34680,7 +32174,7 @@
     {
         "country": "Mexico",
         "city": "Tijuana",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.tij.attmex.mx:8080",
         "id": 7953
     },
@@ -34729,7 +32223,7 @@
     {
         "country": "Mexico",
         "city": "Tlalnepantla",
-        "provider": "AT&amp;T Mexico",
+        "provider": "AT&T Mexico",
         "host": "speed1.tla.attmex.mx:8080",
         "id": 5051
     },
@@ -35247,7 +32741,7 @@
     {
         "country": "Panama",
         "city": "Panama",
-        "provider": "Cable &amp; Wireless PanamÃ„â€ Ã¯Â¿Â½",
+        "provider": "Cable & Wireless PanamÃ„â€ Ã¯Â¿Â½",
         "host": "speedtest1.cwpanama.net:8080",
         "id": 13884
     },
@@ -35833,909 +33327,6 @@
         "id": 8661
     },
     {
-        "country": "Russia",
-        "city": "Irkutsk",
-        "provider": "Baikal Teleport",
-        "host": "speedtest.bteleport.ru:8080",
-        "id": 18543
-    },
-    {
-        "country": "Russia",
-        "city": "Irkutsk",
-        "provider": "Svyztranzit",
-        "host": "acc.stranzit.ru:8080",
-        "id": 4734
-    },
-    {
-        "country": "Russia",
-        "city": "Irkutsk",
-        "provider": "Orion telecom, Ltd",
-        "host": "speedtest.irk.orionnet.ru:8080",
-        "id": 19636
-    },
-    {
-        "country": "Russia",
-        "city": "Istra",
-        "provider": "Istranet",
-        "host": "speedtest.istranet.ru:8080",
-        "id": 21725
-    },
-    {
-        "country": "Russia",
-        "city": "Izberbash",
-        "provider": "IzbNet",
-        "host": "sp2.izbnet.com:8080",
-        "id": 21488
-    },
-    {
-        "country": "Russia",
-        "city": "Izhevsk",
-        "provider": "MTS",
-        "host": "rapido.izhnt.ru:8080",
-        "id": 17014
-    },
-    {
-        "country": "Russia",
-        "city": "Izhevsk",
-        "provider": "MegaFon",
-        "host": "izhevsk.speedtest-uf.megafon.ru:8080",
-        "id": 17040
-    },
-    {
-        "country": "Russia",
-        "city": "Kaliningrad",
-        "provider": "WestBalt Telecom",
-        "host": "speedtest.wbt.ru:8080",
-        "id": 19414
-    },
-    {
-        "country": "Russia",
-        "city": "Kaluga",
-        "provider": "Beeline",
-        "host": "kaluga1.speedtest.corbina.net:8080",
-        "id": 4744
-    },
-    {
-        "country": "Russia",
-        "city": "Kamen-na-Obi",
-        "provider": "Dianet",
-        "host": "st-kamen.dianet.ru:8080",
-        "id": 4950
-    },
-    {
-        "country": "Russia",
-        "city": "Kamenolomni",
-        "provider": "SFERA LLC",
-        "host": "speedtest.sfera-telecom.info:8080",
-        "id": 21266
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "Westcall LTD",
-        "host": "speedtest.westcall.ru:8080",
-        "id": 20105
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "MOSOBLCOM LLC",
-        "host": "speedtest.mosoblcom.ru:8080",
-        "id": 18576
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "provider": "CJSC RASCOM",
-        "host": "msk.speedtest.rascom.ru:8080",
-        "id": 20933
-    },
-    {
-        "country": "Russia",
-        "city": "Mytishchi",
-        "provider": "East Telecom Ltd",
-        "host": "speedtest.east.ru:8080",
-        "id": 4952
-    },
-    {
-        "country": "Russia",
-        "city": "Nizhnevartovsk",
-        "provider": "PRIDE LLC",
-        "host": "speedtest.pride-net.ru:8080",
-        "id": 20290
-    },
-    {
-        "country": "Russia",
-        "city": "Nizhnevartovsk",
-        "provider": "JSC Avantel",
-        "host": "st0-nv.avantel.ru:8080",
-        "id": 4547
-    },
-    {
-        "country": "Russia",
-        "city": "Tomilino",
-        "provider": "OOO CDMS",
-        "host": "inet-speed.ip-home.net:8080",
-        "id": 5371
-    },
-    {
-        "country": "Russia",
-        "city": "Nizhny Novgorod",
-        "provider": "Link Telecom",
-        "host": "sp.lt-nn.net:8080",
-        "id": 22055
-    },
-    {
-        "country": "Russia",
-        "city": "Tobolsk",
-        "provider": "MegaFon",
-        "host": "tobolsk.speedtest-uf.megafon.ru:8080",
-        "id": 17035
-    },
-    {
-        "country": "Russia",
-        "city": "Tyumen",
-        "provider": "MegaFon",
-        "host": "tumen.speedtest-uf.megafon.ru:8080",
-        "id": 17034
-    },
-    {
-        "country": "Russia",
-        "city": "Ulan-Ude",
-        "provider": "Megalink",
-        "host": "speed3.link-mega.ru:8080",
-        "id": 17940
-    },
-    {
-        "country": "Russia",
-        "city": "Velikiye Luki",
-        "provider": "MART",
-        "host": "speedtest.mart.ru:8080",
-        "id": 19965
-    },
-    {
-        "country": "Russia",
-        "city": "Ulan-Ude",
-        "provider": "Megalink",
-        "host": "speed1.link-mega.ru:8080",
-        "id": 5301
-    },
-    {
-        "country": "Russia",
-        "city": "Voronezh",
-        "provider": "JOxNET",
-        "host": "test.joxnet.ru:8080",
-        "id": 18906
-    },
-    {
-        "country": "Russia",
-        "city": "Yakutsk",
-        "provider": "Bridge-Telecom, Ltd",
-        "host": "speedtest.bridge-telecom.ru:8080",
-        "id": 21607
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Barnaul",
-        "provider": "Dianet",
-        "host": "st.dianet.info:8080",
-        "id": 1550
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Barnaul",
-        "provider": "JSC Zap-Sib TransTeleCom",
-        "host": "speed-brn.myttk.ru:8080",
-        "id": 1833
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Barnaul",
-        "provider": "DOM.RU",
-        "host": "speedtest.barnaul.ertelecom.ru:8080",
-        "id": 2730
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Belgorod",
-        "provider": "Net By Net Holding LLC",
-        "host": "blg-speedtest-srv02.ti.ru:8080",
-        "id": 7621
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Belgorod",
-        "provider": "RusichTVN",
-        "host": "speedtest1.rutvn.ru:8080",
-        "id": 4603
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Belokurikha",
-        "provider": "Dianet",
-        "host": "st-belokuriha.dianet.info:8080",
-        "id": 1534
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cherepovets",
-        "provider": "Beeline",
-        "host": "msk-speedtest2.corbina.net:8080",
-        "id": 10987
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Belovo",
-        "provider": "Truenetwork",
-        "host": "belovo.speedtest.truenetwork.ru:8080",
-        "id": 5951
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cherkessk",
-        "provider": "VIP Cherkessk",
-        "host": "speedcheck1.chk.beeline.ru:8080",
-        "id": 5949
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Cherkessk",
-        "provider": "Cybercom",
-        "host": "speed.cyber.com.ru:8080",
-        "id": 8587
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chernogolovka",
-        "provider": "TISP",
-        "host": "speedtest.tisp.ru:8080",
-        "id": 11100
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chita",
-        "provider": "MegaFon",
-        "host": "cht.speedtest-dvf.megafon.ru:8080",
-        "id": 5645
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chita",
-        "provider": "TeleNet, LLC",
-        "host": "speed1.telenet-chita.ru:8080",
-        "id": 6444
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chita",
-        "provider": "GIN Agency",
-        "host": "speedtest1.gin.su:8080",
-        "id": 15213
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Chita",
-        "provider": "TTK-CHITA",
-        "host": "spt1.ttk-chita.ru:8080",
-        "id": 3497
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Grozny",
-        "provider": "CJSC Vainah Telecom",
-        "host": "speedtest.vainahtelecom.ru:8080",
-        "id": 3431
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Gudauta",
-        "provider": "Goodnet",
-        "host": "speedtest.gudauta.net:8080",
-        "id": 11423
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "MegaFon",
-        "host": "irk.speedtest-dvf.megafon.ru:8080",
-        "id": 5651
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Beeline Irkutsk",
-        "host": "194.186.138.14:8080",
-        "id": 6440
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.irkutsk.ertelecom.ru:8080",
-        "id": 2636
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Baikal-Telecom Ltd",
-        "host": "st.baikal-telecom.net:8080",
-        "id": 3149
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "JSC DSI",
-        "host": "speedtest.irk.ru:8080",
-        "id": 13953
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kazan",
-        "provider": "DOM.RU",
-        "host": "speedtest.kzn.ertelecom.ru:8080",
-        "id": 2703
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Irkutsk",
-        "provider": "Teleos-1",
-        "host": "speed.irk.teleos.ru:8080",
-        "id": 9616
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kemerovo",
-        "provider": "OJSC MTS",
-        "host": "94.229.228.34:8080",
-        "id": 2632
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Khabarovsk",
-        "provider": "CJSC TransTeleCom DV",
-        "host": "server.ttk2701.cloudns.cc:8080",
-        "id": 10578
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Khabarovsk",
-        "provider": "Ã„ÂÃ¢â€šÂ¬Ã‚Å“OJSC MegaFon (Far East)Ã„ÂÃ¢â€šÂ¬Ã‚Â¯",
-        "host": "khb.speedtest-dvf.megafon.ru:8080",
-        "id": 3706
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnodar",
-        "provider": "Freedom",
-        "host": "st-krd.freedom1.ru:8080",
-        "id": 13421
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnodar",
-        "provider": "Artecom",
-        "host": "speedtest.slan.ru:8080",
-        "id": 5755
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnodar",
-        "provider": "Megafon",
-        "host": "speedtest-kf.megafon.ru:8080",
-        "id": 6388
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnogorsk",
-        "provider": "LLC IPLS",
-        "host": "speed.ipls.ru:8080",
-        "id": 5739
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnoyarsk",
-        "provider": "DOM.RU",
-        "host": "speedtest.krsk.ertelecom.ru:8080",
-        "id": 2701
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Krasnoyarsk",
-        "provider": "cemka.org",
-        "host": "speed.cemka.org:8080",
-        "id": 4270
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Kurgan",
-        "provider": "MTS",
-        "host": "speedtest.infocentr.ru:8080",
-        "id": 4152
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Medvezhyegorsk",
-        "provider": "CityLink Ltd",
-        "host": "speedtest-mg.karelia.pro:8080",
-        "id": 8658
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Megion",
-        "provider": "LLC \"Megion-Link\"",
-        "host": "spt1.megion.biz:8080",
-        "id": 7312
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Meshcherino",
-        "provider": "SkynetCom",
-        "host": "speedtest-mch.skynetcom.ru:8080",
-        "id": 12050
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Mezhdurechensk",
-        "provider": "RTA-Telecom",
-        "host": "sp1.m-ten.ru:8080",
-        "id": 10277
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Mezhdurechensk",
-        "provider": "RIKT",
-        "host": "212.77.128.254:8080",
-        "id": 3277
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Moscow",
-        "provider": "INETCOM LLC",
-        "host": "speedtest1.inetcom.ru:8080",
-        "id": 11266
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Mineralnie Vody",
-        "provider": "VIP Mineralnie Vody",
-        "host": "speedcheck1.mvd.beeline.ru:8080",
-        "id": 5947
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Mytishchi",
-        "provider": "Opticom",
-        "host": "speedtest1.opcom.ru:8080",
-        "id": 3612
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Naberezhnye Chelny",
-        "provider": "DOM.RU",
-        "host": "speedtest.chelny.ertelecom.ru:8080",
-        "id": 2664
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nadym",
-        "provider": "VKS-Internet",
-        "host": "sp1.nadym.tv:8080",
-        "id": 4856
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nakhodka",
-        "provider": "Net By Net Holding LLC",
-        "host": "nkh-speedtest-srv02.ti.ru:8080",
-        "id": 11073
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nalchik",
-        "provider": "VIP Nalchik",
-        "host": "speedcheck1.nlk.beeline.ru:8080",
-        "id": 5944
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nalchik",
-        "provider": "MegaNet",
-        "host": "s1.sppeed.ru:8080",
-        "id": 7398
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novy Urengoy",
-        "provider": "Net By Net Holding LLC",
-        "host": "nurg-speedtest-srv02.ti.ru:8080",
-        "id": 11074
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Novy Urengoy",
-        "provider": "JSC Sigma-KTV",
-        "host": "sp1.sigma-ktv.ru:8080",
-        "id": 6256
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Noyabrsk",
-        "provider": "Sever-Svyaz",
-        "host": "speed.global-x.ru:8080",
-        "id": 2017
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nyagan",
-        "provider": "OJSC.MTS",
-        "host": "speedtest.nyagan.net:8080",
-        "id": 1809
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nyagan",
-        "provider": "iCOM",
-        "host": "speedtest-n1.icom.net.ru:8080",
-        "id": 6374
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Nytva",
-        "provider": "NEXT-TELECOM LTD",
-        "host": "nytvahosting.ru:8080",
-        "id": 16055
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Obninsk",
-        "provider": "MAXnet Systems",
-        "host": "test.maxnet.ru:8080",
-        "id": 10967
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Odintsovo",
-        "provider": "VL-Telecom Ltd",
-        "host": "speed.vltele.com:8080",
-        "id": 2074
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Omsk",
-        "provider": "Beeline",
-        "host": "omsk1.speedtest.corbina.net:8080",
-        "id": 5127
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pushkin",
-        "provider": "TincoNet",
-        "host": "speedtest.tinconet.ru:8080",
-        "id": 2376
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pushkino",
-        "provider": "Beirel Telecom ISP",
-        "host": "sp1.beirel.ru:8080",
-        "id": 6441
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pyatigorsk",
-        "provider": "VIP Pyatigorsk",
-        "host": "speedcheck1.ptg.beeline.ru:8080",
-        "id": 5957
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pyatigorsk",
-        "provider": "POST Ltd",
-        "host": "tools.kmv.ru:8080",
-        "id": 1644
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Pyatigorsk",
-        "provider": "KMVtelecom",
-        "host": "speedtest.kmvtelecom.ru:8080",
-        "id": 12501
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Ramenskoye",
-        "provider": "Ramnet LLC",
-        "host": "ookla.ramnet.ru:8080",
-        "id": 12024
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Rostov-on-Don",
-        "provider": "Tele2 Russia",
-        "host": "rostov1.companion.tele2.ru:8080",
-        "id": 6429
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Saint-Petersburg",
-        "provider": "MaximaTelecom SPB",
-        "host": "speedtest.spb.wi-fi.ru:8080",
-        "id": 12549
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Rostov-On-Don",
-        "provider": "Elit-TV",
-        "host": "speedtest.elit-tv.ru:8080",
-        "id": 16261
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Salekhard",
-        "provider": "Yamaltelecom",
-        "host": "speedtest.ytc.ru:8080",
-        "id": 15323
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Samara",
-        "provider": "KRAFT-S",
-        "host": "speed.kraft-s.ru:8080",
-        "id": 14091
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Samara",
-        "provider": "OJSC MegaFon",
-        "host": "speedtest-pf.megafon.ru:8080",
-        "id": 6436
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Samara",
-        "provider": "Metromax",
-        "host": "speedtest.metromax.ru:8080",
-        "id": 13708
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Samara",
-        "provider": "DOM.RU",
-        "host": "speedtest.samara.ertelecom.ru:8080",
-        "id": 2718
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Samara",
-        "provider": "Beeline",
-        "host": "speedtest1.smr.beeline.ru:8080",
-        "id": 10657
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sochi",
-        "provider": "Apsnymadara",
-        "host": "speedtest.am-a.su:8080",
-        "id": 12174
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sochi",
-        "provider": "Business-Svyaz LTD",
-        "host": "speed.bisv.ru:8080",
-        "id": 12213
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sochi",
-        "provider": "Tvintel",
-        "host": "st1.tvintel.info:8080",
-        "id": 2298
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Sosnovy Bor",
-        "provider": "LLC \"InfoCentre\"",
-        "host": "speedtest.sbor.net:8080",
-        "id": 2686
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Stary Oskol",
-        "provider": "GorPTUs OOO",
-        "host": "st.soskol.com:8080",
-        "id": 4146
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Stavropol",
-        "provider": "Kvartal plus",
-        "host": "sp.iformula.ru:8080",
-        "id": 11884
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tuapse",
-        "provider": "TAIGET",
-        "host": "test0.taiget.ru:8080",
-        "id": 3580
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tula",
-        "provider": "Beeline",
-        "host": "tula1.speedtest.corbina.net:8080",
-        "id": 10329
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tula",
-        "provider": "GreenWave",
-        "host": "speedtest.gwave.ru:8080",
-        "id": 15707
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tula",
-        "provider": "DOM.RU",
-        "host": "speedtest.tula.ertelecom.ru:8080",
-        "id": 2661
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tula",
-        "provider": "Beeline",
-        "host": "tula1.speedtest.corbina.net:8080",
-        "id": 8296
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tulun",
-        "provider": "Tulun-Telecom",
-        "host": "speedtest.t-tk.ru:8080",
-        "id": 6406
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tulun",
-        "provider": "Teleos-1 Tulun",
-        "host": "speed.tln.teleos.ru:8080",
-        "id": 8604
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tver",
-        "provider": "Net By Net Holding LLC",
-        "host": "tver-speedtest-srv02.ti.ru:8080",
-        "id": 11077
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Tver",
-        "provider": "Fast Link Ltd.",
-        "host": "speed.fastlnk.ru:8080",
-        "id": 1111
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladikavkaz",
-        "provider": "VIP Vladikavkaz",
-        "host": "speedcheck1.vdk.beeline.ru:8080",
-        "id": 5943
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladikavkaz",
-        "provider": "Global Alania",
-        "host": "speed-one.alania.net:8080",
-        "id": 2413
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladimir",
-        "provider": "YONITI",
-        "host": "st.rtk33.ru:8080",
-        "id": 14431
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladimir",
-        "provider": "Mobile TeleSystems Public Joint Stock Company",
-        "host": "109.201.64.254:8080",
-        "id": 7068
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "MegaFon",
-        "host": "vld.speedtest-dvf.megafon.ru:8080",
-        "id": 5652
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "MTS",
-        "host": "speedtest.mtsdv.ru:8080",
-        "id": 1903
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "Beeline",
-        "host": "speedcheck1.vdv.vimpelcom.ru:8080",
-        "id": 10097
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "Podryad",
-        "host": "speedtest-up1.podryad.tv:8080",
-        "id": 6316
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Vladivostok",
-        "provider": "Alyans Telekom",
-        "host": "speedtest.inetvl.ru:8080",
-        "id": 3805
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yaroslavl",
-        "provider": "Zavolga.Net",
-        "host": "zavolga.net:8080",
-        "id": 4692
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yaroslavl",
-        "provider": "JSC \"ER-Telecom Holding\"",
-        "host": "speedtest.yar.ertelecom.ru:8080",
-        "id": 2666
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yaroslavl",
-        "provider": "ATEL",
-        "host": "st.atel76.ru:8080",
-        "id": 10230
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yekaterinburg",
-        "provider": "DOM.RU",
-        "host": "ookla.ekat.ertelecom.ru:8080",
-        "id": 5844
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yoshkar-ola",
-        "provider": "DOM.RU",
-        "host": "speedtest.yola.ertelecom.ru:8080",
-        "id": 2662
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yevpatoria",
-        "provider": "Miranda-media Yevpatoria",
-        "host": "stevp.miranda-media.net:8080",
-        "id": 10104
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Yuzhno-Sakhalinsk",
-        "provider": "MegaFon",
-        "host": "yus.speedtest-dvf.megafon.ru:8080",
-        "id": 5649
-    },
-    {
-        "country": "Russian Federation",
-        "city": "Zarinsk",
-        "provider": "Dianet",
-        "host": "st-zarinsk.dianet.info:8080",
-        "id": 1535
-    },
-    {
         "country": "Saudi Arabia",
         "city": "Riyadh",
         "provider": "Integrated Telecom Company - ITC",
@@ -36829,7 +33420,7 @@
     {
         "country": "Slovakia",
         "city": "Trebisov",
-        "provider": "E-MAX INTERNET &amp; IT s.r.o.",
+        "provider": "E-MAX INTERNET & IT s.r.o.",
         "host": "speed2-tv.e-max.sk:8080",
         "id": 16459
     },
@@ -39202,7 +35793,7 @@
     {
         "country": "United States",
         "city": "San Diego, CA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "san.speedtest.sbcglobal.net:8080",
         "id": 5116
     },
@@ -39356,7 +35947,7 @@
     {
         "country": "United States",
         "city": "Tucker, GA",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "atl.speedtest.sbcglobal.net:8080",
         "id": 5027
     },
@@ -39405,7 +35996,7 @@
     {
         "country": "United States",
         "city": "Washington, DC",
-        "provider": "AT&amp;T",
+        "provider": "AT&T",
         "host": "was.speedtest.sbcglobal.net:8080",
         "id": 5113
     },
