@@ -8,6 +8,7 @@ HOST_URL = "speed-kaunas.telia.lt:8080"
 IP_API_URL = "http://ip-api.com/json/?fields=25115"
 SERVER_LIST_URL = "https://raw.githubusercontent.com/beniusis/speedtest-lua/master/server_list.json"
 SERVER_LIST_FILE = "/tmp/servers.json"
+RESULTS_FILE = "/tmp/speed_test_results.json"
 
 -- Global variables
 download_speed = 0
@@ -23,21 +24,23 @@ end
 -- Downloading progress function
 function download_progress(_, dlnow, _, _)
     download_speed = round((dlnow / 1024 / 1000 * 8) / (os.time() - start_time))
+    write_results_to_file("Downloading", download_speed, upload_speed)
 end
 
 -- Uploading progress function
 function upload_progress(_, _, _, ulnow)
     upload_speed = round((ulnow / 1024 / 1000 * 8) / (os.time() - start_time))
+    write_results_to_file("Uploading", download_speed, upload_speed)
 end
 
 -- Method for measuring the download speed
-function measure_download_speed()
+function measure_download_speed(server_host)
     local easy = cURL.easy{
-        url = HOST_URL .. "/download",
+        url = server_host .. "/download",
         useragent = USER_AGENT,
         writefunction = io.open("/dev/null", "wb"),
         noprogress = false,
-        timeout = 10,
+        timeout = 15,
         progressfunction = download_progress
     }
 
@@ -48,8 +51,10 @@ function measure_download_speed()
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
             or err == nil then
                 print(string.format("Download speed: %.2f Mbps", download_speed))
+                write_results_to_file("Finished downloading", download_speed, upload_speed)
     else
         print(err)
+        write_results_to_file("Failed", 0, 0)
     end
 
     easy:close()
@@ -57,9 +62,9 @@ function measure_download_speed()
 end
 
 -- Method for measuring the upload speed
-function measure_upload_speed()
+function measure_upload_speed(server_host)
     local easy = cURL.easy{
-        url = HOST_URL .. "/upload",
+        url = server_host .. "/upload",
         useragent = USER_AGENT,
         post = true,
         httppost = cURL.form{
@@ -69,7 +74,7 @@ function measure_upload_speed()
             }
         },
         noprogress = false,
-        timeout = 10,
+        timeout = 15,
         progressfunction = upload_progress
     }
 
@@ -80,8 +85,10 @@ function measure_upload_speed()
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == nil then
             print(string.format("Upload speed: %.2f Mbps", upload_speed))
+            write_results_to_file("Finished uploading", download_speed, upload_speed)
     else
         print(err)
+        write_results_to_file("Failed", 0, 0)
     end
 
     easy:close()
@@ -144,15 +151,15 @@ end
 -- If the server list file does not exist in the system - download it first
 -- If country parameter is not provided or there are zero servers found of provided country - return nil
 function get_servers(country)
+    if country == nil then
+        return nil
+    end
+
     download_server_list() -- does nothing if the server list file exists
 
     local servers = {}
     local server_file = io.open(SERVER_LIST_FILE, "r")
     local server_file_contents = server_file:read("*a")
-
-    if country == nil then
-        return nil
-    end
 
     local server_list = JSON.decode(server_file_contents)
     for _, server in ipairs(server_list) do
@@ -210,25 +217,54 @@ function find_best_server(servers)
     return server_host
 end
 
+--[[
+    Writes results of the tests to a file "/tmp/speed_test_results.json"
+
+    Status
+        Failed - test failed, error occurred
+        Downloading - ongoing download speed test
+        Uploading - ongoing upload speed test
+        Finished downloading - download speed test has been finished
+        Finished uploading - upload speed test has been finished
+        Finished - all tests have been finished
+]]
+function write_results_to_file(current_status, download, upload)
+    local results_file = io.open(RESULTS_FILE, "w")
+    results_file:write(JSON.encode(
+        {
+            status = current_status,
+            download = download_speed,
+            upload = upload_speed
+        }
+    ))
+    results_file:close()
+end
+
 parser = argparse()
-parser:flag("-d", "Call the function to measure download's speed")
-parser:flag("-u", "Call the function to measure upload's speed")
-parser:flag("-c", "Call the function to get the client's country")
-parser:flag("-s", "Call the function to get the server list")
-parser:flag("-b", "Call the function to find the best server from the server list")
+parser:option("--test", "Call the functions to measure download and upload speeds to a chosen server."):argname("<server>")
+parser:flag("-a --auto", "Call the functions to measure download and upload speeds to the best found server.")
+parser:flag("-c --country", "Call the function to get the client's country.")
+parser:flag("-s --servers", "Call the function to get the server list.")
 args = parser:parse()
 
-if (args.d) then
-    measure_download_speed()
-elseif (args.u) then
-    measure_upload_speed()
-elseif (args.c) then
-    local country = get_country()
-elseif (args.s) then
-    local country = get_country()
+if (args.test) then
+    local server_host = args.test
+    measure_download_speed(server_host)
+    os.execute("sleep 3")
+    measure_upload_speed(server_host)
+    write_results_to_file("Finished", download_speed, upload_speed)
+elseif (args.auto) then
+    download_server_list()
+    local country = "Lithuania"
     local servers = get_servers(country)
-elseif (args.b) then
-    local country = get_country()
-    local servers = get_servers(country)
-    local best_server = find_best_server(servers)
+    local best_server_host = find_best_server(servers)
+    print("Downloading...")
+    measure_download_speed(best_server_host)
+    print("Download finished.")
+    os.execute("sleep 3")
+    print("Uploading...")
+    measure_upload_speed(best_server_host)
+    print("Upload finished. Writing results.")
+    write_results_to_file("Finished", download_speed, upload_speed)
+    print("Writing results finished.")
 end
