@@ -14,6 +14,7 @@ RESULTS_FILE = "/tmp/speed_test_results.json"
 download_speed = 0
 upload_speed = 0
 start_time = 0
+how_to_show_results = nil -- terminal OR file
 
 -- Round the provided number to 10s
 -- For example: 9.56321 to 9.56, 5.98741 to 5.99 and so on ...
@@ -24,13 +25,13 @@ end
 -- Downloading progress function
 function download_progress(_, dlnow, _, _)
     download_speed = round((dlnow / 1024 / 1000 * 8) / (os.time() - start_time))
-    write_results_to_file("Downloading", download_speed, upload_speed)
+    result("Downloading", download_speed, upload_speed)
 end
 
 -- Uploading progress function
 function upload_progress(_, _, _, ulnow)
     upload_speed = round((ulnow / 1024 / 1000 * 8) / (os.time() - start_time))
-    write_results_to_file("Uploading", download_speed, upload_speed)
+    result("Uploading", download_speed, upload_speed)
 end
 
 -- Method for measuring the download speed
@@ -50,11 +51,9 @@ function measure_download_speed(server_host)
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
             or err == nil then
-                print(string.format("Download speed: %.2f Mbps", download_speed))
-                write_results_to_file("Finished downloading", download_speed, upload_speed)
+                result("Downloading", download_speed, upload_speed)
     else
-        print(err)
-        write_results_to_file("Failed", 0, 0)
+        result("Failed", 0, 0)
     end
 
     easy:close()
@@ -84,11 +83,9 @@ function measure_upload_speed(server_host)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == nil then
-            print(string.format("Upload speed: %.2f Mbps", upload_speed))
-            write_results_to_file("Finished uploading", download_speed, upload_speed)
+            result("Uploading", download_speed, upload_speed)
     else
-        print(err)
-        write_results_to_file("Failed", 0, 0)
+        result("Failed", 0, 0)
     end
 
     easy:close()
@@ -128,12 +125,14 @@ function download_server_list()
         server_file:close()
         return
     end
+    
+    server_file = io.open(SERVER_LIST_FILE, "w")
 
     local easy = cURL.easy{
         url = SERVER_LIST_URL,
         useragent = USER_AGENT,
         httpget = true,
-        writefunction = io.open(SERVER_LIST_FILE, "w")
+        writefunction = server_file
     }
 
     local success, err = pcall(easy.perform, easy)
@@ -144,6 +143,7 @@ function download_server_list()
         print("Server list has been successfully downloaded!")
     end
 
+    server_file:close()
     easy:close()
 end
 
@@ -198,12 +198,12 @@ end
 -- Find the best server with the best response time
 -- If provided server list is empty - returns nil
 function find_best_server(servers)
-    local best_latency = 99999
-    local server_host = nil
-
     if servers == nil then
         return nil
     end
+
+    local best_latency = 99999
+    local server_host = nil
 
     for _, server in ipairs(servers) do
         local latency = get_server_latency(server.host)
@@ -218,7 +218,7 @@ function find_best_server(servers)
 end
 
 --[[
-    Writes results of the tests to a file "/tmp/speed_test_results.json"
+    Prints test results into a terminal or writes them into a file "/tmp/speed_test_results.json"
 
     Status
         Failed - test failed, error occurred
@@ -228,43 +228,56 @@ end
         Finished uploading - upload speed test has been finished
         Finished - all tests have been finished
 ]]
-function write_results_to_file(current_status, download, upload)
-    local results_file = io.open(RESULTS_FILE, "w")
-    results_file:write(JSON.encode(
-        {
-            status = current_status,
-            download = download_speed,
-            upload = upload_speed
-        }
-    ))
-    results_file:close()
+function result(status, download, upload)
+    if how_to_show_results == "terminal" then
+        print(JSON.encode(
+            {
+                status = status,
+                download = download,
+                upload = upload
+            }
+        ))
+    elseif how_to_show_results == "file" then
+        local results_file = io.open(RESULTS_FILE, "w")
+        results_file:write(JSON.encode(
+            {
+                status = status,
+                download = download,
+                upload = upload
+            }
+        ))
+        results_file:close()
+    end
 end
 
 parser = argparse()
-parser:option("--test", "Call the functions to measure download and upload speeds to a chosen server."):argname("<server>")
-parser:flag("-a --auto", "Call the functions to measure download and upload speeds to the best found server.")
-parser:flag("-c --country", "Call the function to get the client's country.")
-parser:flag("-s --servers", "Call the function to get the server list.")
+parser:group("Running tests",
+    parser:option("--auto", "Call the functions to measure download and upload speeds to the best found server."):argname("terminal/file"):default("terminal"):defmode("a"),
+    parser:option("--specific", "Call the functions to measure download and upload speeds to the chosen server."):args("+"):argname({"<server>", "terminal/file"})
+)
+parser:group("Retrieving data",
+    parser:flag("--country", "Call the function to get the client's country."),
+    parser:flag("--servers", "Call the function to get the server list.")
+)
 args = parser:parse()
 
-if (args.test) then
-    local server_host = args.test
+if args.auto then
+    how_to_show_results = args.auto
+    local servers = get_servers("Lithuania")
+    local best_server_host = find_best_server(servers)
+    measure_download_speed(best_server_host)
+    os.execute("sleep 3")
+    measure_upload_speed(best_server_host)
+    result("Finished", download_speed, upload_speed)
+elseif args.specific then
+    how_to_show_results = args.specific[2] or "terminal"
+    local server_host = args.specific[1]
     measure_download_speed(server_host)
     os.execute("sleep 3")
     measure_upload_speed(server_host)
-    write_results_to_file("Finished", download_speed, upload_speed)
-elseif (args.auto) then
-    download_server_list()
-    local country = "Lithuania"
-    local servers = get_servers(country)
-    local best_server_host = find_best_server(servers)
-    print("Downloading...")
-    measure_download_speed(best_server_host)
-    print("Download finished.")
-    os.execute("sleep 3")
-    print("Uploading...")
-    measure_upload_speed(best_server_host)
-    print("Upload finished. Writing results.")
-    write_results_to_file("Finished", download_speed, upload_speed)
-    print("Writing results finished.")
+    result("Finished", download_speed, upload_speed)
+elseif args.country then
+    print(get_country())
+elseif args.servers then
+    print(get_servers("Lithuania"))
 end
