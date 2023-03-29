@@ -51,7 +51,7 @@ function measure_download_speed(server_host)
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
             or err == nil then
-                result("Downloading", download_speed, upload_speed)
+                result("Finished downloading", download_speed, upload_speed)
     else
         result("Failed", 0, 0)
     end
@@ -83,7 +83,7 @@ function measure_upload_speed(server_host)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == nil then
-            result("Uploading", download_speed, upload_speed)
+            result("Finished uploading", download_speed, upload_speed)
     else
         result("Failed", 0, 0)
     end
