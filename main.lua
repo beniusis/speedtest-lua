@@ -224,7 +224,6 @@ end
         Uploading - ongoing upload speed test
         Finished downloading - download speed test has been finished
         Finished uploading - upload speed test has been finished
-        Finished - all tests have been finished
 
     Download: download speed result
     Upload: upload speed result
@@ -260,19 +259,16 @@ args = parser:parse()
 
 if args.auto then
     how_to_show_results = args.auto
-    local servers = get_servers("Lithuania")
-    local best_server_host = find_best_server(servers)
+    local best_server_host = find_best_server(get_servers(get_country()))
     measure_download_speed(best_server_host)
     os.execute("sleep 3")
     measure_upload_speed(best_server_host)
-    result("Finished", download_speed, upload_speed)
 elseif args.specific then
     how_to_show_results = args.specific[2] or "terminal"
     local server_host = args.specific[1]
     measure_download_speed(server_host)
     os.execute("sleep 3")
     measure_upload_speed(server_host)
-    os.execute("sleep 3")
 elseif args.country then
     print(get_country())
 elseif args.servers then
