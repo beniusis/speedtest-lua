@@ -271,9 +271,7 @@ parser:group("Retrieving data",
 )
 args = parser:parse()
 
-if #args == 0 then
-    print(parser:get_help())
-elseif args.auto then
+if args.auto then
     how_to_show_results = args.auto
     local best_server_host = find_best_server(get_servers("Lithuania"))
     if best_server_host ~= nil then
@@ -293,4 +291,6 @@ elseif args.country then
     print(get_country())
 elseif args.servers then
     download_server_list()
+else
+    print(parser:get_help())
 end
