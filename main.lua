@@ -231,6 +231,11 @@ end
         Finished downloading - download speed test has been finished
         Finished uploading - upload speed test has been finished
 
+    Action:
+        download
+        upload
+        downloading server list
+    
     Download: download speed result
     Upload: upload speed result
 ]]
@@ -266,7 +271,9 @@ parser:group("Retrieving data",
 )
 args = parser:parse()
 
-if args.auto then
+if #args == 0 then
+    print(parser:get_help())
+elseif args.auto then
     how_to_show_results = args.auto
     local best_server_host = find_best_server(get_servers("Lithuania"))
     if best_server_host ~= nil then
