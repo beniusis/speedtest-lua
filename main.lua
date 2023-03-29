@@ -25,13 +25,13 @@ end
 -- Downloading progress function
 function download_progress(_, dlnow, _, _)
     download_speed = round((dlnow / 1024 / 1000 * 8) / (os.time() - start_time))
-    result("Downloading", download_speed, upload_speed)
+    result("Downloading", "download", download_speed, upload_speed)
 end
 
 -- Uploading progress function
 function upload_progress(_, _, _, ulnow)
     upload_speed = round((ulnow / 1024 / 1000 * 8) / (os.time() - start_time))
-    result("Uploading", download_speed, upload_speed)
+    result("Uploading", "upload", download_speed, upload_speed)
 end
 
 -- Method for measuring the download speed
@@ -51,9 +51,9 @@ function measure_download_speed(server_host)
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
             or err == nil then
-                result("Finished downloading", download_speed, upload_speed)
+                result("Finished downloading", "download", download_speed, upload_speed)
     else
-        result("Failed", 0, 0)
+        result("Failed", "download", 0, 0)
     end
 
     easy:close()
@@ -83,9 +83,9 @@ function measure_upload_speed(server_host)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == nil then
-            result("Finished uploading", download_speed, upload_speed)
+            result("Finished uploading", "upload", download_speed, upload_speed)
     else
-        result("Failed", 0, 0)
+        result("Failed", "upload", 0, 0)
     end
 
     easy:close()
@@ -138,7 +138,8 @@ function download_server_list()
     local success, err = pcall(easy.perform, easy)
 
     if not success then
-        result("Failed", 0, 0)
+        result("Failed", "downloading server list", 0, 0)
+        os.remove(SERVER_LIST_FILE)
     end
 
     server_file:close()
@@ -157,6 +158,11 @@ function get_servers(country)
 
     local servers = {}
     local server_file = io.open(SERVER_LIST_FILE, "r")
+
+    if server_file == nil then
+        return nil
+    end
+
     local server_file_contents = server_file:read("*a")
 
     local server_list = JSON.decode(server_file_contents)
@@ -228,10 +234,11 @@ end
     Download: download speed result
     Upload: upload speed result
 ]]
-function result(status, download, upload)
+function result(status, action, download, upload)
     local res = JSON.encode(
         {
             status = status,
+            action = action,
             download = download,
             upload = upload
         }
@@ -248,8 +255,10 @@ end
 
 parser = argparse()
 parser:group("Running tests",
-    parser:option("--auto", "Calls the function to measure download and upload speeds to the best found server."):argname("terminal/file"):default("terminal"):defmode("a"),
-    parser:option("--specific", "Calls the function to measure download and upload speeds to the chosen server."):args("1-2"):argname({"<server>", "terminal/file"})
+    parser:option("--auto", "Calls the functions to measure download and upload speeds to the best found server."):argname("terminal/file"):default("terminal"):defmode("a"),
+    parser:option("--specific", "Calls the function to make test to the chosen server"):args(1):argname("<server>"),
+    parser:option("--download", "Calls the function to measure download speed."):argname("terminal/file"):default("terminal"):defmode("a"),
+    parser:option("--upload", "Calls the function to measure upload speed."):argname("terminal/file"):default("terminal"):defmode("a")
 )
 parser:group("Retrieving data",
     parser:flag("--country", "Calls the function to get the client's country."),
@@ -259,15 +268,19 @@ args = parser:parse()
 
 if args.auto then
     how_to_show_results = args.auto
-    local best_server_host = find_best_server(get_servers(get_country()))
-    measure_download_speed(best_server_host)
-    os.execute("sleep 3")
-    measure_upload_speed(best_server_host)
-elseif args.specific then
-    how_to_show_results = args.specific[2] or "terminal"
-    local server_host = args.specific[1]
+    local best_server_host = find_best_server(get_servers("Lithuania"))
+    if best_server_host ~= nil then
+        measure_download_speed(best_server_host)
+        os.execute("sleep 5")
+        measure_upload_speed(best_server_host)
+    end
+elseif args.specific and args.download and #string.gsub(args.specific, "%s+", "") ~= 0 then
+    how_to_show_results = args.download
+    local server_host = string.gsub(args.specific, "%s+", "")
     measure_download_speed(server_host)
-    os.execute("sleep 3")
+elseif args.specific and args.upload and #string.gsub(args.specific, "%s+", "") ~= 0 then
+    how_to_show_results = args.upload
+    local server_host = string.gsub(args.specific, "%s+", "")
     measure_upload_speed(server_host)
 elseif args.country then
     print(get_country())
