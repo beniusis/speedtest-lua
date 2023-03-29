@@ -146,6 +146,21 @@ function download_server_list()
     easy:close()
 end
 
+-- Returns server list from the server list file
+-- If the server list file does not exist in the system - download it first
+function get_server_list()
+    local server_file = io.open(SERVER_LIST_FILE, "r")
+    
+    if server_file == nil then
+        download_server_list()
+        server_file = io.open(SERVER_LIST_FILE, "r")
+    end
+
+    local server_file_contents = server_file:read("*a")
+    local server_list = JSON.decode(server_file_contents)
+    return server_list
+end
+
 -- Get servers from the server list file by provided country
 -- If the server list file does not exist in the system - download it first
 -- If country parameter is not provided or there are zero servers found of provided country - return nil
