@@ -4,7 +4,6 @@ argparse = require("argparse")
 
 -- Global constants
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
-HOST_URL = "speed-kaunas.telia.lt:8080"
 IP_API_URL = "http://ip-api.com/json/?fields=25115"
 SERVER_LIST_URL = "https://raw.githubusercontent.com/beniusis/speedtest-lua/master/server_list.json"
 SERVER_LIST_FILE = "/tmp/servers.json"
@@ -158,6 +157,9 @@ function get_server_list()
 
     local server_file_contents = server_file:read("*a")
     local server_list = JSON.decode(server_file_contents)
+
+    server_file:close()
+
     return server_list
 end
 
@@ -186,6 +188,8 @@ function get_servers(country)
             table.insert(servers, server)
         end
     end
+
+    server_file:close()
 
     if #servers ~= 0 then
         return servers
@@ -305,7 +309,7 @@ elseif args.specific and args.upload and #string.gsub(args.specific, "%s+", "") 
 elseif args.country then
     print(get_country())
 elseif args.servers then
-    download_server_list()
+    get_server_list()
 else
     print(parser:get_help())
 end
