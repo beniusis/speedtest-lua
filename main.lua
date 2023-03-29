@@ -138,9 +138,7 @@ function download_server_list()
     local success, err = pcall(easy.perform, easy)
 
     if not success then
-        print(err)
-    else
-        print("Server list has been successfully downloaded!")
+        result("Failed", 0, 0)
     end
 
     server_file:close()
@@ -220,44 +218,43 @@ end
 --[[
     Prints test results into a terminal or writes them into a file "/tmp/speed_test_results.json"
 
-    Status
+    Status:
         Failed - test failed, error occurred
         Downloading - ongoing download speed test
         Uploading - ongoing upload speed test
         Finished downloading - download speed test has been finished
         Finished uploading - upload speed test has been finished
         Finished - all tests have been finished
+
+    Download: download speed result
+    Upload: upload speed result
 ]]
 function result(status, download, upload)
+    local res = JSON.encode(
+        {
+            status = status,
+            download = download,
+            upload = upload
+        }
+    )
+
     if how_to_show_results == "terminal" then
-        print(JSON.encode(
-            {
-                status = status,
-                download = download,
-                upload = upload
-            }
-        ))
+        print(res)
     elseif how_to_show_results == "file" then
         local results_file = io.open(RESULTS_FILE, "w")
-        results_file:write(JSON.encode(
-            {
-                status = status,
-                download = download,
-                upload = upload
-            }
-        ))
+        results_file:write(res)
         results_file:close()
     end
 end
 
 parser = argparse()
 parser:group("Running tests",
-    parser:option("--auto", "Call the functions to measure download and upload speeds to the best found server."):argname("terminal/file"):default("terminal"):defmode("a"),
-    parser:option("--specific", "Call the functions to measure download and upload speeds to the chosen server."):args("+"):argname({"<server>", "terminal/file"})
+    parser:option("--auto", "Calls the function to measure download and upload speeds to the best found server."):argname("terminal/file"):default("terminal"):defmode("a"),
+    parser:option("--specific", "Calls the function to measure download and upload speeds to the chosen server."):args("1-2"):argname({"<server>", "terminal/file"})
 )
 parser:group("Retrieving data",
-    parser:flag("--country", "Call the function to get the client's country."),
-    parser:flag("--servers", "Call the function to get the server list.")
+    parser:flag("--country", "Calls the function to get the client's country."),
+    parser:flag("--servers", "Calls the function to get the server list.")
 )
 args = parser:parse()
 
@@ -275,9 +272,9 @@ elseif args.specific then
     measure_download_speed(server_host)
     os.execute("sleep 3")
     measure_upload_speed(server_host)
-    result("Finished", download_speed, upload_speed)
+    os.execute("sleep 3")
 elseif args.country then
     print(get_country())
 elseif args.servers then
-    print(get_servers("Lithuania"))
+    download_server_list()
 end
