@@ -286,13 +286,14 @@ parser:group("Running tests",
 )
 parser:group("Retrieving data",
     parser:flag("--country", "Calls the function to get the client's country."),
-    parser:flag("--servers", "Calls the function to get the server list.")
+    parser:flag("--servers", "Calls the function to get the server list."),
+    parser:flag("--bestServer", "Calls the function to get the best server found for the test.")
 )
 args = parser:parse()
 
 if args.auto then
     how_to_show_results = args.auto
-    local best_server_host = find_best_server(get_servers("Lithuania"))
+    local best_server_host = find_best_server(get_servers(get_country()))
     if best_server_host ~= nil then
         measure_download_speed(best_server_host)
         os.execute("sleep 5")
@@ -309,7 +310,10 @@ elseif args.specific and args.upload and #string.gsub(args.specific, "%s+", "") 
 elseif args.country then
     print(get_country())
 elseif args.servers then
-    get_server_list()
+    download_server_list()
+elseif args.bestServer then
+    local best_server_host = find_best_server(get_servers(get_country()))
+    print(best_server_host)
 else
     print(parser:get_help())
 end
