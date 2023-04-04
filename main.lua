@@ -8,6 +8,7 @@ IP_API_URL = "http://ip-api.com/json/?fields=25115"
 SERVER_LIST_URL = "https://raw.githubusercontent.com/beniusis/speedtest-lua/master/server_list.json"
 SERVER_LIST_FILE = "/tmp/servers.json"
 RESULTS_FILE = "/tmp/speed_test_results.json"
+INTERIM_FILE = "/tmp/speedtest_interim.json"
 
 -- Global variables
 download_speed = 0
@@ -313,7 +314,13 @@ elseif args.servers then
     download_server_list()
 elseif args.bestServer then
     local best_server_host = find_best_server(get_servers(get_country()))
-    print(best_server_host)
+    local file = io.open(INTERIM_FILE, "w")
+    file:write(json.encode(
+        {
+            bestServer = best_server_host
+        }
+    ))
+    file:close()
 else
     print(parser:get_help())
 end
