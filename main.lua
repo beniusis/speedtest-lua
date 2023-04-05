@@ -1,6 +1,6 @@
 #!/usr/bin/env lua
 cURL = require("cURL")
-JSON = require("json")
+cjson = require("cjson")
 argparse = require("argparse")
 
 -- Global constants
@@ -104,7 +104,7 @@ function get_country()
         useragent = USER_AGENT,
         httpget = true,
         writefunction = function(data)
-            country = JSON.decode(data).country
+            country = cjson.decode(data).country
         end
     }
 
@@ -160,7 +160,7 @@ function get_server_list()
     end
 
     local server_file_contents = server_file:read("*a")
-    local server_list = JSON.decode(server_file_contents)
+    local server_list = cjson.decode(server_file_contents)
 
     server_file:close()
 
@@ -186,7 +186,7 @@ function get_servers(country)
 
     local server_file_contents = server_file:read("*a")
 
-    local server_list = JSON.decode(server_file_contents)
+    local server_list = cjson.decode(server_file_contents)
     for _, server in ipairs(server_list) do
         if server.country == country then
             table.insert(servers, server)
@@ -194,7 +194,7 @@ function get_servers(country)
     end
 
     server_file:close()
-
+    
     if #servers ~= 0 then
         return servers
     else
@@ -263,7 +263,8 @@ end
     Upload: upload speed result
 ]]
 function result(status, action, download, upload)
-    local res = JSON.encode(
+    cjson.encode_invalid_numbers(true)
+    local res = cjson.encode(
         {
             status = status,
             action = action,
@@ -318,7 +319,7 @@ elseif args.servers then
 elseif args.bestServer then
     local best_server_host = find_best_server(get_servers(get_country()))
     local file = io.open(INTERIM_FILE, "w")
-    file:write(json.encode(
+    file:write(cjson.encode(
         {
             bestServer = best_server_host
         }
