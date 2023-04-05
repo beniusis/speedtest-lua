@@ -194,7 +194,7 @@ function get_servers(country)
     end
 
     server_file:close()
-    
+
     if #servers ~= 0 then
         return servers
     else
@@ -208,6 +208,7 @@ end
 function get_server_latency(server_host)
     local easy = cURL.easy()
     easy:setopt_url(server_host)
+    easy:setopt_nobody(true)
     easy:setopt_timeout(3)
     easy:setopt_ssl_verifyhost(false)
     easy:setopt_ssl_verifypeer(false)
