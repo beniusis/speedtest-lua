@@ -10,19 +10,13 @@ function M.get_country()
     return { country = output }
 end
 
-function M.get_best_server()
-    local handle = io.popen("main.lua --bestServer")
-    local output = handle:read("*a")
-    return { server = output }
-end
-
-function M.send_best()
+function M.start_finding_best_server()
     io.popen("main.lua --bestServer")
     local content = "Finding best server..."
     return { content = content }
 end
 
-function M.find_best()
+function M.get_best_server()
     local file = io.open(INTERIM_FILE, "r")
     local output = file:read("*a")
     file:close()
@@ -46,11 +40,15 @@ end
 
 function M.automatic_test()
     io.popen("main.lua --auto file")
+    local content = "Started automatic test..."
+    return { content = content }
 end
 
 -- PARAMS: server - server host; type - download/upload
 function M.specific_test(params)
     io.popen("main.lua --specific " .. params.server .. " --" .. params.type .. " file")
+    local content = "Started specific test to a chosen server..."
+    return { content = content }
 end
 
 return M

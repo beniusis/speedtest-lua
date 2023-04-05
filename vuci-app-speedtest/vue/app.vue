@@ -1,60 +1,74 @@
 <template>
   <div class="container">
-    <div class="cards-container">
-      <InfoCard :title="'Country'" :value="'Country'" :isSpeedData="false" />
-      <InfoCard :title="'Server'" :value="'Server'" @click="showServersModal" class="servers-button" :isSpeedData="false" />
-      <InfoCard :title="'Download'" :value="0" />
-      <InfoCard :title="'Upload'" :value="0" />
+    <vue-gauge v-if="isGaugeVisible" :options="{
+      chartWidth: 500,
+      needleValue: 0,
+      hasNeedle: true,
+      needleColor: 'black',
+      arcDelimiters: [20, 70],
+      arcPadding: 10,
+      arcColors: ['red', 'yellow', 'green'],
+      rangeLabel: ['0 Mbps', '100 Mbps'],
+      centralLabel: this.speed,
+      arcOverEffect: false
+    }" />
+    <button v-if="!isGaugeVisible" class="start-test-button" @click="startTest">GO</button>
+    <div class="message-container">
+      {{ message }}
     </div>
-    <div class="messages-container">
-      <h2>{{ message }}</h2>
+    <div class="info-container">
+      <div class="left-container">
+        <div class="left-info">
+          <h2 class="country">Country</h2>
+          <h3 class="country-value"><strong>{{ country }}</strong></h3>
+        </div>
+        <div class="left-icon">
+          <a-icon type="user" />
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-icon">
+          <a-icon type="global" />
+        </div>
+        <div class="right-info">
+          <h2 class="provider">{{ bestServer.provider }}</h2>
+          <h3 class="location">{{ bestServer.city }}</h3>
+          <p class="change-server-button" @click="showServersModal"><strong>Change Server</strong></p>
+        </div>
+      </div>
     </div>
-    <div class="gauge-container">
-      <vue-gauge :options="{
-        chartWidth: 600,
-        needleValue: 0,
-        hasNeedle: true,
-        needleColor: 'black',
-        arcDelimiters: [20, 70],
-        arcPadding: 10,
-        arcColors: ['red', 'yellow', 'green'],
-        rangeLabel: ['0 Mbps', '100 Mbps'],
-        centralLabel: this.speed,
-        arcOverEffect: false
-      }" />
-    </div>
-    <div class="button-container">
-      <button>GO</button>
-    </div>
-    <ServersModal
-      :isVisible="isModalVisible"
-      @closeModal="closeServersModal"
-    />
+    <ServersModal :isVisible="isModalVisible" @closeModal="closeServersModal" @serverChosen="handleServerChosen" />
   </div>
 </template>
 
 <script>
 import VueGauge from 'vue-gauge'
 import ServersModal from './components/ServersModal.vue'
-import InfoCard from './components/InfoCard.vue'
 
 export default {
   components: {
     VueGauge,
-    ServersModal,
-    InfoCard
+    ServersModal
   },
-
   data () {
     return {
-      country: 'Country',
-      bestServer: 'Server',
+      country: '',
+      bestServer: {},
       speed: '0',
-      message: 'Informative message here...',
-      isModalVisible: false
+      message: '',
+      isModalVisible: false,
+      isGaugeVisible: false,
+      bestServerInterval: null
     }
   },
-
+  watch: {
+    bestServer: {
+      handler () {
+        clearInterval(this.bestServerInterval)
+        this.message = ''
+      }
+    }
+  },
   methods: {
     async getCountry () {
       this.$spin(true)
@@ -62,6 +76,35 @@ export default {
         this.country = res.country
         this.$spin(false)
       }).catch(err => console.log(err))
+    },
+
+    initBestServer () {
+      this.$rpc.call('speedtest', 'start_finding_best_server').then((res) => {
+        this.message = res.content
+      }).catch(err => console.log(err))
+    },
+
+    async getBestServer () {
+      await this.$rpc.call('speedtest', 'get_best_server').then((res) => {
+        this.bestServer = JSON.parse(res.content)
+      }).catch(err => console.log(err))
+    },
+
+    pollBestServer () {
+      this.bestServerInterval = setInterval(() => {
+        this.getBestServer()
+      }, 1000)
+    },
+
+    startTest () {
+      this.isGaugeVisible = true
+    },
+
+    handleServerChosen (server) {
+      this.closeServersModal()
+      this.bestServer.provider = server.provider
+      this.bestServer.city = server.city
+      this.bestServer.server = server.host
     },
 
     showServersModal () {
@@ -72,61 +115,91 @@ export default {
       this.isModalVisible = false
     }
   },
-
   created () {
-    // this.getCountry()
+    this.getCountry()
+    this.initBestServer()
+    this.pollBestServer()
   }
 }
 </script>
 
 <style scoped>
 .container {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
   padding: 0;
 }
 
-.cards-container {
+.start-test-button {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+  background: none;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.start-test-button:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.info-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  width: 300px;
 }
 
-.servers-button:hover {
+.info-container .left-container {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  gap: 10px;
+}
+
+.country {
+  font-size: 18px;
+}
+
+.country-value {
+  font-size: 14px;
+}
+
+.provider {
+  font-size: 18px;
+}
+
+.location {
+  font-size: 14px;
+}
+
+.info-container .right-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 10px;
+}
+
+.change-server-button {
+  color: rgb(84, 132, 230);
+}
+
+.change-server-button:hover {
   cursor: pointer;
+  color: rgb(141, 206, 255)
 }
 
-.messages-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  font-size: 10px;
-}
-
-.gauge-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-container button {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background: #fff;
-  border: 2px solid black;
+.message-container {
+  font-size: 14px;
   color: black;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.button-container button:hover {
-  cursor: pointer;
-  border: 2px solid rgb(92, 92, 92);
-  color: rgb(92, 92, 92);
+  opacity: .5;
+  margin: 20px;
 }
 </style>

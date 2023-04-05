@@ -231,18 +231,18 @@ function find_best_server(servers)
     end
 
     local best_latency = 99999
-    local server_host = nil
+    local best_server = nil
 
     for _, server in ipairs(servers) do
         local latency = get_server_latency(server.host)
         if latency ~= nil then
             if latency < best_latency then
                 best_latency = latency
-                server_host = server.host
+                best_server = server
             end
         end
     end
-    return server_host
+    return best_server
 end
 
 --[[
@@ -299,11 +299,11 @@ args = parser:parse()
 
 if args.auto then
     how_to_show_results = args.auto
-    local best_server_host = find_best_server(get_servers(get_country()))
-    if best_server_host ~= nil then
-        measure_download_speed(best_server_host)
+    local best_server = find_best_server(get_servers(get_country()))
+    if best_server ~= nil then
+        measure_download_speed(best_server.host)
         os.execute("sleep 5")
-        measure_upload_speed(best_server_host)
+        measure_upload_speed(best_server.host)
     end
 elseif args.specific and args.download and #string.gsub(args.specific, "%s+", "") ~= 0 then
     how_to_show_results = args.download
@@ -318,11 +318,13 @@ elseif args.country then
 elseif args.servers then
     download_server_list()
 elseif args.bestServer then
-    local best_server_host = find_best_server(get_servers(get_country()))
+    local best_server = find_best_server(get_servers(get_country()))
     local file = io.open(INTERIM_FILE, "w")
     file:write(cjson.encode(
         {
-            bestServer = best_server_host
+            provider = best_server.provider,
+            city = best_server.city,
+            server = best_server.host
         }
     ))
     file:close()
