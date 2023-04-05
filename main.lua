@@ -1,3 +1,4 @@
+#!/usr/bin/env lua
 cURL = require("cURL")
 JSON = require("json")
 argparse = require("argparse")
@@ -50,8 +51,9 @@ function measure_download_speed(server_host)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
         or err == "[CURL-EASY][PARTIAL_FILE] Transferred a partial file (18)"
-            or err == nil then
-                result("Finished downloading", "download", download_speed, upload_speed)
+            or err == "[CURL-EASY][OPERATION_TIMEDOUT] Error (28)"
+                or err == nil then
+                    result("Finished downloading", "download", download_speed, upload_speed)
     else
         result("Failed", "download", 0, 0)
     end
@@ -82,8 +84,9 @@ function measure_upload_speed(server_host)
     local success, err = pcall(easy.perform, easy)
 
     if err == "[CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)"
-        or err == nil then
-            result("Finished uploading", "upload", download_speed, upload_speed)
+        or err == "[CURL-EASY][OPERATION_TIMEDOUT] Error (28)"
+            or err == nil then
+                result("Finished uploading", "upload", download_speed, upload_speed)
     else
         result("Failed", "upload", 0, 0)
     end
