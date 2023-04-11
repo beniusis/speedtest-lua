@@ -1,23 +1,18 @@
 <template>
   <a-modal :visible="isVisible" title="Server List" :closable="false" :footer="null" @cancel="$emit('closeModal')" :width="1000">
-    <a-input v-model="searchInput" placeholder="Search for country, city or provider..." style="margin-bottom: 20px;" />
-    <!-- <a-list item-layout="horizontal" :data-source="filteredServers[0]" :pagination="true" :loading="loading" bordered>
-      <a-list-item slot="renderItem" slot-scope="item">
+    <a-input v-model="searchInput" placeholder="Search for country, city or provider..." style="margin-bottom: 20px;" @keyup.enter="filterServers" />
+    <a-list item-layout="horizontal" :data-source="filteredServers[0]" :pagination="true" :loading="loading" bordered>
+      <a-list-item slot="renderItem" slot-scope="server">
         <template #actions>
-          <a-button type="primary" @click="chosenServer">Choose</a-button>
+          <a-button type="primary" @click="chooseServer(server)">Choose</a-button>
         </template>
         <a-list-item-meta
-          :description="item.city + ', ' + item.country"
+          :description="server.city + ', ' + server.country"
         >
-          <h3 slot="title">{{ item.provider }}</h3>
+          <h3 slot="title">{{ server.provider }}</h3>
         </a-list-item-meta>
       </a-list-item>
-    </a-list> -->
-    <a-table :columns="columns" :data-source="filteredServers[0]" :rowKey="'id'" :pagination="true" :loading="loading">
-      <span slot="action" slot-scope="record, action">
-        <a-button type="primary" @click="chosenServer(action)">Choose</a-button>
-      </span>
-    </a-table>
+    </a-list>
   </a-modal>
 </template>
 
@@ -54,11 +49,37 @@ export default {
       ],
       servers: [],
       filteredServers: [],
-      searchInput: ''
+      searchInput: '',
+      getServersInterval: null
     }
   },
   watch: {
-    searchInput () {
+    servers: {
+      handler () {
+        clearInterval(this.getServersInterval)
+      }
+    }
+  },
+  methods: {
+    async getServers () {
+      await this.$rpc.call('speedtest', 'get_servers').then((res) => {
+        const servers = JSON.parse(res.servers)
+        this.servers.push(servers)
+        this.filteredServers = this.servers
+        this.loading = false
+      }).catch(() => {
+        this.loading = true
+      })
+    },
+
+    async pollServers () {
+      await this.getServers()
+      this.getServersInterval = setInterval(async () => {
+        await this.getServers()
+      }, 1000)
+    },
+
+    filterServers () {
       this.filteredServers = []
       const arr = []
       this.servers[0].forEach(server => {
@@ -69,25 +90,15 @@ export default {
         }
       })
       this.filteredServers.push(arr)
-    }
-  },
-  methods: {
-    async getServers () {
-      await this.$rpc.call('speedtest', 'get_servers').then((res) => {
-        const servers = JSON.parse(res.servers)
-        this.servers.push(servers)
-        this.filteredServers = this.servers
-        this.loading = false
-      }).catch(err => console.log(err))
     },
 
-    chosenServer (server) {
+    chooseServer (server) {
       this.$emit('serverChosen', server)
     }
   },
   beforeUpdate () {
     if (this.servers.length === 0) {
-      this.getServers()
+      this.pollServers()
     }
   }
 }

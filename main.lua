@@ -302,7 +302,7 @@ if args.auto then
     local best_server = find_best_server(get_servers(get_country()))
     if best_server ~= nil then
         measure_download_speed(best_server.host)
-        os.execute("sleep 5")
+        os.execute("sleep 2")
         measure_upload_speed(best_server.host)
     end
 elseif args.specific and args.download and #string.gsub(args.specific, "%s+", "") ~= 0 then
