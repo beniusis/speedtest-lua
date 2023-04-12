@@ -16,7 +16,11 @@
     <a-list
       item-layout="horizontal"
       :data-source="filteredServers[0]"
-      :pagination="true"
+      :pagination="{
+        pageSize: 6,
+        showQuickJumper: true,
+        hideOnSinglePage: true
+      }"
       :loading="loading"
       bordered
     >
@@ -24,8 +28,8 @@
         <template #actions>
           <a-button
             type="primary"
-            @click="chooseServer(server)"
-          >Choose</a-button>
+            @click="selectServer(server)"
+          >Select</a-button>
         </template>
         <a-list-item-meta
           :description="server.city + ', ' + server.country"
@@ -93,7 +97,7 @@ export default {
       })
     },
 
-    async pollServers () {
+    pollServers () {
       this.getServersInterval = setInterval(async () => {
         await this.getServers()
       }, 1000)
@@ -109,8 +113,8 @@ export default {
       this.filteredServers.push(filtered)
     },
 
-    chooseServer (server) {
-      this.$emit('serverChosen', server)
+    selectServer (server) {
+      this.$emit('serverSelected', server)
     }
   },
   beforeUpdate () {
