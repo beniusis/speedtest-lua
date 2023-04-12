@@ -1,10 +1,31 @@
 <template>
-  <a-modal :visible="isVisible" title="Server List" :closable="false" :footer="null" @cancel="$emit('closeModal')" :width="1000">
-    <a-input v-model="searchInput" placeholder="Search for country, city or provider..." style="margin-bottom: 20px;" @keyup.enter="filterServers" />
-    <a-list item-layout="horizontal" :data-source="filteredServers[0]" :pagination="true" :loading="loading" bordered>
+  <a-modal
+    :visible="isVisible"
+    title="Server List"
+    :closable="false"
+    :footer="null"
+    @cancel="$emit('closeModal')"
+    :width="1000"
+  >
+    <a-input
+      v-model="searchInput"
+      placeholder="Search for the country, city or provider..."
+      style="margin-bottom: 20px;"
+      @keyup.enter="filterServers"
+    />
+    <a-list
+      item-layout="horizontal"
+      :data-source="filteredServers[0]"
+      :pagination="true"
+      :loading="loading"
+      bordered
+    >
       <a-list-item slot="renderItem" slot-scope="server">
         <template #actions>
-          <a-button type="primary" @click="chooseServer(server)">Choose</a-button>
+          <a-button
+            type="primary"
+            @click="chooseServer(server)"
+          >Choose</a-button>
         </template>
         <a-list-item-meta
           :description="server.city + ', ' + server.country"
@@ -73,7 +94,6 @@ export default {
     },
 
     async pollServers () {
-      await this.getServers()
       this.getServersInterval = setInterval(async () => {
         await this.getServers()
       }, 1000)
@@ -81,15 +101,12 @@ export default {
 
     filterServers () {
       this.filteredServers = []
-      const arr = []
-      this.servers[0].forEach(server => {
-        if (server.country.toLowerCase().includes(this.searchInput.toLowerCase()) ||
-          server.provider.toLowerCase().includes(this.searchInput.toLowerCase()) ||
-          server.city.toLowerCase().includes(this.searchInput.toLowerCase())) {
-          arr.push(server)
-        }
-      })
-      this.filteredServers.push(arr)
+      const filtered = this.servers[0].filter(server =>
+        server.country.toLowerCase().includes(this.searchInput.toLowerCase()) ||
+        server.provider.toLowerCase().includes(this.searchInput.toLowerCase()) ||
+        server.city.toLowerCase().includes(this.searchInput.toLowerCase())
+      )
+      this.filteredServers.push(filtered)
     },
 
     chooseServer (server) {
