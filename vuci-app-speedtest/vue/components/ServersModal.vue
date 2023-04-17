@@ -53,25 +53,6 @@ export default {
   data () {
     return {
       loading: true,
-      columns: [
-        {
-          title: 'Provider',
-          dataIndex: 'provider'
-        },
-        {
-          title: 'City',
-          dataIndex: 'city'
-        },
-        {
-          title: 'Country',
-          dataIndex: 'country'
-        },
-        {
-          title: 'Action',
-          dataIndex: 'action',
-          scopedSlots: { customRender: 'action' }
-        }
-      ],
       servers: [],
       filteredServers: [],
       searchInput: '',

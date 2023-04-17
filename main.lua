@@ -324,7 +324,7 @@ elseif args.bestServer then
         {
             provider = best_server.provider,
             city = best_server.city,
-            server = best_server.host
+            host = best_server.host
         }
     ))
     file:close()

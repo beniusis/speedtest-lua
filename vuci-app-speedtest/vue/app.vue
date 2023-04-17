@@ -34,7 +34,7 @@
         <v-icon name="hi-solid-location-marker" class="icon" />
         <h2>{{ country }}</h2>
       </div>
-      <div class="container" style="max-width: 200px;">
+      <div class="container" style="max-width: 250px;">
         <v-icon name="ri-global-line" class="icon" />
         <div style="dislay: flex; flex-direction: column;">
           <h2>{{ server.provider }}</h2>
@@ -63,7 +63,7 @@
     <ServersModal
       :isVisible="isModalVisible"
       @closeModal="closeServersModal"
-      @serverChosen="handleServerChosen"
+      @serverSelected="handleSelectedServer"
     />
   </div>
 </template>
@@ -86,15 +86,14 @@ export default {
       uploadSpeed: 0,
       status: '',
       isModalVisible: false,
-      serverInterval: null,
-      isAuto: true
+      serverInterval: null
     }
   },
   watch: {
     server: {
       handler () {
         clearInterval(this.serverInterval)
-        this.status = 'Server is set. Getting ready for the tests.'
+        this.status = 'Server is set.'
       }
     }
   },
@@ -110,65 +109,55 @@ export default {
 
     async initFindingBestServer () {
       await this.$rpc.call('speedtest', 'start_finding_best_server').then(() => {
-        this.status = 'Searching for the best server...'
+        this.status = 'Initiating the search for the best server available...'
       }).catch(() => {
-        this.status = 'Failed while searching for the best server! Try again.'
+        this.status = 'Failed to initiate the search of the best server available.'
       })
     },
 
     async getBestServer () {
       await this.$rpc.call('speedtest', 'get_best_server').then((res) => {
+        this.status = 'Searching for the best server available...'
         this.server = JSON.parse(res.content)
       }).catch(() => {
-        this.status = 'Failed to get the best server! Try again.'
+        this.status = 'Still trying to search for the best server available...'
       })
     },
 
-    pollBestServer () {
-      this.initFindingBestServer()
-      this.serverInterval = setInterval(() => {
-        this.getBestServer()
+    async pollBestServer () {
+      await this.initFindingBestServer()
+      this.serverInterval = setInterval(async () => {
+        await this.getBestServer()
       }, 1000)
     },
 
-    async startAutoTest () {
-      await this.$rpc.call('speedtest', 'automatic_test').then(() => {
-        this.status = 'Starting automatic test...'
+    // type - download/upload
+    async startSpecificTest (type) {
+      await this.$rpc.call('speedtest', 'specific_test', { server: this.server.host, type: type }).then(() => {
+        this.status = 'Starting ' + type + ' test...'
       }).catch(() => {
-        this.status = 'Failed to start the test! Try again.'
-      })
-    },
-
-    // testType - download/upload
-    async startSpecificTest (testType) {
-      await this.$rpc.call('speedtest', 'specific_test', { server: this.server.server, type: testType }).then(() => {
-        this.status = 'Starting ' + testType + ' test...'
-      }).catch(() => {
-        this.status = 'Failed to start the test! Try again.'
+        this.status = 'Failed to start the test. Please try again.'
       })
     },
 
     async runTests () {
-      // by default automatic test to the best server
-      // else - specific (to a chosen server)
+      this.downloadSpeed = 0
+      this.uploadSpeed = 0
+
+      // check if the server is not selected
+      // if it's not selected - search for the best server available first
       if (Object.keys(this.server).length === 0) {
-        this.downloadSpeed = 0
-        this.uploadSpeed = 0
-        this.pollBestServer()
-        await this.startAutoTest()
+        await this.pollBestServer()
         await this.sleep(3000)
-        await this.getResults()
-      } else {
-        this.downloadSpeed = 0
-        this.uploadSpeed = 0
-        this.isAuto = false
-        await this.startSpecificTest('download')
-        await this.sleep(3000)
-        await this.getResults()
-        await this.startSpecificTest('upload')
-        await this.sleep(3000)
-        await this.getResults()
       }
+
+      // run download and upload tests one after another
+      await this.startSpecificTest('download')
+      await this.sleep(3000)
+      await this.getResults()
+      await this.startSpecificTest('upload')
+      await this.sleep(3000)
+      await this.getResults()
     },
 
     async getResults () {
@@ -177,25 +166,34 @@ export default {
         const res = await this.$rpc.call('speedtest', 'get_results')
         if (res.results !== '') {
           const result = JSON.parse(res.results)
-          this.status = result.status
-          if (result.status === 'Downloading') {
-            this.currentTestSpeed = result.download
-          } else if (result.status === 'Uploading') {
-            this.currentTestSpeed = result.upload
-          } else if (result.status === 'Finished downloading') {
-            this.currentTestSpeed = 0
-            this.downloadSpeed = result.download
-            if (this.isAuto === false) running = false
-          } else if (result.status === 'Finished uploading') {
-            this.currentTestSpeed = 0
-            this.uploadSpeed = result.upload
-            running = false
-          } else if (result.status === 'Failed') {
-            this.currentTestSpeed = 0
-            this.downloadSpeed = 0
-            this.uploadSpeed = 0
-            this.status = 'Test failed! Try again.'
-            running = false
+          switch (result.status) {
+            case 'Downloading':
+              this.currentTestSpeed = result.download
+              this.status = 'Downloading'
+              break
+            case 'Uploading':
+              this.currentTestSpeed = result.upload
+              this.status = 'Uploading'
+              break
+            case 'Finished downloading':
+              this.currentTestSpeed = 0
+              this.downloadSpeed = result.download
+              this.status = 'Finished downloading'
+              running = false
+              break
+            case 'Finished uploading':
+              this.currentTestSpeed = 0
+              this.uploadSpeed = result.upload
+              this.status = 'Finished uploading'
+              running = false
+              break
+            case 'Failed':
+              this.currentTestSpeed = 0
+              this.downloadSpeed = 0
+              this.uploadSpeed = 0
+              this.status = 'Test failed. Please try again.'
+              running = false
+              break
           }
         }
         await this.sleep(500)
@@ -206,11 +204,9 @@ export default {
       return new Promise(resolve => setTimeout(resolve, ms))
     },
 
-    handleServerChosen (server) {
+    handleSelectedServer (server) {
       this.closeServersModal()
-      this.server.provider = server.provider
-      this.server.city = server.city
-      this.server.server = server.host
+      this.server = server
     },
 
     showServersModal () {
@@ -221,8 +217,8 @@ export default {
       this.isModalVisible = false
     }
   },
-  created () {
-    this.getCountry()
+  async created () {
+    await this.getCountry()
   }
 }
 </script>
@@ -259,8 +255,8 @@ export default {
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
 }
 
 .change-server-button {
