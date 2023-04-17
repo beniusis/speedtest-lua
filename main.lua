@@ -37,6 +37,11 @@ end
 
 -- Method for measuring the download speed
 function measure_download_speed(server_host)
+    local latency = get_server_latency(server_host)
+    if latency == nil then
+        result("Connection to server failed", "download", 0, 0)
+        return
+    end
     local easy = cURL.easy{
         url = server_host .. "/download",
         useragent = USER_AGENT,
@@ -64,6 +69,11 @@ end
 
 -- Method for measuring the upload speed
 function measure_upload_speed(server_host)
+    local latency = get_server_latency(server_host)
+    if latency == nil then
+        result("Connection to server failed", "upload", 0, 0)
+        return
+    end
     local easy = cURL.easy{
         url = server_host .. "/upload",
         useragent = USER_AGENT,
@@ -249,6 +259,7 @@ end
     Prints test results into a terminal or writes them into a file "/tmp/speed_test_results.json"
 
     Status:
+        Connection to server failed - test failed, failed to establish connection to the server
         Failed - test failed, error occurred
         Downloading - ongoing download speed test
         Uploading - ongoing upload speed test

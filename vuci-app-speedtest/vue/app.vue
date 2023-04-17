@@ -1,34 +1,5 @@
 <template>
   <div>
-    <div class="main-container">
-      <div class="speed-meter-container">
-        <div style="margin-top: 130px;">
-          <h3><strong>0</strong></h3>
-        </div>
-        <vue-svg-gauge
-          :start-angle="-90"
-          :end-angle="90"
-          :value="this.currentTestSpeed"
-          :separator-step="0"
-          :inner-radius="80"
-          :min="0"
-          :max="100"
-          :gauge-color="[{ offset: 0, color: '#b43a3a'}, { offset: 70, color: '#fdfb1d'}, { offset: 100, color: '#58fc45'}]"
-          :scale-interval="0"
-          :easing="'Circular.InOut'"
-          :transition-duration="500"
-        />
-        <div style="margin-top: 130px;">
-          <h3><strong>100</strong></h3>
-        </div>
-      </div>
-      <div class="status-container">
-        <h3 style="color: lightcoral; font-size: 12px;">{{ status }}</h3>
-      </div>
-      <div class="speed-container">
-        <h2><strong>Current test speed: </strong>{{ currentTestSpeed }}</h2>
-      </div>
-    </div>
     <div class="info-container">
       <div class="container">
         <v-icon name="hi-solid-location-marker" class="icon" />
@@ -39,11 +10,6 @@
         <div style="dislay: flex; flex-direction: column;">
           <h2>{{ server.provider }}</h2>
           <h3>{{ server.city }}</h3>
-          <p
-            class="change-server-button"
-            @click="showServersModal">
-              <strong>Select Server</strong>
-          </p>
         </div>
       </div>
       <div class="container">
@@ -56,11 +22,38 @@
       </div>
     </div>
 
-    <div class="actions-container">
-      <a-button type="primary" @click="runTests">GO</a-button>
+    <h3 class="status-line">{{ displayStatus }}</h3>
+    <h2 class="speed-line"><strong>Current test speed: </strong>{{ currentTestSpeed }}</h2>
+
+    <div class="main-container">
+      <vue-speedometer
+        :maxSegmentLabels="1"
+        :segments="6"
+        :customSegmentStops='[0, 20, 40, 60, 80, 100]'
+        :value="currentTestSpeed > 100 ? 100 : currentTestSpeed"
+        currentValueText=""
+        :ringWidth="25"
+        :minValue="0"
+        :maxValue="100"
+        :needleHeightRatio="0.85"
+        :width="400"
+        startColor="#b43a3a"
+        endColor="#58fc45"
+        needleColor="#2E3440"
+        textColor="#2E3440"
+        :paddingHorizontal="2"
+        :paddingVertical="0"
+        labelFontSize="16px"
+        needleTransition="easeCircleInOut"
+      />
     </div>
 
-    <ServersModal
+    <div class="actions-container">
+      <a-button :disabled="isDisabled" type="primary" @click="runTests">Start</a-button>
+      <a-button :disabled="isDisabled" @click="showServersModal">Select Server</a-button>
+    </div>
+
+    <servers-modal
       :isVisible="isModalVisible"
       @closeModal="closeServersModal"
       @serverSelected="handleSelectedServer"
@@ -70,12 +63,12 @@
 
 <script>
 import ServersModal from './components/ServersModal.vue'
-import { VueSvgGauge } from 'vue-svg-gauge'
+import VueSpeedometer from 'vue-speedometer'
 
 export default {
   components: {
     ServersModal,
-    VueSvgGauge
+    VueSpeedometer
   },
   data () {
     return {
@@ -85,7 +78,9 @@ export default {
       downloadSpeed: 0,
       uploadSpeed: 0,
       status: '',
+      displayStatus: '',
       isModalVisible: false,
+      isDisabled: false,
       serverInterval: null
     }
   },
@@ -93,34 +88,33 @@ export default {
     server: {
       handler () {
         clearInterval(this.serverInterval)
-        this.status = 'Server is set.'
+        this.displayStatus = 'Server is set.'
       }
     }
   },
   methods: {
     async getCountry () {
-      this.$spin(true)
       await this.$rpc.call('speedtest', 'get_country').then((res) => {
         this.country = res.country
       }).catch(() => {
-        this.status = 'Unable to detect your country.'
-      }).finally(() => this.$spin(false))
+        this.displayStatus = 'Unable to detect your country.'
+      })
     },
 
     async initFindingBestServer () {
       await this.$rpc.call('speedtest', 'start_finding_best_server').then(() => {
-        this.status = 'Initiating the search for the best server available...'
+        this.displayStatus = 'Initiating the search for the best server available...'
       }).catch(() => {
-        this.status = 'Failed to initiate the search of the best server available.'
+        this.displayStatus = 'Failed to initiate the search of the best server available.'
       })
     },
 
     async getBestServer () {
       await this.$rpc.call('speedtest', 'get_best_server').then((res) => {
-        this.status = 'Searching for the best server available...'
+        this.displayStatus = 'Searching for the best server available...'
         this.server = JSON.parse(res.content)
       }).catch(() => {
-        this.status = 'Still trying to search for the best server available...'
+        this.displayStatus = 'Still trying to search for the best server available...'
       })
     },
 
@@ -134,15 +128,19 @@ export default {
     // type - download/upload
     async startSpecificTest (type) {
       await this.$rpc.call('speedtest', 'specific_test', { server: this.server.host, type: type }).then(() => {
-        this.status = 'Starting ' + type + ' test...'
+        this.displayStatus = 'Starting ' + type + ' test...'
       }).catch(() => {
-        this.status = 'Failed to start the test. Please try again.'
+        this.displayStatus = 'Failed to start the test. Please try again.'
       })
     },
 
     async runTests () {
+      this.isDisabled = true
+      this.displayStatus = ''
+      this.status = ''
       this.downloadSpeed = 0
       this.uploadSpeed = 0
+      await this.getCountry()
 
       // check if the server is not selected
       // if it's not selected - search for the best server available first
@@ -155,9 +153,20 @@ export default {
       await this.startSpecificTest('download')
       await this.sleep(3000)
       await this.getResults()
+
+      // do not start upload test if the download test failed
+      // or failed to establish connection to a server
+      if (this.status === 'Failed') {
+        this.isDisabled = false
+        return
+      }
+
       await this.startSpecificTest('upload')
       await this.sleep(3000)
       await this.getResults()
+
+      this.displayStatus = 'Tests finished'
+      this.isDisabled = false
     },
 
     async getResults () {
@@ -169,29 +178,36 @@ export default {
           switch (result.status) {
             case 'Downloading':
               this.currentTestSpeed = result.download
-              this.status = 'Downloading'
+              this.displayStatus = 'Downloading'
               break
             case 'Uploading':
               this.currentTestSpeed = result.upload
-              this.status = 'Uploading'
+              this.displayStatus = 'Uploading'
               break
             case 'Finished downloading':
               this.currentTestSpeed = 0
               this.downloadSpeed = result.download
-              this.status = 'Finished downloading'
+              this.displayStatus = 'Finished downloading'
               running = false
               break
             case 'Finished uploading':
               this.currentTestSpeed = 0
               this.uploadSpeed = result.upload
-              this.status = 'Finished uploading'
+              this.displayStatus = 'Finished uploading'
+              running = false
+              break
+            case 'Connection to server failed':
+              this.currentTestSpeed = 0
+              this.displayStatus = 'Failed to establish connection to the server. Please choose another server and try again.'
+              this.status = 'Failed'
               running = false
               break
             case 'Failed':
               this.currentTestSpeed = 0
               this.downloadSpeed = 0
               this.uploadSpeed = 0
-              this.status = 'Test failed. Please try again.'
+              this.displayStatus = 'Test failed. Please try again.'
+              this.status = 'Failed'
               running = false
               break
           }
@@ -216,9 +232,6 @@ export default {
     closeServersModal () {
       this.isModalVisible = false
     }
-  },
-  async created () {
-    await this.getCountry()
   }
 }
 </script>
@@ -229,15 +242,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
   gap: 20px;
-}
-
-.speed-meter-container {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+  margin-top: 50px;
 }
 
 .info-container {
@@ -245,6 +251,8 @@ export default {
   flex-direction: row;
   justify-content: center;
   gap: 50px;
+  margin-top: 30px;
+  height: 100px;
 }
 
 .container {
@@ -252,6 +260,19 @@ export default {
   flex-direction: row;
   justify-content: center;
   gap: 10px;
+}
+
+.status-line {
+  color: lightcoral;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  height: 18px;
+}
+
+.speed-line {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .icon {
@@ -272,6 +293,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  gap: 10px;
 }
 </style>
