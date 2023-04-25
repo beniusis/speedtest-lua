@@ -16,6 +16,9 @@ end
 
 function M.get_best_server()
     local file = io.open(INTERIM_FILE, "r")
+    if file == nil then
+        return { content = "" }
+    end
     local output = file:read("*a")
     file:close()
     return { content = output }
@@ -23,6 +26,9 @@ end
 
 function M.get_results()
     local file = io.open(RESULTS_FILE, "r")
+    if file == nil then
+        return { results = "" }
+    end
     local content = file:read("*a")
     file:close()
     return { results = content }
